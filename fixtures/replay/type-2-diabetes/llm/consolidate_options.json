@@ -1,0 +1,218 @@
+{
+  "options": [
+    {
+      "id": "opt-metformin",
+      "name": "Metformin",
+      "category": "pharmacologic",
+      "drug_class": "Biguanide",
+      "line_of_therapy": "first_line",
+      "population": "Most nonpregnant adults with type 2 diabetes",
+      "summary": "Metformin with lifestyle modification is the background regimen in the ACP 2024 guideline; newer agents are recommended as additions to it when glycemic control is inadequate. The retrieved abstracts do not grade metformin itself, so its first-line role is implied rather than separately evidenced here.",
+      "member_refs": [
+        "pubmed:38639546#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-lifestyle-modification",
+      "name": "Lifestyle modification and weight management",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All adults with type 2 diabetes or prediabetes",
+      "summary": "Every guideline in the set treats lifestyle change as the foundation of care: ACP pairs it with metformin, KDIGO builds its layered CKD approach on it, and AACE 2026 makes lifestyle and obesity treatment key pillars. MedlinePlus notes many people manage glucose this way.",
+      "member_refs": [
+        "pubmed:38639546#1",
+        "pubmed:36623286#0",
+        "pubmed:41842862#0",
+        "medlineplus:diabetestype2#0"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-physical-activity",
+      "name": "Structured physical activity",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "People of all ages with type 2 diabetes",
+      "summary": "ACSM's 2022 consensus statement recommends regular physical activity of several types and breaking up sedentary time, applying the 2018 Physical Activity Guidelines for Americans with few modifications.",
+      "member_refs": [
+        "pubmed:35029593#0"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-sglt2-inhibitors",
+      "name": "SGLT-2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "add_on",
+      "population": "Adults with inadequate control on metformin (ACP); first-line in diabetes with CKD (KDIGO); risk-stratified by cardiovascular and kidney risk (BMJ)",
+      "summary": "Reduce all-cause mortality, MACE, CKD progression and heart-failure hospitalisation (high certainty). ACP strongly recommends adding them to metformin, KDIGO makes them first-line in CKD, and the BMJ living guideline recommends them for moderate- and higher-risk adults but not for lower-risk adults.",
+      "member_refs": [
+        "pubmed:38639546#2",
+        "pubmed:40813129#0",
+        "pubmed:36623286#1",
+        "pubmed:37874122#1",
+        "pubmed:38639549#0"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-glp-1-receptor-agonists",
+      "name": "GLP-1 receptor agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with inadequate control on metformin (ACP); moderate- or higher-risk adults (BMJ); people with cardiovascular disease or CKD",
+      "summary": "Reduce all-cause mortality, MACE and stroke. ACP strongly recommends adding them to metformin; KDIGO layers them on first-line therapy in CKD; the German NDMG and BMJ panel tie their use to cardiovascular and renal risk.",
+      "member_refs": [
+        "pubmed:38639546#3",
+        "pubmed:40813129#1",
+        "pubmed:36623286#2",
+        "pubmed:37874122#0",
+        "pubmed:38639549#1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-tirzepatide",
+      "name": "Tirzepatide",
+      "category": "pharmacologic",
+      "drug_class": "Dual GIP/GLP-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and obesity",
+      "summary": "The BMJ living guideline gives a weak recommendation in favour for adults with obesity across risk strata, while the ACP network meta-analysis found no reduction in all-cause mortality versus usual care.",
+      "member_refs": [
+        "pubmed:40813129#3",
+        "pubmed:38639549#3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-finerenone",
+      "name": "Finerenone (nonsteroidal MRA)",
+      "category": "pharmacologic",
+      "drug_class": "Nonsteroidal mineralocorticoid receptor antagonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "KDIGO adds nonsteroidal MRAs on top of first-line therapy for heart and kidney protection; the BMJ panel suggests finerenone only for higher-risk adults with CKD and suggests against it at moderate risk.",
+      "member_refs": [
+        "pubmed:40813129#2",
+        "pubmed:36623286#3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-dpp-4-inhibitors",
+      "name": "DPP-4 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Dipeptidyl peptidase-4 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with inadequate glycemic control on metformin",
+      "summary": "ACP strongly recommends against adding a DPP-4 inhibitor to metformin to reduce morbidity and mortality; the supporting network meta-analysis found no mortality reduction versus usual care.",
+      "member_refs": [
+        "pubmed:38639546#4",
+        "pubmed:38639549#2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-insulin",
+      "name": "Insulin (basal / long-acting)",
+      "category": "pharmacologic",
+      "drug_class": "Insulin",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes who need further glucose lowering",
+      "summary": "AACE provides a dedicated insulin initiation and titration algorithm. Long-acting insulin did not reduce mortality versus usual care and carries more severe hypoglycemia than SGLT2 inhibitors or GLP-1 agonists.",
+      "member_refs": [
+        "pubmed:41842862#1",
+        "pubmed:38639549#4",
+        "medlineplus:diabetestype2#1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-sulfonylureas",
+      "name": "Sulfonylureas",
+      "category": "pharmacologic",
+      "drug_class": "Sulfonylurea",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes",
+      "summary": "Appears only as a comparator: SGLT2 inhibitors reduce MACE versus sulfonylureas, and severe hypoglycemia is more frequent with sulfonylureas.",
+      "member_refs": [
+        "pubmed:38639549#5"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-individualized-glycemic-targets",
+      "name": "Individualized HbA1c targets",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Nonpregnant adults with type 2 diabetes",
+      "summary": "ACP (2018) asks clinicians to personalise glycemic goals and aim for HbA1c 7%-8% in most patients; the German NDMG (2023) found evidence too uncertain to recommend HbA1c target values.",
+      "member_refs": [
+        "pubmed:37874122#3",
+        "pubmed:29507945#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-deintensification",
+      "name": "Deintensification of drug therapy",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with HbA1c below 6.5% on drug therapy, or with life expectancy under 10 years",
+      "summary": "ACP advises considering deintensification when HbA1c is below 6.5% and avoiding HbA1c targets for people with limited life expectancy, where harms outweigh benefits.",
+      "member_refs": [
+        "pubmed:29507945#1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-shared-decision-making",
+      "name": "Structured shared decision making",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults whose individual treatment goals have not been achieved",
+      "summary": "The German NDMG adds a structured shared-decision-making approach for use when individual treatment goals are not met.",
+      "member_refs": [
+        "pubmed:37874122#2"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-cardiovascular-risk-factor-management",
+      "name": "Blood pressure and lipid management",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes",
+      "summary": "KDIGO, AACE and MedlinePlus all include control of blood pressure and lipids alongside glycemia to reduce cardiovascular and kidney events.",
+      "member_refs": [
+        "pubmed:36623286#4",
+        "pubmed:41842862#2",
+        "medlineplus:diabetestype2#3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-blood-glucose-self-monitoring",
+      "name": "Blood glucose self-monitoring",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with type 2 diabetes",
+      "summary": "MedlinePlus advises regular blood glucose checks at a frequency set by the provider; no guideline in this set grades it.",
+      "member_refs": [
+        "medlineplus:diabetestype2#2"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

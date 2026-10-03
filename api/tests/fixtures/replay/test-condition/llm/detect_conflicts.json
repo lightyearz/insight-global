@@ -1,0 +1,29 @@
+{
+  "conflicts": [
+    {
+      "id": "conf-preferred-first-line-agent",
+      "topic": "Preferred first-line pharmacotherapy",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-alphamab",
+        "opt-betacillin",
+        "opt-unknown"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:1000001",
+          "side": 1,
+          "statement": "Alphamab is first-line; Betacillin is add-on.",
+          "quote": "Alphamab is recommended as first-line therapy for adults with test condition (Grade A)."
+        },
+        {
+          "source_id": "pubmed:1000002",
+          "side": 2,
+          "statement": "Betacillin should be first-line.",
+          "quote": "Betacillin should be considered first-line therapy for test condition."
+        }
+      ],
+      "ai_assessment": "The 2024 guideline post-dates the 2020 review and may reflect newer evidence."
+    }
+  ]
+}

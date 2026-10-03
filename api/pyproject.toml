@@ -1,0 +1,55 @@
+[project]
+name = "health-briefing-api"
+version = "0.1.0"
+description = "Health Briefing POC API: standard-of-care research agent (FastAPI + LangGraph + Gemini)."
+readme = "../README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "httpx>=0.27",
+    "langgraph>=1.0,<2",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "google-genai>=2.28",
+    "sqlalchemy[asyncio]>=2.0",
+    "aiosqlite>=0.20",
+    "sse-starlette>=2.1",
+    "tenacity>=9.0",
+    "defusedxml>=0.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "respx>=0.21",
+    "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+markers = ["live: calls the real Gemini API / Vertex AI (opt-in: RUN_LIVE_LLM=1 and credentials)"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "ASYNC", "S", "SIM", "RUF"]
+ignore = ["S101", "RUF001", "RUF002", "RUF003", "B008"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S", "ASYNC", "E501"]
+
+[tool.ruff.format]
+# Frozen contract files keep their hand layout.
+exclude = ["app/schemas.py", "app/agent/llm_outputs.py"]

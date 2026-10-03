@@ -1,0 +1,105 @@
+{
+  "is_relevant": true,
+  "issuing_body": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+  "region": "International",
+  "treatments": [
+    {
+      "name": "Lifestyle interventions and self-management",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with diabetes and chronic kidney disease",
+      "summary": "Lifestyle interventions and self-management form the foundation of a layered approach to care.",
+      "evidence": [
+        {
+          "quote": "starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy",
+          "statement": "Care is built on a foundation of lifestyle interventions and self-management.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "SGLT-2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "first_line",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "Named as first-line pharmacotherapy in diabetes with CKD because of demonstrated clinical outcome benefits.",
+      "evidence": [
+        {
+          "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes.",
+          "statement": "SGLT-2 inhibitors are first-line pharmacotherapy in the layered approach for diabetes and CKD.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "date_precision": "year",
+          "label": "KDIGO 2022 update positions SGLT-2 inhibitors as first-line in diabetes with CKD",
+          "quote": "The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO)."
+        }
+      ]
+    },
+    {
+      "name": "GLP-1 receptor agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "Added on top of first-line therapy for additional heart and kidney protection.",
+      "evidence": [
+        {
+          "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+          "statement": "GLP-1 receptor agonists are layered on top of first-line therapy for heart and kidney protection.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Nonsteroidal mineralocorticoid receptor antagonists",
+      "category": "pharmacologic",
+      "drug_class": "Nonsteroidal mineralocorticoid receptor antagonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "Added on top of first-line therapy for additional heart and kidney protection.",
+      "evidence": [
+        {
+          "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+          "statement": "Nonsteroidal MRAs are layered on top of first-line therapy for heart and kidney protection.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Blood pressure, glycemia and lipid control",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults with diabetes and chronic kidney disease",
+      "summary": "Risk-factor control for CKD progression and cardiovascular events is added to the layered approach.",
+      "evidence": [
+        {
+          "quote": "interventions to control risk factors for CKD progression and cardiovascular events, such as blood pressure, glycemia, and lipids",
+          "statement": "Blood pressure, glucose and lipid control are part of comprehensive care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Applies to adults with diabetes and chronic kidney disease."
+}

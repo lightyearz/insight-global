@@ -1,0 +1,69 @@
+{
+  "is_relevant": true,
+  "issuing_body": "Test Society",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Alphamab",
+      "category": "pharmacologic",
+      "drug_class": "Synthetic antibody",
+      "line_of_therapy": "first_line",
+      "population": "Adults with test condition",
+      "summary": "Recommended first-line therapy.",
+      "evidence": [
+        {
+          "quote": "Alphamab is recommended as first-line therapy for adults with test condition (Grade A).",
+          "statement": "Alphamab is the recommended first-line therapy for adults.",
+          "recommendation_strength": "Grade A",
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Betacillin",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults not at target after 3 months",
+      "summary": "Add-on when targets are not met.",
+      "evidence": [
+        {
+          "quote": "Betacillin may be added when treatment targets are not met after 3 months (Grade B).",
+          "statement": "Betacillin is an add-on option after 3 months off target.",
+          "recommendation_strength": "Grade B",
+          "evidence_level": null,
+          "stance": "conditional"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Structured exercise",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All patients with test condition",
+      "summary": "Structured exercise programmes are recommended for all patients.",
+      "evidence": [
+        {
+          "quote": "structured exercise programmes have been recommended for all patients with test condition",
+          "statement": "Structured exercise is recommended for everyone with the condition.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "date_precision": "year",
+          "label": "Structured exercise recommended for all patients",
+          "quote": "Since 2022, structured exercise programmes have been recommended for all patients with test condition."
+        }
+      ]
+    }
+  ],
+  "notes": null
+}

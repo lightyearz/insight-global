@@ -1,0 +1,40 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "Lower blood pressure target (135/85 mm Hg or lower)",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with chronic arterial hypertension (mean age 63; mainly older people with moderate to high cardiovascular risk)",
+      "summary": "Lower targets do not reduce total mortality or total serious adverse events compared with a standard target of 140/90 mm Hg or lower; benefits do not outweigh harms.",
+      "evidence": [
+        {
+          "quote": "Lower targets do not reduce total mortality (risk ratio (RR) 0.95, 95% confidence interval (CI) 0.86 to 1.05; 11 trials, 38,688 participants; high-certainty evidence) and do not reduce total serious adverse events (RR 1.04, 95% CI 0.99 to 1.08; 6 trials, 18,165 participants; moderate-certainty evidence).",
+          "statement": "Lower targets did not reduce total mortality or total serious adverse events.",
+          "recommendation_strength": null,
+          "evidence_level": "high-certainty evidence",
+          "stance": "described"
+        },
+        {
+          "quote": "For the general population of persons with elevated blood pressure, the benefits of trying to achieve a lower blood pressure target rather than a standard target (≤ 140/90 mm Hg) do not outweigh the harms associated with that intervention.",
+          "statement": "For the general population, the benefits of a lower target do not outweigh the harms compared with ≤140/90 mm Hg.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended_against"
+        },
+        {
+          "quote": "The results of this review are primarily applicable to older people with moderate to high cardiovascular risk.",
+          "statement": "Findings apply mainly to older people with moderate to high cardiovascular risk.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,87 @@
+{
+  "conflicts": [
+    {
+      "id": "conf-systolic-target-older-adults",
+      "topic": "What systolic target should apply to older adults with hypertension?",
+      "conflict_type": "outdated_guidance",
+      "treatment_option_ids": [
+        "opt-bp-targets-older-adults",
+        "opt-intensive-systolic-target"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:28135725",
+          "side": 1,
+          "statement": "Adults aged 60 or older are treated when systolic pressure is persistently at or above 150 mm Hg, to a target below 150 mm Hg.",
+          "quote": "ACP and AAFP recommend that clinicians initiate treatment in adults aged 60 years or older with systolic blood pressure persistently at or above 150 mm Hg to achieve a target systolic blood pressure of less than 150 mm Hg to reduce the risk for mortality, stroke, and cardiac events."
+        },
+        {
+          "source_id": "pubmed:39589443",
+          "side": 2,
+          "statement": "The target is 120-129 mm Hg systolic, with individualised goals only for frailty or age 85 and over.",
+          "quote": "The new target systolic blood pressure is 120-129 mm Hg, with establishment of individualized treatment goals in cases of frailty or age ≥85 years."
+        },
+        {
+          "source_id": "pubmed:39688187",
+          "side": 3,
+          "statement": "In adults 65 and over, a target of 140/90 mm Hg or lower reduces stroke and likely serious cardiovascular events compared with 150-160 mm Hg targets.",
+          "quote": "When comparing a higher BP target, in the range of < 150 to 160/95 to 105 mmHg, to a lower BP target of 140/90 or lower, over two to four years of follow-up, there is high-certainty evidence that the lower BP target reduces stroke, and moderate-certainty evidence that the lower BP target likely reduces serious cardiovascular events."
+        }
+      ],
+      "ai_assessment": "The ACP/AAFP guideline (January 2017) sets a target below 150 mm Hg for most adults aged 60 or older, while the 2024 ESC guidance applies a 120-129 mm Hg target to older adults unless they are frail or 85 or older. The 2024 Cochrane update, which added a newer trial, found high-certainty evidence that a target of 140/90 mm Hg or lower reduces stroke in adults 65 or older, and itself notes that guideline targets for older adults range from below 130 to below 150 mm Hg. The gap mainly reflects the age of the ACP/AAFP evidence base."
+    },
+    {
+      "id": "conf-general-systolic-target",
+      "topic": "Should the general treatment target be below 130 mm Hg systolic or the standard 140/90 mm Hg?",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-intensive-systolic-target"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:40419299",
+          "side": 1,
+          "statement": "Treatment should target a systolic blood pressure below 130 mm Hg.",
+          "quote": "Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy."
+        },
+        {
+          "source_id": "pubmed:39589443",
+          "side": 1,
+          "statement": "The treated systolic target is 120-129 mm Hg.",
+          "quote": "The new target systolic blood pressure is 120-129 mm Hg, with establishment of individualized treatment goals in cases of frailty or age ≥85 years."
+        },
+        {
+          "source_id": "pubmed:33332584",
+          "side": 2,
+          "statement": "For the general population, the benefits of a lower target do not outweigh the harms compared with a standard target of 140/90 mm Hg or lower.",
+          "quote": "For the general population of persons with elevated blood pressure, the benefits of trying to achieve a lower blood pressure target rather than a standard target (≤ 140/90 mm Hg) do not outweigh the harms associated with that intervention."
+        }
+      ],
+      "ai_assessment": "Hypertension Canada (2025) and the ESC (2024) both set systolic targets below 130 mm Hg, whereas the 2020 Cochrane review concluded that lower targets (135/85 mm Hg or lower) do not reduce total mortality or total serious adverse events versus 140/90 mm Hg. The review searched trials up to May 2019 and states its results apply mainly to older people with moderate to high cardiovascular risk. The guidelines are newer, and they weigh benefits and harms differently from the review."
+    },
+    {
+      "id": "conf-systolic-target-in-ckd",
+      "topic": "What systolic target applies to adults with chronic kidney disease?",
+      "conflict_type": "population_difference",
+      "treatment_option_ids": [
+        "opt-intensive-target-ckd",
+        "opt-intensive-systolic-target"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:34152826",
+          "side": 1,
+          "statement": "Adults with CKD not on dialysis have a systolic target below 120 mm Hg, which KDIGO notes differs from other guidelines.",
+          "quote": "In particular, the synopsis focuses on recommendations for standardized BP measurement and a target systolic BP of less than 120 mm Hg, because these recommendations differ from some other guidelines."
+        },
+        {
+          "source_id": "pubmed:40419299",
+          "side": 2,
+          "statement": "Adults with hypertension in primary care have a systolic target below 130 mm Hg.",
+          "quote": "Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy."
+        }
+      ],
+      "ai_assessment": "KDIGO 2021 recommends a systolic target below 120 mm Hg specifically for adults with chronic kidney disease not receiving dialysis, and explicitly says this differs from some other guidelines. Hypertension Canada's below-130 mm Hg target is for the general adult primary care population. The positions apply to different populations rather than contradicting each other."
+    }
+  ]
+}

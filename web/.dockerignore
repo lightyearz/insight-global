@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+test-results
+playwright-report
+screenshots
+*.tsbuildinfo
+next-env.d.ts
+.env*
+Dockerfile
+.dockerignore
+# Key material and cloud credentials must never enter an image (defence in depth)
+*.pem
+*.key
+*.p12
+sa-key*.json
+*credentials*.json
+service-account*.json
+client_secret*.json

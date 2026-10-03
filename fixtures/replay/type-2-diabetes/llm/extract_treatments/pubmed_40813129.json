@@ -1,0 +1,122 @@
+{
+  "is_relevant": true,
+  "issuing_body": "BMJ Rapid Recommendations international guideline panel",
+  "region": "International",
+  "treatments": [
+    {
+      "name": "SGLT-2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes, stratified by cardiovascular and kidney risk",
+      "summary": "Recommended for adults at moderate (weak) or higher (strong) cardiovascular/kidney risk; weak recommendation against for lower-risk adults.",
+      "evidence": [
+        {
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against"
+        },
+        {
+          "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional"
+        },
+        {
+          "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "strong recommendation in favour",
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "GLP-1 receptor agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes, stratified by cardiovascular and kidney risk",
+      "summary": "Same risk-stratified recommendations as SGLT-2 inhibitors: against at lower risk, in favour at moderate and higher risk.",
+      "evidence": [
+        {
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against"
+        },
+        {
+          "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional"
+        },
+        {
+          "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "strong recommendation in favour",
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Finerenone",
+      "category": "pharmacologic",
+      "drug_class": "Nonsteroidal mineralocorticoid receptor antagonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "Weak recommendation against at moderate risk and weak recommendation in favour at higher risk of complications.",
+      "evidence": [
+        {
+          "quote": "and a weak recommendation against finerenone in adults with CKD",
+          "statement": "For moderate-risk adults with CKD the panel suggests not using finerenone.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against"
+        },
+        {
+          "quote": "and a weak recommendation in favour of finerenone in adults with CKD",
+          "statement": "For higher-risk adults with CKD the panel suggests using finerenone.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Tirzepatide",
+      "category": "pharmacologic",
+      "drug_class": "Dual GIP/GLP-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and obesity, across risk strata",
+      "summary": "Weak recommendation in favour of tirzepatide for adults with obesity regardless of cardiovascular or kidney risk.",
+      "evidence": [
+        {
+          "quote": "Across risk strata: weak recommendation in favour of tirzepatide in adults with obesity.",
+          "statement": "The panel suggests tirzepatide for adults with type 2 diabetes and obesity.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-07-31",
+          "date_precision": "day",
+          "label": "Living evidence review underpinning the tirzepatide recommendation updated",
+          "quote": "network meta-analysis evaluating relative benefits and harms updated to 31 July 2024"
+        }
+      ]
+    }
+  ],
+  "notes": "Living guideline; recommendations are stratified by cardiovascular and kidney risk rather than by line of therapy."
+}

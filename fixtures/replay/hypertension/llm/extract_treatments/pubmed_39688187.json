@@ -1,0 +1,40 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "Lower blood pressure target (140/90 mm Hg or lower) in older adults",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Hypertensive adults aged 65 years or older",
+      "summary": "Compared with higher targets of <150-160 mm Hg systolic, a target of 140/90 mm Hg or lower reduces stroke and likely reduces serious cardiovascular events, without increasing withdrawals due to adverse effects.",
+      "evidence": [
+        {
+          "quote": "When comparing a higher BP target, in the range of < 150 to 160/95 to 105 mmHg, to a lower BP target of 140/90 or lower, over two to four years of follow-up, there is high-certainty evidence that the lower BP target reduces stroke, and moderate-certainty evidence that the lower BP target likely reduces serious cardiovascular events.",
+          "statement": "A target of 140/90 mm Hg or lower reduces stroke and likely reduces serious cardiovascular events compared with higher targets.",
+          "recommendation_strength": null,
+          "evidence_level": "high-certainty evidence",
+          "stance": "described"
+        },
+        {
+          "quote": "Although additional research is warranted in those who are 80 years of age and older, and those who are frail (in whom risks and benefits may differ), conventional BP targets may be appropriate for the majority of older adults.",
+          "statement": "Conventional targets may suit most older adults; those 80 and older and frail people need more research.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "Current clinical practice guidelines are inconsistent in target BP recommendations for older adults, with systolic BP targets ranging from < 130 mmHg to < 150 mmHg.",
+          "statement": "Guideline targets for older adults range from below 130 to below 150 mm Hg.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

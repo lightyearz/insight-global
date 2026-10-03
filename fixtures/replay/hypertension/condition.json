@@ -1,0 +1,8 @@
+{
+  "input": "hypertension",
+  "label": "Hypertension",
+  "mesh_id": "D006973",
+  "synonyms": [
+    "Blood Pressure, High"
+  ]
+}

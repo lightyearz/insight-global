@@ -1,0 +1,126 @@
+{
+  "is_relevant": true,
+  "issuing_body": "European Society of Cardiology",
+  "region": "EU",
+  "treatments": [
+    {
+      "name": "Lifestyle modification",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All patients with elevated blood pressure (120-139/70-89 mm Hg) or hypertension",
+      "summary": "Lifestyle modification is advised for everyone with elevated blood pressure, to reduce cardiovascular risk early, and is started together with medication in hypertension.",
+      "evidence": [
+        {
+          "quote": "All patients with elevated blood pressure are advised to implement lifestyle modifications.",
+          "statement": "Everyone in the new 'elevated blood pressure' category is advised to make lifestyle changes.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "For patients with hypertension (≥ 140/90 mm Hg), the guidelines now recommend initiating lifestyle modifications and antihypertensive medication concurrently.",
+          "statement": "In hypertension (140/90 mm Hg or more), lifestyle changes start at the same time as medication.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024",
+          "date_precision": "year",
+          "label": "ESC introduces the 'elevated blood pressure' category (120-139/70-89 mm Hg)",
+          "quote": "The 2024 guidelines of the European Society of Cardiology (ESC) for the management of elevated blood pressure and hypertension introduce the new category \"elevated blood pressure\" (120-139/70-89 mm Hg)."
+        }
+      ]
+    },
+    {
+      "name": "Antihypertensive medication",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension (≥140/90 mm Hg); selected moderate-to-high-risk adults at ≥130/80 mm Hg after 3 months of lifestyle change",
+      "summary": "Medication is started together with lifestyle modification once blood pressure is 140/90 mm Hg or more, and may be considered from 130/80 mm Hg in moderate-to-high-risk patients after 3 months of lifestyle change.",
+      "evidence": [
+        {
+          "quote": "For patients with hypertension (≥ 140/90 mm Hg), the guidelines now recommend initiating lifestyle modifications and antihypertensive medication concurrently.",
+          "statement": "The 2024 ESC guidance now recommends starting medication and lifestyle changes concurrently in hypertension.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "In addition, a structured assessment should be carried out based on the comorbidities, such as coronary artery disease, heart failure and stroke as well as on risk factors, which can result from an antihypertensive treatment in cases of moderate to high risk and a blood pressure of 130/80 mm Hg or more despite 3 months of lifestyle modifications.",
+          "statement": "Moderate-to-high-risk patients with blood pressure of 130/80 mm Hg or more after 3 months of lifestyle change are assessed for drug treatment.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "conditional"
+        },
+        {
+          "quote": "Compared to the guidelines of the European Society of Hypertension (ESH) and the German national guidelines (NVL), the ESC extends the treatment recommendations to patients with elevated blood pressure even below the threshold of 140/90 mm Hg.",
+          "statement": "The ESC extends treatment recommendations below the 140/90 mm Hg threshold, unlike ESH and German national guidance.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Systolic blood pressure target of 120-129 mm Hg",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Treated adults with hypertension; individualised goals for frailty or age ≥85 years",
+      "summary": "The 2024 ESC guidance sets a treated systolic target of 120-129 mm Hg, with individualised goals for frail patients and those aged 85 or older.",
+      "evidence": [
+        {
+          "quote": "The new target systolic blood pressure is 120-129 mm Hg, with establishment of individualized treatment goals in cases of frailty or age ≥85 years.",
+          "statement": "The target systolic blood pressure is 120-129 mm Hg, individualised in frailty or age 85 and over.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Spironolactone",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Patients with resistant hypertension",
+      "summary": "Spironolactone is the recommended option for resistant hypertension.",
+      "evidence": [
+        {
+          "quote": "For resistant hypertension spironolactone is recommended, with renal denervation being an alternative option to increasing the antihypertensive medication.",
+          "statement": "Spironolactone is recommended for resistant hypertension.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Renal denervation",
+      "category": "procedural",
+      "drug_class": null,
+      "line_of_therapy": "alternative",
+      "population": "Patients with resistant hypertension",
+      "summary": "Renal denervation is named as an alternative to adding further antihypertensive medication in resistant hypertension.",
+      "evidence": [
+        {
+          "quote": "For resistant hypertension spironolactone is recommended, with renal denervation being an alternative option to increasing the antihypertensive medication.",
+          "statement": "Renal denervation is an alternative to increasing medication in resistant hypertension.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "conditional"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "German-language article (Herz) with an English abstract summarising the 2024 ESC guidelines; no recommendation classes or evidence levels are stated in the abstract."
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Standard of care: Hypertension (US)",
+  "top_level_description": "This briefing summarises nine public sources on adult hypertension management, retrieved on 3 October 2026: four clinical guidelines, four systematic reviews and one MedlinePlus consumer summary. Every guideline starts with lifestyle modification. Under the 2024 European Society of Cardiology (ESC) guidance, medication starts together with lifestyle change once blood pressure reaches 140/90 mm Hg or more, and Hypertension Canada (2025) gives stepwise medication guidance. Treatment targets are the main area of disagreement. The recent ESC and Hypertension Canada guidelines target a systolic pressure below 130 mm Hg. A 2020 Cochrane review found that lower targets did not outweigh their harms, and a 2017 ACP/AAFP guideline targets below 150 mm Hg for adults aged 60 or older. This briefing follows the more recent tier-1 guidance on both points. KDIGO (2021) sets a lower target, below 120 mm Hg, for chronic kidney disease. Among drug classes, a 2022 Cochrane review found that diuretics reduced major cardiovascular events and heart failure more than calcium channel blockers. Single-pill combinations improve adherence, but their effect on outcomes is unproven. This is a literature summary for planning, not clinical guidance.",
+  "key_takeaways": [
+    "Lifestyle modification is the starting point in every guideline source. The 2024 ESC guidance starts medication alongside it once blood pressure reaches 140/90 mm Hg or more.",
+    "Recent tier-1 guidelines target a systolic pressure below 130 mm Hg: 120-129 mm Hg (ESC 2024) or below 130 mm Hg (Hypertension Canada 2025). Older evidence, such as the 2020 Cochrane review and the 2017 ACP/AAFP guideline for adults 60 or older, supports less intensive targets.",
+    "Chronic kidney disease is a separate population: KDIGO 2021 recommends a systolic target below 120 mm Hg.",
+    "As first-line therapy, diuretics reduced major cardiovascular events and heart failure more than calcium channel blockers, and calcium channel blockers outperformed beta-blockers (Cochrane 2022).",
+    "Single-pill combinations, most often CCB/ARB pairs, are linked to better adherence than free-dose combinations, but better blood pressure control and outcomes are not yet shown.",
+    "For resistant hypertension, the 2024 ESC guidance recommends spironolactone and names renal denervation as an alternative to adding medication."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "Calcium channel blockers",
+      "category": "pharmacologic",
+      "drug_class": "Calcium channel blocker",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension (randomised trials of first-line therapy)",
+      "summary": "First-line CCBs show no difference in all-cause mortality versus other classes; they probably reduce major cardiovascular events more than beta-blockers but less than diuretics.",
+      "evidence": [
+        {
+          "quote": "All-cause mortality was not different between first-line CCBs and any other antihypertensive classes.",
+          "statement": "First-line CCBs did not differ from other classes on all-cause mortality.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "There is low to moderate certainty evidence that CCBs probably reduce major cardiovascular events more than beta-blockers.",
+          "statement": "CCBs probably reduce major cardiovascular events more than beta-blockers.",
+          "recommendation_strength": null,
+          "evidence_level": "low to moderate certainty evidence",
+          "stance": "described"
+        },
+        {
+          "quote": "Many of the differences found in the current review are not robust, and further trials might change the conclusions.",
+          "statement": "Many between-class differences are not robust and may change with further trials.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "insufficient_evidence"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Diuretics",
+      "category": "pharmacologic",
+      "drug_class": "Diuretic",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension (randomised trials of first-line therapy)",
+      "summary": "Diuretics reduce major cardiovascular events and congestive heart failure more than CCBs.",
+      "evidence": [
+        {
+          "quote": "For the treatment of hypertension, there is moderate certainty evidence that diuretics reduce major cardiovascular events and congestive heart failure more than CCBs.",
+          "statement": "Diuretics reduce major cardiovascular events and heart failure more than CCBs.",
+          "recommendation_strength": null,
+          "evidence_level": "moderate certainty evidence",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "ACE inhibitors and angiotensin receptor blockers",
+      "category": "pharmacologic",
+      "drug_class": "ACE inhibitor / angiotensin receptor blocker",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension (randomised trials of first-line therapy)",
+      "summary": "Compared with CCBs, ACE inhibitors and ARBs were associated with less congestive heart failure, while CCBs reduced stroke versus ACE inhibitors and myocardial infarction versus ARBs.",
+      "evidence": [
+        {
+          "quote": "There is low to moderate certainty evidence that CCBs reduced stroke when compared to angiotensin-converting enzyme (ACE) inhibitors and reduced myocardial infarction when compared to angiotensin receptor blockers (ARBs), but increased congestive heart failure when compared to ACE inhibitors and ARBs.",
+          "statement": "ACE inhibitors and ARBs had fewer heart failure events than CCBs; CCBs had fewer strokes (vs ACE inhibitors) and myocardial infarctions (vs ARBs).",
+          "recommendation_strength": null,
+          "evidence_level": "low to moderate certainty evidence",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Beta-blockers",
+      "category": "pharmacologic",
+      "drug_class": "Beta-blocker",
+      "line_of_therapy": "alternative",
+      "population": "Adults with hypertension (randomised trials of first-line therapy)",
+      "summary": "Beta-blockers performed worse than CCBs as first-line therapy for major cardiovascular events, stroke and cardiovascular mortality.",
+      "evidence": [
+        {
+          "quote": "As compared to beta-blockers, CCBs reduced the following outcomes: major cardiovascular events (RR 0.84, 95% CI 0.77 to 0.92), stroke (RR 0.77, 95% CI 0.67 to 0.88, moderate-certainty evidence), and cardiovascular mortality (RR 0.90, 95% CI 0.81 to 0.99, low-certainty evidence).",
+          "statement": "Compared with beta-blockers, CCBs reduced major cardiovascular events, stroke and cardiovascular mortality.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

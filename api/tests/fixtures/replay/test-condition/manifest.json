@@ -1,0 +1,8 @@
+{
+  "slug": "test-condition",
+  "label": "Test condition",
+  "aliases": ["synthetic test condition", "tc"],
+  "recorded_at": "2026-09-30T12:00:00Z",
+  "recorded_with": "hand-authored",
+  "notes": "SYNTHETIC test fixture for the API test suite. Fictional condition, drugs, journals and PMIDs; not real medical content."
+}

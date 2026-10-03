@@ -1,0 +1,51 @@
+{
+  "is_relevant": true,
+  "issuing_body": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+  "region": "International",
+  "treatments": [
+    {
+      "name": "Systolic blood pressure target below 120 mm Hg",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with chronic kidney disease not receiving dialysis",
+      "summary": "KDIGO recommends a systolic target below 120 mm Hg in CKD and notes this differs from some other guidelines.",
+      "evidence": [
+        {
+          "quote": "In particular, the synopsis focuses on recommendations for standardized BP measurement and a target systolic BP of less than 120 mm Hg, because these recommendations differ from some other guidelines.",
+          "statement": "KDIGO recommends a systolic target below 120 mm Hg in adults with CKD, which differs from some other guidelines.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "date_precision": "year",
+          "label": "KDIGO updates its 2012 CKD blood pressure guideline",
+          "quote": "The Kidney Disease: Improving Global Outcomes (KDIGO) 2021 clinical practice guideline for the management of blood pressure (BP) in patients with chronic kidney disease (CKD) not receiving dialysis is an update of the KDIGO 2012 guideline on the same topic and reflects new evidence on the risks and benefits of BP-lowering therapy among patients with CKD."
+        }
+      ]
+    },
+    {
+      "name": "Standardized blood pressure measurement",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with chronic kidney disease not receiving dialysis",
+      "summary": "Standardized BP measurement is one of the two recommendations the synopsis highlights.",
+      "evidence": [
+        {
+          "quote": "In particular, the synopsis focuses on recommendations for standardized BP measurement and a target systolic BP of less than 120 mm Hg, because these recommendations differ from some other guidelines.",
+          "statement": "KDIGO highlights standardized blood pressure measurement as a key recommendation in CKD.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Synopsis of the KDIGO 2021 guideline; GRADE strengths are not reported in the abstract."
+}

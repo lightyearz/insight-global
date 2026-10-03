@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "email": "admin@example.org",
+      "role": "admin"
+    },
+    {
+      "id": "analyst",
+      "name": "Demo Analyst",
+      "email": "analyst@example.org",
+      "role": "analyst"
+    },
+    {
+      "id": "analyst2",
+      "name": "Second Analyst",
+      "email": "analyst2@example.org",
+      "role": "analyst"
+    }
+  ],
+  "replay_conditions": [
+    {
+      "slug": "hypertension",
+      "label": "Hypertension",
+      "aliases": [
+        "high blood pressure",
+        "HTN",
+        "essential hypertension"
+      ],
+      "recorded_at": "2026-10-03T15:55:06.220525Z",
+      "recorded_with": "hand-authored",
+      "notes": "Sources fetched live on 2026-10-03 with the project's own connectors: MeSH lookup (Hypertension, D006973; synonym from the MeSH descriptor's entry terms), PubMed E-utilities efetch for 8 hand-picked PMIDs, and the MedlinePlus health-topics service plus page meta dates. PMIDs were chosen by hand (not by the live esearch ranking) so the abstracts contain concrete recommendations; the 2017 ACP/AAFP guideline (PMID 28135725) is outside the default PUBMED_YEARS window and was included deliberately as the older-adult target position. The 2025 AHA/ACC guideline (PMID 40811497) and the 2024 ESC full guideline (PMID 39210715) were not used: the first's abstract states scope and methods only, and the second has no abstract in PubMed; the 2024 ESC guidance is represented by an English abstract summarising it (PMID 39589443). All LLM outputs are hand-authored from the abstracts only; every quote is verbatim and passes is_grounded. write_report.json is written for the suggested selection and the suggested conflict resolutions. Contract 1.1 (2026-10-03): evidence 'stance' and conflict position 'side' values were added by hand from the same abstracts; source tiers were recomputed with the title rule. Suggested resolutions are computed at run time, not stored. Public copy: abstracts from publishers outside the open-licence allowlist are cut down to the sentences quoted as evidence (joined with ' … '); see fixtures/README.md."
+    },
+    {
+      "slug": "type-2-diabetes",
+      "label": "Type 2 diabetes",
+      "aliases": [
+        "T2D",
+        "T2DM",
+        "type 2 diabetes mellitus",
+        "diabetes mellitus, type 2",
+        "diabetes type 2",
+        "adult-onset diabetes"
+      ],
+      "recorded_at": "2026-10-03T15:50:29Z",
+      "recorded_with": "hand-authored",
+      "notes": "Sources were fetched live on recorded_at with the project's own connectors: PubMed E-utilities (esearch with guideline / systematic-review filters over the last 6 years plus targeted searches for ACP, KDIGO, AACE, ACSM and national guidelines, then efetch XML) and the MedlinePlus Health Topics web service (dates from the topic page's DC.Date meta tags). Metadata are unedited. condition.json comes from the MeSH descriptor lookup for 'Diabetes Mellitus, Type 2' (D003924) and its entry terms, because the MeSH lookup alone returns no descriptor for the typed text 'type 2 diabetes' (live runs now resolve it through the Entrez entry-term step). All llm/*.json outputs were hand-authored from the real abstracts for replay and demo use; they are not Gemini output. Every evidence, milestone and conflict quote is a verbatim span of its source excerpt. write_report.json is written for the AI-suggested selection and suggested conflict resolutions. Contract 1.1 (2026-10-03): evidence 'stance' and conflict position 'side' values were added by hand from the same abstracts; source tiers were recomputed with the title rule (the ACP 2018 'Guidance Statement', indexed by PubMed as a Review, is now tier 1); the CKD first-line conflict was rewritten to two genuine, full-sentence positions with a neutral assessment. Suggested resolutions are computed at run time, not stored. Public copy: abstracts from publishers outside the open-licence allowlist are cut down to the sentences quoted as evidence (joined with ' … '); see fixtures/README.md."
+    }
+  ],
+  "condition_suggestions": [
+    {
+      "label": "Type 2 diabetes",
+      "code": "E11.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Type 1 diabetes",
+      "code": "E10.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Diabetes insipidus",
+      "code": "E23.2",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Gestational diabetes",
+      "code": "O24.419",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Hypertension",
+      "code": "I10",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Heart failure",
+      "code": "I50.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Atrial fibrillation",
+      "code": "I48.91",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Chronic kidney disease",
+      "code": "N18.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Asthma",
+      "code": "J45.909",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Chronic obstructive pulmonary disease",
+      "code": "J44.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Major depressive disorder",
+      "code": "F32.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Rheumatoid arthritis",
+      "code": "M06.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Osteoarthritis of knee",
+      "code": "M17.9",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Migraine",
+      "code": "G43.909",
+      "source": "clinical_tables"
+    },
+    {
+      "label": "Obesity",
+      "code": "E66.9",
+      "source": "clinical_tables"
+    }
+  ]
+}

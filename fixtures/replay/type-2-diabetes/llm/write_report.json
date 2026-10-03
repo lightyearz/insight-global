@@ -1,0 +1,11 @@
+{
+  "title": "Standard of care: Type 2 diabetes mellitus (US)",
+  "top_level_description": "Current guidance for adults with type 2 diabetes treats lifestyle modification, physical activity and weight management as the foundation of care, with metformin as the usual background drug. The largest shift is the role of SGLT-2 inhibitors and GLP-1 receptor agonists. Both reduce all-cause mortality and major cardiovascular events with high certainty, and ACP (2024) strongly recommends adding either to metformin when glycemic control is inadequate. The BMJ living guideline (2025) instead stratifies by cardiovascular and kidney risk and advises against routine use in lower-risk adults; reviewers adopted this risk-stratified view. In chronic kidney disease, KDIGO positions SGLT-2 inhibitors as first-line, with GLP-1 receptor agonists and finerenone layered on for higher-risk patients. DPP-4 inhibitors are recommended against as an add-on, and insulin carries more severe hypoglycaemia than newer agents. Tirzepatide has a weak recommendation in adults with obesity. Glycaemic targets should be individualised, and deintensification is advised when HbA1c is very low or life expectancy is limited. Evidence certainty for a single HbA1c target is contested.",
+  "key_takeaways": [
+    "SGLT-2 inhibitors and GLP-1 receptor agonists are the main outcome-driven add-ons, with high-certainty reductions in mortality and cardiovascular events; the size of the eligible population depends on whether use is risk-stratified.",
+    "In diabetes with CKD, SGLT-2 inhibitors are first-line (KDIGO 2022), with GLP-1 receptor agonists and finerenone as layered add-ons.",
+    "ACP strongly recommends against adding DPP-4 inhibitors to metformin, which signals a de-adoption opportunity.",
+    "Lifestyle, physical activity and obesity treatment are consistent first-line pillars across US and international guidance.",
+    "HbA1c targets remain contested (ACP 2018: 7%-8% versus no recommended target in the German NDMG 2023); individualisation and deintensification for frail or low-HbA1c patients are common ground."
+  ]
+}

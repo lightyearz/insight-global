@@ -1,0 +1,151 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "SGLT2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Reduce all-cause mortality, MACE, CKD progression and heart-failure hospitalisation versus usual care.",
+      "evidence": [
+        {
+          "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+          "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described"
+        },
+        {
+          "quote": "SGLT2 inhibitors reduce progression of chronic kidney disease (CKD) and heart failure hospitalizations",
+          "statement": "SGLT2 inhibitors reduce CKD progression and heart-failure hospitalisation.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "GLP1 agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Reduce all-cause mortality, MACE and stroke versus usual care.",
+      "evidence": [
+        {
+          "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+          "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described"
+        },
+        {
+          "quote": "GLP1 agonists reduce stroke (high CoE)",
+          "statement": "GLP-1 agonists reduce stroke.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "DPP4 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Dipeptidyl peptidase-4 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Do not reduce all-cause mortality versus usual care; GLP-1 agonists reduce mortality compared with DPP4 inhibitors.",
+      "evidence": [
+        {
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described"
+        },
+        {
+          "quote": "Compared with DPP4 inhibitors, GLP1 agonists reduce all-cause mortality (moderate CoE).",
+          "statement": "GLP-1 agonists reduce mortality relative to DPP-4 inhibitors.",
+          "recommendation_strength": null,
+          "evidence_level": "moderate CoE",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Tirzepatide",
+      "category": "pharmacologic",
+      "drug_class": "Dual GIP/GLP-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Did not reduce all-cause mortality versus usual care in the included trials.",
+      "evidence": [
+        {
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Long-acting insulin",
+      "category": "pharmacologic",
+      "drug_class": "Insulin",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Does not reduce all-cause mortality versus usual care and causes more severe hypoglycemia than SGLT2 inhibitors or GLP1 agonists.",
+      "evidence": [
+        {
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described"
+        },
+        {
+          "quote": "Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU.",
+          "statement": "Severe hypoglycemia and serious adverse events are more frequent with insulin or sulfonylureas than with SGLT2 inhibitors or GLP-1 agonists.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Sulfonylureas",
+      "category": "pharmacologic",
+      "drug_class": "Sulfonylurea",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes mellitus",
+      "summary": "Comparator only: SGLT2 inhibitors reduce MACE versus sulfonylureas, and sulfonylureas cause more severe hypoglycemia.",
+      "evidence": [
+        {
+          "quote": "Compared with DPP4 inhibitors and sulfonylurea (SU), SGLT2 inhibitors reduce MACE (moderate to high CoE).",
+          "statement": "SGLT2 inhibitors reduce major cardiovascular events compared with sulfonylureas.",
+          "recommendation_strength": null,
+          "evidence_level": "moderate to high CoE",
+          "stance": "described"
+        },
+        {
+          "quote": "Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU.",
+          "statement": "Severe hypoglycemia and serious adverse events are more frequent with insulin or sulfonylureas than with SGLT2 inhibitors or GLP-1 agonists.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Systematic review and network meta-analysis commissioned by the American College of Physicians; reports effects, not recommendations."
+}

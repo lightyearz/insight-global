@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slide 1 - The problem</title>
+  </head>
+  <body>
+    <template id="s1-problem-template">
+      <style>
+        @font-face {
+          font-family: "Atkinson Hyperlegible Next";
+          src: url("assets/fonts/AtkinsonHyperlegibleNext-Variable.ttf") format("truetype");
+          font-weight: 200 800;
+          font-style: normal;
+          font-display: block;
+        }
+        #s1-root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: #f4f7f6;
+          color: #13294b;
+          font-family: "Atkinson Hyperlegible Next", sans-serif;
+          letter-spacing: -0.005em;
+        }
+        #s1-root * {
+          box-sizing: border-box;
+        }
+        #s1-root svg.ic {
+          display: block;
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2.25;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        /* ---------- background layer ---------- */
+        #s1-grid {
+          position: absolute;
+          left: -120px;
+          top: -120px;
+          width: 2160px;
+          height: 1320px;
+          background-image: radial-gradient(circle, rgba(14, 116, 112, 0.22) 2.2px, transparent 2.6px);
+          background-size: 48px 48px;
+        }
+        #s1-glow {
+          position: absolute;
+          left: 1060px;
+          top: -420px;
+          width: 1300px;
+          height: 1100px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(14, 116, 112, 0.16), rgba(14, 116, 112, 0));
+        }
+        #s1-glow2 {
+          position: absolute;
+          left: -380px;
+          top: 560px;
+          width: 1100px;
+          height: 900px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(31, 91, 198, 0.08), rgba(31, 91, 198, 0));
+        }
+        /* ---------- chrome ---------- */
+        #s1-dim {
+          position: absolute;
+          inset: 0;
+        }
+        .s1-pill {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          height: 58px;
+          padding: 0 24px;
+          border-radius: 999px;
+          border: 3px solid #0e7470;
+          background: #fdfefe;
+          color: #0e7470;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        #s1-tag {
+          left: 80px;
+          top: 44px;
+        }
+        #s1-cal {
+          position: absolute;
+          left: 1240px;
+          top: 44px;
+          width: 600px;
+          height: 176px;
+          padding: 20px 26px;
+          border-radius: 22px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 16px 40px rgba(19, 41, 75, 0.1);
+        }
+        #s1-cal-row {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          height: 72px;
+        }
+        #s1-cal-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 16px;
+          background: #ddefec;
+          color: #0e7470;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        #s1-days {
+          position: relative;
+          width: 420px;
+          height: 72px;
+          perspective: 600px;
+        }
+        .s1-day {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 72px;
+          line-height: 72px;
+          font-size: 56px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          white-space: nowrap;
+        }
+        #s1-day-1,
+        #s1-day-2,
+        #s1-day-3 {
+          opacity: 0;
+        }
+        #s1-cal-sub {
+          margin-top: 8px;
+          font-size: 40px;
+          line-height: 52px;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        #s1-head {
+          position: absolute;
+          left: 80px;
+          top: 116px;
+          width: 1130px;
+          margin: 0;
+          font-size: 56px;
+          line-height: 1.1;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        #s1-sub {
+          position: absolute;
+          left: 80px;
+          top: 260px;
+          width: 1130px;
+          margin: 0;
+          font-size: 40px;
+          line-height: 1.22;
+          color: #3b4f6b;
+          text-wrap: balance;
+        }
+        /* ---------- source cards ---------- */
+        .s1-slot {
+          position: absolute;
+          width: 0;
+          height: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .s1-card {
+          flex: none;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 18px 26px 18px 22px;
+          border-radius: 20px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 14px 34px rgba(19, 41, 75, 0.11);
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        .s1-card .ic {
+          color: #0e7470;
+          flex: none;
+        }
+        .s1-card.two-line {
+          white-space: normal;
+          width: 420px;
+        }
+        #s1-q {
+          position: absolute;
+          left: 290px;
+          top: 703px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #b83a33;
+          color: #fdfefe;
+          font-size: 42px;
+          font-weight: 800;
+          line-height: 60px;
+          text-align: center;
+          box-shadow: 0 8px 20px rgba(184, 58, 51, 0.3);
+        }
+        /* ---------- bottom stamp words ---------- */
+        #s1-words {
+          position: absolute;
+          left: 80px;
+          top: 944px;
+          width: 1760px;
+          height: 96px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+        }
+        .s1-word {
+          display: block;
+          font-size: 76px;
+          line-height: 96px;
+          font-weight: 800;
+          letter-spacing: -0.025em;
+          color: #13294b;
+        }
+        .s1-sep {
+          display: block;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #0e7470;
+        }
+        /* ---------- question bubble ---------- */
+        #s1-bubble-glow {
+          position: absolute;
+          left: 460px;
+          top: 380px;
+          width: 1000px;
+          height: 540px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(14, 116, 112, 0.34), rgba(14, 116, 112, 0));
+        }
+        #s1-bubble {
+          flex: none;
+          width: 720px;
+          padding: 26px 36px 32px;
+          border-radius: 36px 36px 36px 10px;
+          background: #fdfefe;
+          border: 4px solid #0e7470;
+          box-shadow: 0 22px 50px rgba(19, 41, 75, 0.16);
+        }
+        #s1-ex {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          height: 52px;
+          padding: 0 20px;
+          border-radius: 999px;
+          background: #ddefec;
+          color: #0b5f5c;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        #s1-qtext {
+          margin: 14px 0 0;
+          font-size: 44px;
+          line-height: 1.2;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+        }
+      </style>
+
+      <div id="s1-root" data-composition-id="s1-problem" data-width="1920" data-height="1080" data-duration="19">
+        <div id="s1-bg">
+          <div id="s1-grid"></div>
+          <div id="s1-glow"></div>
+          <div id="s1-glow2"></div>
+        </div>
+
+        <div id="s1-dim">
+          <div id="s1-tag" class="s1-pill">Illustrative scenario</div>
+
+          <div id="s1-cal">
+            <div id="s1-cal-row">
+              <div id="s1-cal-icon">
+                <svg class="ic" width="40" height="40" viewBox="0 0 24 24"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></svg>
+              </div>
+              <div id="s1-days">
+                <div class="s1-day" id="s1-day-0" data-layout-allow-overlap>Monday</div>
+                <div class="s1-day" id="s1-day-1" data-layout-allow-overlap>Tuesday</div>
+                <div class="s1-day" id="s1-day-2" data-layout-allow-overlap>Wednesday</div>
+                <div class="s1-day" id="s1-day-3" data-layout-allow-overlap>Thursday</div>
+              </div>
+            </div>
+            <div id="s1-cal-sub">Planning meeting · Friday</div>
+          </div>
+
+          <h1 id="s1-head">Today, one planning question can take days or weeks of source-hunting.</h1>
+          <p id="s1-sub">The answers exist, but they're scattered, updated at different times, and sometimes disagree.</p>
+
+
+          <!-- six source cards: slot = drift, card = fly-in / dim / conflict tint -->
+          <div class="s1-slot" id="s1-slot-update" style="left: 360px; top: 480px">
+            <div class="s1-card" id="s1-c-update" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /><path d="M12 7v5l4 2" /></svg>
+              <span data-layout-allow-overflow data-layout-allow-overlap>Guideline update</span>
+            </div>
+          </div>
+          <div class="s1-slot" id="s1-slot-clin" style="left: 300px; top: 610px">
+            <div class="s1-card" id="s1-c-clin" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg>
+              <span data-layout-allow-overflow>Clinical guideline</span>
+            </div>
+          </div>
+          <div class="s1-slot" id="s1-slot-soc" style="left: 350px; top: 862px">
+            <div class="s1-card" id="s1-c-soc" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>
+              <span data-layout-allow-overflow>Professional society</span>
+            </div>
+          </div>
+          <div class="s1-slot" id="s1-slot-nlm" style="left: 1600px; top: 462px">
+            <div class="s1-card two-line" id="s1-c-nlm" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg>
+              <span data-layout-allow-overflow>National Library of Medicine</span>
+            </div>
+          </div>
+          <div class="s1-slot" id="s1-slot-jour" style="left: 1640px; top: 668px">
+            <div class="s1-card" id="s1-c-jour" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg>
+              <span data-layout-allow-overflow>Journal article</span>
+            </div>
+          </div>
+          <div class="s1-slot" id="s1-slot-rev" style="left: 1580px; top: 852px">
+            <div class="s1-card" id="s1-c-rev" data-layout-allow-overflow>
+              <svg class="ic" width="38" height="38" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>
+              <span data-layout-allow-overflow>Systematic review</span>
+            </div>
+          </div>
+
+          <div id="s1-q">?</div>
+
+          <div id="s1-words">
+            <span class="s1-word" id="s1-w1">Scattered</span>
+            <span class="s1-sep" id="s1-sep1"></span>
+            <span class="s1-word" id="s1-w2">Slow</span>
+            <span class="s1-sep" id="s1-sep2"></span>
+            <span class="s1-word" id="s1-w3">Hard to trace</span>
+          </div>
+        </div>
+
+        <div id="s1-bubble-glow"></div>
+        <div class="s1-slot" id="s1-bubble-slot" style="left: 960px; top: 650px">
+          <div id="s1-bubble">
+            <div id="s1-ex">Example condition</div>
+            <p id="s1-qtext"><span class="s1-qw">What's</span> <span class="s1-qw">the</span> <span class="s1-qw">standard</span> <span class="s1-qw">of</span> <span class="s1-qw">care</span> <span class="s1-qw">for</span> <span class="s1-qw">type</span> <span class="s1-qw">2</span> <span class="s1-qw">diabetes</span> <span class="s1-qw">today?</span></p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+
+          // ---- ambient background (one slow diagonal drift + glow breathing) ----
+          tl.fromTo("#s1-grid", { x: 0, y: 0 }, { x: -48, y: -48, duration: 19, ease: "none" }, 0);
+          tl.fromTo("#s1-glow", { scale: 1 }, { scale: 1.07, duration: 4.75, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+
+          // ---- 0-1.5s: calendar chip + scenario tag ----
+          tl.fromTo("#s1-cal", { opacity: 0, x: 90 }, { opacity: 1, x: 0, duration: 0.9, ease: "power3.out" }, 0.15);
+          tl.fromTo("#s1-day-0", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.5);
+          tl.fromTo("#s1-tag", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.7, ease: "power2.out" }, 0.6);
+
+          // ---- 1.5-3.5s: question bubble pops, question types word by word ----
+          tl.fromTo("#s1-bubble", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 1.5);
+          tl.fromTo(".s1-qw", { opacity: 0 }, { opacity: 1, duration: 0.08, stagger: 0.13, ease: "none" }, 1.95);
+          tl.fromTo("#s1-ex", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 1.75);
+
+          // ---- 3.5-7s: six source cards fly in from all four edges, then drift around the question ----
+          var cards = [
+            { id: "update", from: { x: 0, y: -620, rotation: -6 }, drift: { x: -26, y: -14 }, t: 3.5 },
+            { id: "nlm", from: { x: 620, y: -40, rotation: 6 }, drift: { x: 18, y: 26 }, t: 3.8 },
+            { id: "clin", from: { x: -720, y: 0, rotation: -5 }, drift: null, t: 4.1 },
+            { id: "rev", from: { x: 120, y: 520, rotation: 5 }, drift: { x: -40, y: 6 }, t: 4.4 },
+            { id: "jour", from: { x: 560, y: 60, rotation: 4 }, drift: { x: -8, y: 20 }, t: 4.7 },
+            { id: "soc", from: { x: -520, y: 420, rotation: -4 }, drift: null, t: 5.0 }
+          ];
+          cards.forEach(function (c) {
+            tl.fromTo(
+              "#s1-c-" + c.id,
+              { opacity: 0, x: c.from.x, y: c.from.y, rotation: c.from.rotation },
+              { opacity: 1, x: 0, y: 0, rotation: 0, duration: 1.25, ease: "power3.out" },
+              c.t
+            );
+            if (c.drift) {
+              tl.fromTo(
+                "#s1-slot-" + c.id,
+                { x: 0, y: 0 },
+                { x: c.drift.x, y: c.drift.y, duration: 18.6 - (c.t + 1.3), ease: "sine.inOut" },
+                c.t + 1.3
+              );
+            }
+          });
+          // the two guideline cards drift slowly, then drift together and clash (9-12s)
+          tl.fromTo("#s1-slot-clin", { x: 0, y: 0 }, { x: 8, y: 10, duration: 3.6, ease: "sine.inOut" }, 5.4);
+          tl.fromTo("#s1-slot-soc", { x: 0, y: 0 }, { x: -12, y: -10, duration: 2.7, ease: "sine.inOut" }, 6.3);
+          tl.fromTo("#s1-slot-clin", { x: 8, y: 10 }, { immediateRender: false, x: 20, y: 46, duration: 2.0, ease: "power2.inOut" }, 9.1);
+          tl.fromTo("#s1-slot-soc", { x: -12, y: -10 }, { immediateRender: false, x: -30, y: -56, duration: 2.0, ease: "power2.inOut" }, 9.1);
+
+          // ---- 7-9s: headline rises, subhead fades in, cards dim to 60% ----
+          tl.fromTo("#s1-head", { opacity: 0, y: 46 }, { opacity: 1, y: 0, duration: 0.95, ease: "expo.out" }, 7.0);
+          tl.fromTo("#s1-sub", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 7.45);
+          tl.fromTo(
+            ["#s1-c-update", "#s1-c-nlm", "#s1-c-rev", "#s1-c-jour", "#s1-c-clin", "#s1-c-soc"],
+            { opacity: 1 },
+            { immediateRender: false, opacity: 0.6, duration: 0.8, ease: "power1.inOut" },
+            7.3
+          );
+
+          // ---- 9-12s: two guideline sources drift together and clash; a question mark pulses between them ----
+          tl.fromTo(["#s1-c-clin", "#s1-c-soc"], { opacity: 0.6 }, { immediateRender: false, opacity: 1, duration: 0.5, ease: "power1.out" }, 9.1);
+          tl.fromTo(
+            ["#s1-c-clin", "#s1-c-soc"],
+            { borderColor: "#d3dde3", backgroundColor: "#fdfefe" },
+            { borderColor: "#b83a33", backgroundColor: "#fbe2df", duration: 0.9, ease: "power1.inOut" },
+            9.9
+          );
+          tl.fromTo("#s1-q", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }, 10.4);
+          tl.fromTo("#s1-q", { scale: 1 }, { immediateRender: false, scale: 1.14, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 10.85);
+
+          // ---- 11.5-14s: the calendar flips toward Friday, a little faster each day ----
+          var flips = [
+            { from: "#s1-day-0", to: "#s1-day-1", t: 11.6, d: 0.55 },
+            { from: "#s1-day-1", to: "#s1-day-2", t: 12.55, d: 0.42 },
+            { from: "#s1-day-2", to: "#s1-day-3", t: 13.3, d: 0.32 }
+          ];
+          flips.forEach(function (f) {
+            var out = { immediateRender: false, opacity: 0, rotationX: -80, y: -26, duration: f.d, ease: "power2.in", transformOrigin: "50% 100%" };
+            tl.fromTo(f.from, { opacity: 1, rotationX: 0, y: 0 }, out, f.t);
+            tl.fromTo(f.to, { opacity: 0, rotationX: 80, y: 26 }, { opacity: 1, rotationX: 0, y: 0, duration: f.d, ease: "power2.out", transformOrigin: "50% 0%" }, f.t + f.d * 0.55);
+          });
+
+          // ---- 14-16.5s: three words stamp in along the bottom ----
+          ["#s1-w1", "#s1-w2", "#s1-w3"].forEach(function (w, i) {
+            tl.fromTo(w, { opacity: 0, scale: 1.3, y: -8 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out", transformOrigin: "50% 60%" }, 14.0 + i * 0.8);
+          });
+          tl.fromTo(["#s1-sep1", "#s1-sep2"], { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)", stagger: 0.8 }, 14.55);
+
+          // ---- 16.5-18.4s: the supporting cast dims; the headline, the three words and the question stay at full strength ----
+          tl.fromTo(
+            ["#s1-tag", "#s1-sub", "#s1-cal", ".s1-card"],
+            { opacity: 1 },
+            { immediateRender: false, opacity: 0.25, duration: 1.1, ease: "power2.inOut" },
+            16.6
+          );
+          tl.fromTo("#s1-q", { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.8, ease: "power2.inOut" }, 16.6);
+          tl.fromTo(".s1-word", { color: "#13294b" }, { color: "#0e7470", duration: 1.1, ease: "power2.inOut" }, 16.6);
+          tl.fromTo("#s1-bubble-glow", { opacity: 0, scale: 0.75 }, { opacity: 1, scale: 1, duration: 1.3, ease: "power2.out" }, 16.7);
+          tl.fromTo("#s1-bubble", { scale: 1 }, { immediateRender: false, scale: 1.04, duration: 1.3, ease: "power2.out" }, 16.8);
+
+          // ---- 18.45-18.9s: exit. Everything but the question leaves; the bubble is the match-cut into slide 2 ----
+          tl.fromTo("#s1-dim", { opacity: 1 }, { opacity: 0, duration: 0.45, ease: "power2.in" }, 18.45);
+
+          window.__timelines["s1-problem"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

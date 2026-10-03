@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Health Briefing - stakeholder video</title>
+    <!-- GSAP is vendored locally (assets/vendor) so nothing is fetched from a CDN at present or render time. -->
+    <script src="assets/vendor/gsap-3.14.2.min.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #f4f7f6;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Linear video: the same three scene files as the slideshow deck (../index.html),
+      played back-to-back (0-19s, 19-39s, 39-60s) for `npx hyperframes render`.
+      compositions/ and assets/ are copied in from the deck by `npm run video:sync` (scripts/sync-video.mjs),
+      which lint, check and render run first, so the deck folders stay the one source of truth.
+    -->
+    <div id="root" data-composition-id="video" data-start="0" data-duration="60" data-width="1920" data-height="1080">
+      <div
+        id="slide-1"
+        data-composition-id="s1-problem"
+        data-composition-src="compositions/s1-problem.html"
+        data-start="0"
+        data-duration="19"
+        data-track-index="1"
+        data-label="1 · Scattered sources"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="slide-2"
+        data-composition-id="s2-how"
+        data-composition-src="compositions/s2-how.html"
+        data-start="19"
+        data-duration="20"
+        data-track-index="1"
+        data-label="2 · The AI reads, your team decides"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="slide-3"
+        data-composition-id="s3-briefing"
+        data-composition-src="compositions/s3-briefing.html"
+        data-start="39"
+        data-duration="21"
+        data-track-index="1"
+        data-label="3 · The briefing and the ask"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["video"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

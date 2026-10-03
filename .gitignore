@@ -1,0 +1,116 @@
+# ---- Repository (pre-existing) ----
+.claude/settings.local.json
+
+# ---- Python ----
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# ---- Local data (SQLite app DB + LangGraph checkpoints) ----
+/api/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ---- Secrets / env (only .env.example is committed) ----
+.env
+.env.*
+!.env.example
+*.pem
+sa-key*.json
+# Key material and cloud credentials that must never be committed (defence in depth)
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+.envrc
+*credentials*.json
+service-account*.json
+client_secret*.json
+application_default_credentials.json
+
+# ---- Local-only working notes and personal agent config (never published) ----
+/local-notes/
+/CLAUDE.local.md
+/.agents/
+/.agent/
+# Claude Code: only the audited generic harness below is publishable; everything else under .claude/ stays local.
+/.claude/*
+!/.claude/settings.json
+!/.claude/skills/
+/.claude/skills/*
+!/.claude/skills/README.md
+!/.claude/skills/agentic-ai-resources/
+!/.claude/skills/ai-ml-engineering/
+!/.claude/skills/backend-architect/
+!/.claude/skills/backend-test-runner/
+!/.claude/skills/cloud-costs-optimization/
+!/.claude/skills/cloud-run-deploy/
+!/.claude/skills/devops-infrastructure/
+!/.claude/skills/frontend-developer/
+!/.claude/skills/frontend-test-runner/
+!/.claude/skills/harness-engineering/
+!/.claude/skills/llm-evaluation/
+!/.claude/skills/llm-guardrails/
+!/.claude/skills/llm-models-expert/
+!/.claude/skills/project-manager/
+!/.claude/skills/python-developer/
+!/.claude/skills/testing-qa/
+!/.claude/skills/ui-ux-designer/
+!/.claude/agents/
+/.claude/agents/*
+!/.claude/agents/ai-ml-engineering.md
+!/.claude/agents/backend-developer.md
+!/.claude/agents/devops-infrastructure.md
+!/.claude/agents/frontend-developer.md
+!/.claude/agents/project-manager.md
+!/.claude/agents/python-developer.md
+!/.claude/agents/testing-qa.md
+!/.claude/agents/ui-ux-designer.md
+!/.claude/rules/
+/.claude/rules/*
+!/.claude/rules/python-services.md
+!/.claude/rules/web-frontend.md
+!/.claude/rules/harness-authoring.md
+!/.claude/scripts/
+/.claude/scripts/*
+!/.claude/scripts/harness_lint.py
+!/.claude/scripts/build_skills_index.py
+!/.claude/hooks/
+/.claude/hooks/*
+!/.claude/hooks/guard-bash.sh
+!/.claude/hooks/post-edit.sh
+
+# ---- Test output ----
+test-results/
+playwright-report/
+coverage/
+
+# ---- OS / editors ----
+.DS_Store
+.idea/
+.vscode/
+
+# ---- Local run state (scripts/dev.sh) ----
+.run/
+
+# ---- Live-run fixture recordings (promoted into fixtures/replay only on success) ----
+recordings/
+
+# ---- Rendered media (deck/dist holds the MP4; rebuild with `npm run render` in deck/) ----
+*.mp4

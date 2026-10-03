@@ -1,0 +1,69 @@
+{
+  "is_relevant": true,
+  "issuing_body": "American Association of Clinical Endocrinology (AACE)",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Lifestyle modification and treatment of overweight/obesity",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with prediabetes or type 2 diabetes",
+      "summary": "Emphasised as key pillars of management in the 2026 algorithm update.",
+      "evidence": [
+        {
+          "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+          "statement": "AACE treats lifestyle modification and obesity treatment as key pillars of care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026",
+          "date_precision": "year",
+          "label": "AACE 2026 algorithm makes lifestyle and obesity treatment key pillars",
+          "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D."
+        }
+      ]
+    },
+    {
+      "name": "Insulin",
+      "category": "pharmacologic",
+      "drug_class": "Insulin",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes",
+      "summary": "The algorithm includes a dedicated section on initiating and titrating insulin.",
+      "evidence": [
+        {
+          "quote": "(8) Initiating and Titrating Insulin Algorithm",
+          "statement": "Insulin initiation and titration has its own algorithm in the AACE guidance.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Management of dyslipidemia and hypertension",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes",
+      "summary": "Atherosclerotic risk factors are managed alongside glycemia.",
+      "evidence": [
+        {
+          "quote": "It also provides guidance on the management of atherosclerotic risk factors of dyslipidemia and hypertension.",
+          "statement": "The algorithm covers lipid and blood pressure management as part of diabetes care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Abstract describes the algorithm structure; individual drug recommendations are in the full text."
+}

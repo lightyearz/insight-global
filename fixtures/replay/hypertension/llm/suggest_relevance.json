@@ -1,0 +1,74 @@
+{
+  "suggestions": [
+    {
+      "option_id": "opt-lifestyle-modification",
+      "suggested": true,
+      "reason": "Recommended first step in every guideline source; drives prevention and primary care programme design."
+    },
+    {
+      "option_id": "opt-antihypertensive-drug-therapy",
+      "suggested": true,
+      "reason": "Core treatment; the ESC move to start medication with lifestyle change at 140/90 mm Hg affects prescribing volume."
+    },
+    {
+      "option_id": "opt-intensive-systolic-target",
+      "suggested": true,
+      "reason": "Target choice sets how many treated patients count as controlled and is the main point of divergence across sources."
+    },
+    {
+      "option_id": "opt-bp-targets-older-adults",
+      "suggested": true,
+      "reason": "Older adults are a large share of the treated population and targets for them differ between sources."
+    },
+    {
+      "option_id": "opt-intensive-target-ckd",
+      "suggested": true,
+      "reason": "CKD patients need a separate, lower target that affects nephrology and primary care pathways."
+    },
+    {
+      "option_id": "opt-standardized-bp-measurement",
+      "suggested": true,
+      "reason": "Standardized measurement is a workflow and equipment requirement for diagnosis and treatment monitoring."
+    },
+    {
+      "option_id": "opt-diuretics",
+      "suggested": true,
+      "reason": "First-line class with the strongest comparative outcome evidence in the retrieved sources."
+    },
+    {
+      "option_id": "opt-calcium-channel-blockers",
+      "suggested": true,
+      "reason": "Widely used first-line class and common single-pill combination partner."
+    },
+    {
+      "option_id": "opt-ace-inhibitors-and-arbs",
+      "suggested": true,
+      "reason": "First-line classes with distinct heart failure and stroke trade-offs relevant to formulary decisions."
+    },
+    {
+      "option_id": "opt-beta-blockers",
+      "suggested": false,
+      "reason": "Evidence here places beta-blockers behind CCBs as first-line therapy, so they are not a standard-of-care focus."
+    },
+    {
+      "option_id": "opt-single-pill-combination",
+      "suggested": true,
+      "reason": "Adherence gains make single-pill combinations relevant to formulary and adherence programmes, though outcome evidence is limited."
+    },
+    {
+      "option_id": "opt-spironolactone-resistant-hypertension",
+      "suggested": true,
+      "reason": "Defines the next step for resistant hypertension, a specialist referral pathway."
+    },
+    {
+      "option_id": "opt-renal-denervation",
+      "suggested": true,
+      "reason": "A procedural alternative with service-line and capital implications."
+    },
+    {
+      "option_id": "opt-treat-underlying-cause",
+      "suggested": false,
+      "reason": "Supported only by a consumer summary and covers secondary causes outside the essential hypertension pathway."
+    }
+  ]
+}

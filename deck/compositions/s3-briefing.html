@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slide 3 - The briefing</title>
+  </head>
+  <body>
+    <template id="s3-briefing-template">
+      <style>
+        @font-face {
+          font-family: "Atkinson Hyperlegible Next";
+          src: url("assets/fonts/AtkinsonHyperlegibleNext-Variable.ttf") format("truetype");
+          font-weight: 200 800;
+          font-style: normal;
+          font-display: block;
+        }
+        #s3-root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: #f4f7f6;
+          color: #13294b;
+          font-family: "Atkinson Hyperlegible Next", sans-serif;
+          letter-spacing: -0.005em;
+        }
+        #s3-root * {
+          box-sizing: border-box;
+        }
+        #s3-root svg.ic {
+          display: block;
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2.25;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          flex: none;
+        }
+        .s3-abs {
+          position: absolute;
+        }
+        /* ---------- background ---------- */
+        #s3-grid {
+          position: absolute;
+          left: -60px;
+          top: -60px;
+          width: 2040px;
+          height: 1200px;
+          background-image: radial-gradient(circle, rgba(14, 116, 112, 0.2) 2.2px, transparent 2.6px);
+          background-size: 48px 48px;
+        }
+        #s3-glow {
+          position: absolute;
+          left: 1000px;
+          top: 160px;
+          width: 1200px;
+          height: 1000px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(22, 119, 61, 0.1), rgba(22, 119, 61, 0));
+        }
+        #s3-ring {
+          position: absolute;
+          left: 1560px;
+          top: -420px;
+          width: 760px;
+          height: 760px;
+          border-radius: 50%;
+          border: 4px dashed rgba(14, 116, 112, 0.18);
+        }
+        /* ---------- header + calendar ---------- */
+        #s3-head {
+          left: 80px;
+          top: 116px;
+          width: 1130px;
+          margin: 0;
+          font-size: 56px;
+          line-height: 1.1;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          text-wrap: balance;
+        }
+        #s3-cal {
+          left: 1240px;
+          top: 44px;
+          width: 600px;
+          height: 176px;
+          padding: 20px 26px;
+          border-radius: 22px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 16px 40px rgba(19, 41, 75, 0.1);
+        }
+        #s3-cal-row {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          height: 72px;
+        }
+        #s3-cal-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 16px;
+          background: #ddefec;
+          color: #0e7470;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        #s3-days {
+          position: relative;
+          width: 420px;
+          height: 72px;
+          perspective: 600px;
+        }
+        .s3-day {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 72px;
+          line-height: 72px;
+          font-size: 56px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          white-space: nowrap;
+        }
+        #s3-day-mon {
+          opacity: 0;
+        }
+        .s3-calsub {
+          position: absolute;
+          left: 26px;
+          top: 100px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 40px;
+          line-height: 52px;
+          white-space: nowrap;
+        }
+        #s3-sub-old {
+          color: #3b4f6b;
+        }
+        #s3-sub-new {
+          color: #16773d;
+          font-weight: 700;
+          opacity: 0;
+        }
+        /* ---------- report page ---------- */
+        #s3-report {
+          left: 80px;
+          top: 290px;
+          width: 1760px;
+          height: 630px;
+          overflow: hidden;
+          border-radius: 24px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 24px 60px rgba(19, 41, 75, 0.14);
+        }
+        #s3-rtitle {
+          left: 40px;
+          top: 22px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          font-size: 44px;
+          line-height: 56px;
+          font-weight: 800;
+          white-space: nowrap;
+          color: #13294b;
+        }
+        #s3-rtitle .ic {
+          color: #0e7470;
+        }
+        #s3-rtag {
+          right: 40px;
+          top: 24px;
+          height: 52px;
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          border-radius: 999px;
+          background: #ddefec;
+          color: #0b5f5c;
+          font-size: 40px;
+          font-weight: 600;
+        }
+        #s3-rule {
+          left: 40px;
+          top: 92px;
+          width: 1680px;
+          height: 3px;
+          background: #e3e9ee;
+        }
+        .s3-sec {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          height: 48px;
+          font-size: 40px;
+          font-weight: 700;
+          color: #0b5f5c;
+          white-space: nowrap;
+        }
+        .s3-bar {
+          position: absolute;
+          left: 40px;
+          height: 14px;
+          border-radius: 7px;
+          background: #d3dde3;
+        }
+        #s3-tline {
+          left: 40px;
+          top: 328px;
+          width: 640px;
+          height: 5px;
+          border-radius: 3px;
+          background: #0e7470;
+        }
+        .s3-dot {
+          position: absolute;
+          top: 319px;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background: #fdfefe;
+          border: 5px solid #0e7470;
+        }
+        .s3-chip {
+          position: absolute;
+          left: 40px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 0 14px 0 10px;
+          border-radius: 16px;
+          background: #fffaf1;
+          border: 3px solid #f2c27a;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        .s3-tick {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          background: #f2a93b;
+          color: #13294b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        .s3-link {
+          margin-left: auto;
+          color: #0e7470;
+        }
+        #s3-logrow {
+          left: 880px;
+          top: 166px;
+          height: 62px;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding: 0 20px 0 8px;
+          border-radius: 16px;
+          background: #fffaf1;
+          border: 3px solid #f2c27a;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        #s3-logp {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          background: #fcebcf;
+          color: #8a4a00;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .s3-src {
+          position: absolute;
+          left: 880px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        .s3-srcic {
+          width: 46px;
+          height: 46px;
+          border-radius: 12px;
+          background: #ddefec;
+          color: #0e7470;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        .s3-stype {
+          margin-right: 6px;
+          font-size: 40px;
+          font-weight: 600;
+          color: #13294b;
+          white-space: nowrap;
+        }
+        .s3-bdg {
+          height: 52px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 0 14px;
+          border-radius: 12px;
+          background: #f4f7f6;
+          border: 3px solid #d3dde3;
+          font-size: 40px;
+          font-weight: 600;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        .s3-bdg.tier {
+          background: #ddefec;
+          border-color: #9fcfca;
+          color: #0b5f5c;
+        }
+        #s3-links {
+          left: 0;
+          top: 0;
+          width: 1760px;
+          height: 630px;
+          overflow: visible;
+        }
+        /* end state: the report condenses to three proof lines, readable from the back of the room */
+        #s3-proof {
+          left: 40px;
+          top: 136px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+        }
+        .s3-pl {
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          font-size: 44px;
+          line-height: 56px;
+          font-weight: 700;
+          color: #13294b;
+          white-space: nowrap;
+          opacity: 0;
+        }
+        .s3-pchk {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: #0e7470;
+          color: #fdfefe;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        .s3-pchk.team {
+          background: #f2a93b;
+          color: #13294b;
+        }
+        /* ---------- roadmap, goal, ask, footer ---------- */
+        #s3-path {
+          left: 1218px;
+          top: 344px;
+          width: 12px;
+          height: 164px;
+          background-image: radial-gradient(circle, #0e7470 3.4px, transparent 4px);
+          background-size: 12px 20px;
+          background-position: center top;
+        }
+        .s3-stone {
+          position: absolute;
+          left: 1200px;
+          width: 640px;
+        }
+        .s3-circ {
+          position: absolute;
+          left: 0;
+          top: 2px;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 5px solid #0e7470;
+          background: #f4f7f6;
+        }
+        .s3-stext {
+          position: absolute;
+          left: 72px;
+          top: 0;
+          width: 568px;
+          font-size: 40px;
+          line-height: 48px;
+          color: #3b4f6b;
+        }
+        .s3-stext {
+          text-wrap: balance;
+        }
+        .s3-stext b {
+          color: #13294b;
+          font-weight: 800;
+        }
+        .s3-stag {
+          display: inline-flex;
+          align-items: center;
+          height: 52px;
+          margin-top: 8px;
+          padding: 0 20px;
+          border-radius: 999px;
+          background: #ddefec;
+          color: #0b5f5c;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        #s3-goal {
+          left: 1200px;
+          top: 626px;
+          text-wrap: balance;
+          width: 640px;
+          padding: 12px 26px 14px;
+          border-radius: 26px;
+          background: #ddefec;
+          border: 3px dashed #0e7470;
+          font-size: 40px;
+          line-height: 48px;
+          color: #13294b;
+        }
+        #s3-ask {
+          left: 80px;
+          top: 860px;
+          width: 1760px;
+          height: 104px;
+          border-radius: 24px;
+          background: #13294b;
+          color: #f4f7f6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 14px;
+          font-size: 42px;
+          font-weight: 600;
+          white-space: nowrap;
+          box-shadow: 0 20px 44px rgba(19, 41, 75, 0.28);
+        }
+        #s3-ask b {
+          color: #f2a93b;
+          font-weight: 800;
+        }
+        #s3-foot {
+          left: 80px;
+          top: 994px;
+          width: 1760px;
+          height: 52px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 22px;
+          font-size: 40px;
+          line-height: 52px;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        .s3-fsep {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #0e7470;
+          flex: none;
+        }
+      </style>
+
+      <div id="s3-root" data-composition-id="s3-briefing" data-width="1920" data-height="1080" data-duration="21">
+        <div id="s3-bg"><div id="s3-grid"></div><div id="s3-glow"></div><div id="s3-ring" data-layout-allow-overflow></div></div>
+
+        <h1 id="s3-head" class="s3-abs">Every briefing arrives sourced, dated and traceable.</h1>
+
+        <div id="s3-cal" class="s3-abs">
+          <div id="s3-cal-row">
+            <div id="s3-cal-icon"><svg class="ic" width="40" height="40" viewBox="0 0 24 24"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></svg></div>
+            <div id="s3-days"><div class="s3-day" id="s3-day-thu" data-layout-allow-overlap>Thursday</div><div class="s3-day" id="s3-day-mon" data-layout-allow-overlap>Monday</div></div>
+          </div>
+          <div class="s3-calsub" id="s3-sub-old">Planning meeting · Friday</div>
+          <div class="s3-calsub" id="s3-sub-new"><svg class="ic" width="38" height="38" viewBox="0 0 24 24" style="stroke-width: 3"><path d="M20 6 9 17l-5-5" /></svg>Ready before Friday</div>
+        </div>
+
+        <!-- the report builds itself -->
+        <div id="s3-report" class="s3-abs">
+          <div id="s3-rtitle" class="s3-abs"><svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Type 2 diabetes · Standard of care</div>
+          <div id="s3-rtag" class="s3-abs">Example</div>
+          <div id="s3-rule" class="s3-abs"></div>
+
+          <div class="s3-sec s3-abs" id="s3-l-sum" style="left: 40px; top: 110px">Summary</div>
+          <div class="s3-bar" id="s3-b1" style="top: 168px; width: 740px"></div>
+          <div class="s3-bar" id="s3-b2" style="top: 194px; width: 700px"></div>
+          <div class="s3-bar" id="s3-b3" style="top: 220px; width: 460px"></div>
+
+          <div class="s3-sec s3-abs" id="s3-l-time" style="left: 40px; top: 250px">Timeline</div>
+          <div id="s3-tline" class="s3-abs"></div>
+          <div class="s3-dot" style="left: 49px"></div><div class="s3-dot" style="left: 199px"></div><div class="s3-dot" style="left: 349px"></div><div class="s3-dot" style="left: 499px"></div><div class="s3-dot" style="left: 649px"></div>
+
+          <div class="s3-sec s3-abs" id="s3-l-opt" style="left: 40px; top: 358px">Treatment options</div>
+          <div class="s3-chip" id="s3-c1" style="top: 414px; width: 480px"><div class="s3-tick"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>Lifestyle changes<svg class="ic s3-link" width="30" height="30" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></div>
+          <div class="s3-chip" id="s3-c2" style="top: 478px; width: 320px"><div class="s3-tick"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>Metformin<svg class="ic s3-link" width="30" height="30" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></div>
+          <div class="s3-chip" id="s3-c3" style="top: 542px; width: 450px"><div class="s3-tick"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>GLP-1 medicines<svg class="ic s3-link" width="30" height="30" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></div>
+
+          <div class="s3-sec s3-abs" id="s3-l-log" style="left: 880px; top: 110px">Decision log</div>
+          <div id="s3-logrow" class="s3-abs"><div id="s3-logp"><svg class="ic" width="30" height="30" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></div><div class="s3-tick"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 3.2"><path id="s3-logk" d="M20 6 9 17l-5-5" pathLength="100" /></svg></div>A1C target · your team's call</div>
+
+          <div class="s3-sec s3-abs" id="s3-l-src" style="left: 880px; top: 250px">Sources</div>
+          <div class="s3-src" id="s3-s1" style="top: 308px"><div class="s3-srcic"><svg class="ic" width="28" height="28" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></div><span class="s3-stype">Clinical guideline</span><div class="s3-bdg tier"><svg class="ic" width="30" height="30" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>Tier 1</div></div>
+          <div class="s3-src" id="s3-s2" style="top: 374px"><div class="s3-srcic"><svg class="ic" width="28" height="28" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg></div><span class="s3-stype">Systematic review</span><div class="s3-bdg tier"><svg class="ic" width="30" height="30" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>Tier 2</div></div>
+          <div class="s3-src" id="s3-s3" style="top: 440px"><div class="s3-srcic"><svg class="ic" width="28" height="28" viewBox="0 0 24 24"><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg></div><span class="s3-stype">Library of Medicine summary</span><div class="s3-bdg tier"><svg class="ic" width="30" height="30" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>Tier 3</div></div>
+
+          <svg id="s3-links" class="s3-abs" viewBox="0 0 1760 630" data-layout-allow-overflow>
+            <g fill="none" stroke="#0e7470" stroke-width="3.5" stroke-linecap="round">
+              <path id="s3-ln1" d="M532 442 C 700 442, 720 336, 868 336" pathLength="100" />
+              <path id="s3-ln2" d="M372 506 C 640 506, 700 402, 868 402" pathLength="100" />
+              <path id="s3-ln3" d="M502 570 C 700 570, 720 468, 868 468" pathLength="100" />
+            </g>
+          </svg>
+
+          <div id="s3-proof" class="s3-abs">
+            <div class="s3-pl" id="s3-p1"><div class="s3-pchk"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>Every option linked to its source</div>
+            <div class="s3-pl" id="s3-p2"><div class="s3-pchk team"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>Every decision logged</div>
+            <div class="s3-pl" id="s3-p3"><div class="s3-pchk"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div>Every source dated and trust-rated</div>
+          </div>
+        </div>
+
+        <!-- roadmap: three stepping stones -->
+        <div id="s3-path" class="s3-abs"></div>
+        <div class="s3-stone" id="s3-st1" style="top: 290px"><div class="s3-circ" id="s3-now"></div><div class="s3-stext"><b>Now:</b> Standard of care<br /><span class="s3-stag">Working prototype</span></div></div>
+        <div class="s3-stone" id="s3-st2" style="top: 426px"><div class="s3-circ"></div><div class="s3-stext"><b>Next:</b> Emerging treatments</div></div>
+        <div class="s3-stone" id="s3-st3" style="top: 504px"><div class="s3-circ"></div><div class="s3-stext"><b>Then:</b> Key companies &amp; institutions</div></div>
+
+        <div id="s3-goal" class="s3-abs"><b>Goal:</b> a sourced first draft in minutes, not weeks</div>
+        <div id="s3-ask" class="s3-abs"><b>The ask:</b> pick 2–3 conditions your team cares about. Let's pilot together.</div>
+
+        <div id="s3-foot" class="s3-abs"><span id="s3-ft1">Public research only</span><i class="s3-fsep" id="s3-fs1"></i><span id="s3-ft2">No patient data</span><i class="s3-fsep" id="s3-fs2"></i><span id="s3-ft3">Decision support, not medical advice</span></div>
+      </div>
+
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+
+          // ---- ambient: slow ring rotation + glow drift ----
+          tl.fromTo("#s3-ring", { rotation: 0 }, { rotation: 40, duration: 21, ease: "none" }, 0);
+          tl.fromTo("#s3-glow", { x: 0, y: 0 }, { x: -60, y: -30, duration: 21, ease: "sine.inOut" }, 0);
+
+          // ---- 0-1.5s: headline; the calendar rewinds from Thursday to Monday and turns green ("Ready before Friday"); blank report slides up ----
+          tl.fromTo("#s3-head", { opacity: 0, y: 44 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, 0.1);
+          tl.fromTo("#s3-day-thu", { opacity: 1, rotationX: 0, y: 0 }, { opacity: 0, rotationX: 80, y: 26, duration: 0.4, ease: "power2.in", transformOrigin: "50% 0%" }, 0.35);
+          tl.fromTo("#s3-day-mon", { opacity: 0, rotationX: -80, y: -26 }, { opacity: 1, rotationX: 0, y: 0, duration: 0.5, ease: "power2.out", transformOrigin: "50% 100%" }, 0.6);
+          tl.fromTo("#s3-cal", { backgroundColor: "#fdfefe", borderColor: "#d3dde3" }, { backgroundColor: "#ddf2e4", borderColor: "#16773d", duration: 0.5, ease: "power1.inOut" }, 0.9);
+          tl.fromTo("#s3-cal-icon", { backgroundColor: "#ddefec", color: "#0e7470" }, { backgroundColor: "#16773d", color: "#fdfefe", duration: 0.5, ease: "power1.inOut" }, 0.9);
+          tl.fromTo("#s3-sub-old", { opacity: 1, y: 0 }, { opacity: 0, y: -14, duration: 0.3, ease: "power1.in" }, 0.6);
+          tl.fromTo("#s3-sub-new", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.85);
+          tl.fromTo("#s3-report", { opacity: 0, y: 320 }, { opacity: 1, y: 0, duration: 0.95, ease: "power3.out" }, 0.55);
+          tl.fromTo(["#s3-rtitle", "#s3-rtag"], { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out", stagger: 0.12 }, 1.05);
+          tl.fromTo("#s3-rule", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.15);
+
+          // ---- 1.5-3s: Summary types in ----
+          tl.fromTo("#s3-l-sum", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 1.5);
+          tl.fromTo(["#s3-b1", "#s3-b2", "#s3-b3"], { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.45, ease: "power1.inOut", stagger: 0.38 }, 1.7);
+
+          // ---- 3-4.5s: Timeline draws left to right, markers pop ----
+          tl.fromTo("#s3-l-time", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 3.0);
+          tl.fromTo("#s3-tline", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 1.0, ease: "power2.inOut" }, 3.15);
+          tl.fromTo(".s3-dot", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2.4)", stagger: 0.19 }, 3.25);
+
+          // ---- 4.5-6.5s: the three checked options fly in from slide 2 and gain source links ----
+          tl.fromTo("#s3-l-opt", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 4.5);
+          tl.fromTo(["#s3-c1", "#s3-c2", "#s3-c3"], { opacity: 0, x: -420, rotation: -3 }, { opacity: 1, x: 0, rotation: 0, duration: 0.75, ease: "expo.out", stagger: 0.25 }, 4.6);
+          tl.fromTo(".s3-link", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2.2)", stagger: 0.15 }, 5.75);
+
+          // ---- 6.5-8s: the team's decision lands as the first log row ----
+          tl.fromTo("#s3-l-log", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 6.5);
+          tl.fromTo("#s3-logrow", { opacity: 0, x: 90, scale: 1.06 }, { opacity: 1, x: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 6.7);
+          tl.fromTo("#s3-logk", { attr: { "stroke-dasharray": "0 100" }, opacity: 0 }, { attr: { "stroke-dasharray": "100 0" }, opacity: 1, duration: 0.35, ease: "power2.out" }, 7.3);
+
+          // ---- 8-10.5s: sources tick in with their type and trust tier; lines tie options to sources ----
+          tl.fromTo("#s3-l-src", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, 8.0);
+          ["#s3-s1", "#s3-s2", "#s3-s3"].forEach(function (r, i) {
+            var t = 8.2 + i * 0.4;
+            tl.fromTo(r + " .s3-srcic", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, t);
+            tl.fromTo([r + " .s3-stype", r + " .s3-bdg"], { opacity: 0, rotationX: -90, transformPerspective: 400 }, { opacity: 1, rotationX: 0, duration: 0.4, ease: "power2.out", stagger: 0.12 }, t + 0.12);
+          });
+          tl.fromTo(["#s3-ln1", "#s3-ln2", "#s3-ln3"], { attr: { "stroke-dasharray": "0 100" }, opacity: 0 }, { attr: { "stroke-dasharray": "100 0" }, opacity: 1, duration: 0.6, ease: "power2.inOut", stagger: 0.25 }, 9.4);
+
+          // ---- 10.6-12.5s: the report condenses (real width/height, not scale) into three proof lines ----
+          tl.fromTo(
+            ["#s3-l-sum", ".s3-bar", "#s3-l-time", "#s3-tline", ".s3-dot", "#s3-l-opt", ".s3-chip", "#s3-l-log", "#s3-logrow", "#s3-l-src", ".s3-src", "#s3-links"],
+            { opacity: 1 },
+            { immediateRender: false, opacity: 0, duration: 0.4, ease: "power1.in" },
+            10.6
+          );
+          tl.fromTo("#s3-report", { width: 1760, height: 630 }, { immediateRender: false, width: 1080, height: 460, duration: 1.0, ease: "power3.inOut" }, 10.75);
+          // the "Example" tag moves to the card's lower-right corner so the shorter card keeps its title clear
+          tl.fromTo("#s3-rtag", { y: 0 }, { immediateRender: false, y: 360, duration: 1.0, ease: "power3.inOut" }, 10.75);
+          tl.fromTo("#s3-rule", { width: 1680 }, { immediateRender: false, width: 1000, duration: 1.0, ease: "power3.inOut" }, 10.75);
+          tl.fromTo(".s3-pl", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out", stagger: 0.3 }, 11.4);
+          tl.fromTo(".s3-pchk", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.3 }, 11.5);
+
+          // ---- 11.5-13.5s: three stepping stones rise on a dotted path ----
+          tl.fromTo("#s3-path", { scaleY: 0, transformOrigin: "50% 0%" }, { scaleY: 1, duration: 1.4, ease: "power1.inOut" }, 11.5);
+          ["#s3-st1", "#s3-st2", "#s3-st3"].forEach(function (s, i) {
+            tl.fromTo(s, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 11.55 + i * 0.55);
+          });
+          tl.fromTo("#s3-now", { backgroundColor: "#f4f7f6" }, { backgroundColor: "#0e7470", duration: 0.45, ease: "power2.out" }, 12.2);
+          tl.fromTo("#s3-now", { scale: 1 }, { immediateRender: false, scale: 1.18, duration: 0.25, ease: "power2.out", yoyo: true, repeat: 1 }, 12.2);
+
+          // ---- 13.5-15.5s: the goal, clearly labelled as a goal ----
+          tl.fromTo("#s3-goal", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 13.6);
+
+          // ---- 15.5-17.5s: the ask ----
+          tl.fromTo("#s3-ask", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 15.6);
+
+          // ---- 17.5-20s: safety footer, then hold for questions ----
+          tl.fromTo("#s3-ft1", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 17.6);
+          tl.fromTo("#s3-fs1", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 18.1);
+          tl.fromTo("#s3-ft2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 18.3);
+          tl.fromTo("#s3-fs2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 18.8);
+          tl.fromTo("#s3-ft3", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 19.0);
+
+          window.__timelines["s3-briefing"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

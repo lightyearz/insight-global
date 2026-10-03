@@ -1,0 +1,79 @@
+{
+  "suggestions": [
+    {
+      "option_id": "opt-metformin",
+      "suggested": true,
+      "reason": "Background first-line therapy for most adults; anchors any pathway and formulary view."
+    },
+    {
+      "option_id": "opt-lifestyle-modification",
+      "suggested": true,
+      "reason": "Foundation of care in every guideline retrieved; drives education and weight-management service demand."
+    },
+    {
+      "option_id": "opt-physical-activity",
+      "suggested": true,
+      "reason": "Endorsed by ACSM consensus and relevant to exercise and prevention programme planning."
+    },
+    {
+      "option_id": "opt-sglt2-inhibitors",
+      "suggested": true,
+      "reason": "High-certainty outcome benefits and strong recommendations; major cost and uptake lever."
+    },
+    {
+      "option_id": "opt-glp-1-receptor-agonists",
+      "suggested": true,
+      "reason": "High-certainty mortality and cardiovascular benefits; significant budget and access implications."
+    },
+    {
+      "option_id": "opt-tirzepatide",
+      "suggested": true,
+      "reason": "Newer high-cost agent with a weak recommendation in obesity; important for formulary horizon scanning."
+    },
+    {
+      "option_id": "opt-finerenone",
+      "suggested": true,
+      "reason": "Kidney-protective add-on for the CKD subgroup, with risk-dependent recommendations."
+    },
+    {
+      "option_id": "opt-dpp-4-inhibitors",
+      "suggested": true,
+      "reason": "Strong recommendation against as add-on; relevant to de-adoption and formulary review."
+    },
+    {
+      "option_id": "opt-insulin",
+      "suggested": true,
+      "reason": "Remains part of the treatment pathway; hypoglycaemia harms matter for utilisation planning."
+    },
+    {
+      "option_id": "opt-sulfonylureas",
+      "suggested": false,
+      "reason": "Only appears as a comparator in the retrieved evidence, with no recommendation."
+    },
+    {
+      "option_id": "opt-individualized-glycemic-targets",
+      "suggested": true,
+      "reason": "Target choice shapes quality measures and treatment intensity across the population."
+    },
+    {
+      "option_id": "opt-deintensification",
+      "suggested": true,
+      "reason": "Supports overtreatment reduction in older and frail populations."
+    },
+    {
+      "option_id": "opt-shared-decision-making",
+      "suggested": false,
+      "reason": "Process recommendation from one non-US guideline; better covered in a care-model briefing."
+    },
+    {
+      "option_id": "opt-cardiovascular-risk-factor-management",
+      "suggested": false,
+      "reason": "Important but usually covered by a separate cardiometabolic risk briefing."
+    },
+    {
+      "option_id": "opt-blood-glucose-self-monitoring",
+      "suggested": false,
+      "reason": "Supported only by a consumer health summary in this set; no graded guideline evidence."
+    }
+  ]
+}

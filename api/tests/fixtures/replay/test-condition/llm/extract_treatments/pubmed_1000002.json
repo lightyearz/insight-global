@@ -1,0 +1,26 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "Betacillin",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with test condition",
+      "summary": "Proposed as first-line therapy based on trial data.",
+      "evidence": [
+        {
+          "quote": "Betacillin should be considered first-line therapy for test condition.",
+          "statement": "The review concluded Betacillin should be first-line.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,47 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": null,
+  "treatments": [
+    {
+      "name": "Single-pill combination therapy",
+      "category": "pharmacologic",
+      "drug_class": "Fixed-dose combination",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with hypertension needing combination therapy",
+      "summary": "Single-pill combinations are associated with higher adherence and persistence than free-dose combinations, but effects on blood pressure control and cardiovascular outcomes are not established.",
+      "evidence": [
+        {
+          "quote": "Adherence and/or persistence were generally higher in patients taking antihypertensives as SPC vs. free-dose combination; however, methodological reporting was suboptimal to facilitate comparison.",
+          "statement": "Adherence and persistence were generally higher with single-pill than free-dose combinations, but reporting quality was poor.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "Specifically designed, well reported studies are required to determine if the increased adherence/persistence seen in patients on SPC regimen leads to improved BP control and/or cardiovascular outcomes.",
+          "statement": "Whether better adherence translates into better BP control or cardiovascular outcomes still needs dedicated studies.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "insufficient_evidence"
+        },
+        {
+          "quote": "A range of SPC therapies were studied, with calcium channel blocker/angiotensin receptor blocker combinations most common (11/29 studies).",
+          "statement": "Calcium channel blocker/ARB combinations were the most studied single-pill combinations.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "date_precision": "year",
+          "label": "2018 ESC/ESH guidelines call for evidence on single-pill combinations over free-dose therapy",
+          "quote": "The 2018 European Society of Cardiology/European Society of Hypertension Guidelines for the management of arterial hypertension raised the need for evidence to support the use of single-pill combination (SPC) therapy in preference to free-dosed therapy for hypertension."
+        }
+      ]
+    }
+  ],
+  "notes": "Rapid evidence assessment: 25 of 29 included studies were observational."
+}

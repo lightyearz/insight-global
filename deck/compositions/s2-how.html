@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slide 2 - How it works</title>
+  </head>
+  <body>
+    <template id="s2-how-template">
+      <style>
+        @font-face {
+          font-family: "Atkinson Hyperlegible Next";
+          src: url("assets/fonts/AtkinsonHyperlegibleNext-Variable.ttf") format("truetype");
+          font-weight: 200 800;
+          font-style: normal;
+          font-display: block;
+        }
+        #s2-root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: #f4f7f6;
+          color: #13294b;
+          font-family: "Atkinson Hyperlegible Next", sans-serif;
+          letter-spacing: -0.005em;
+        }
+        #s2-root * {
+          box-sizing: border-box;
+        }
+        #s2-root svg.ic {
+          display: block;
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2.25;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          flex: none;
+        }
+        .s2-abs {
+          position: absolute;
+        }
+        /* ---------- background ---------- */
+        #s2-grid {
+          position: absolute;
+          left: -120px;
+          top: -60px;
+          width: 2160px;
+          height: 1200px;
+          background-image: radial-gradient(circle, rgba(14, 116, 112, 0.2) 2.2px, transparent 2.6px);
+          background-size: 48px 48px;
+        }
+        #s2-glow {
+          position: absolute;
+          left: 760px;
+          top: 300px;
+          width: 1300px;
+          height: 900px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(31, 91, 198, 0.1), rgba(31, 91, 198, 0));
+        }
+        /* ---------- header ---------- */
+        #s2-key {
+          left: 80px;
+          top: 40px;
+          display: flex;
+          gap: 18px;
+        }
+        .s2-keypill {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          height: 58px;
+          padding: 0 24px 0 18px;
+          border-radius: 999px;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        .s2-keypill i {
+          display: block;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+        }
+        #s2-key-ai {
+          background: #e1eafa;
+          color: #1f5bc6;
+        }
+        #s2-key-ai i {
+          background: #1f5bc6;
+        }
+        #s2-key-team {
+          background: #fcebcf;
+          color: #8a4a00;
+        }
+        #s2-key-team i {
+          background: #f2a93b;
+        }
+        #s2-head {
+          left: 80px;
+          top: 116px;
+          width: 1760px;
+          margin: 0;
+          font-size: 58px;
+          line-height: 1.1;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        #s2-sub {
+          left: 80px;
+          top: 192px;
+          width: 1500px;
+          text-wrap: balance;
+          margin: 0;
+          font-size: 40px;
+          line-height: 1.22;
+          color: #3b4f6b;
+        }
+        /* ---------- step rail ---------- */
+        #s2-railline {
+          left: 110px;
+          top: 362px;
+          width: 4px;
+          height: 572px;
+          border-radius: 2px;
+          background: #c9d4dc;
+        }
+        .s2-step {
+          position: absolute;
+          left: 80px;
+          width: 580px;
+        }
+        .s2-circ {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          border: 4px solid #c9d4dc;
+          background: #f4f7f6;
+          color: #3b4f6b;
+          font-size: 40px;
+          font-weight: 800;
+          line-height: 56px;
+          text-align: center;
+        }
+        #s2-c4 span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 56px;
+        }
+        #s2-c4k {
+          position: absolute;
+          left: 11px;
+          top: 11px;
+          opacity: 0;
+          color: #fdfefe;
+        }
+        .s2-label {
+          position: absolute;
+          left: 88px;
+          top: 8px;
+          width: 440px;
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 600;
+          color: #3b4f6b;
+        }
+        #s2-row-wrap .s2-row {
+          position: absolute;
+          left: 168px;
+          width: 492px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        .s2-tick {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #f2a93b;
+          color: #13294b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        .s2-dash {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 3px solid #8a97a8;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        .s2-dash i {
+          display: block;
+          width: 16px;
+          height: 3px;
+          background: #8a97a8;
+        }
+        /* ---------- phase A: search, AI reading, options ---------- */
+        #s2-bubble-glow {
+          left: 460px;
+          top: 380px;
+          width: 1000px;
+          height: 540px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(14, 116, 112, 0.34), rgba(14, 116, 112, 0));
+        }
+        .s2-slot {
+          position: absolute;
+          width: 0;
+          height: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #s2-bubble {
+          flex: none;
+          width: 720px;
+          padding: 26px 36px 32px;
+          border-radius: 36px 36px 36px 10px;
+          background: #fdfefe;
+          border: 4px solid #0e7470;
+          box-shadow: 0 22px 50px rgba(19, 41, 75, 0.16);
+        }
+        #s2-ex {
+          display: inline-flex;
+          align-items: center;
+          height: 52px;
+          padding: 0 20px;
+          border-radius: 999px;
+          background: #ddefec;
+          color: #0b5f5c;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        #s2-qtext {
+          margin: 14px 0 0;
+          font-size: 44px;
+          line-height: 1.2;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+        }
+        #s2-search {
+          left: 720px;
+          top: 336px;
+          width: 1120px;
+          height: 88px;
+          border-radius: 44px;
+          border: 4px solid #0e7470;
+          background: #fdfefe;
+          box-shadow: 0 14px 34px rgba(19, 41, 75, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          padding: 0 30px;
+          color: #0e7470;
+        }
+        #s2-stext {
+          font-size: 44px;
+          font-weight: 700;
+          color: #13294b;
+          white-space: nowrap;
+        }
+        .s2-ch {
+          display: none;
+        }
+        #s2-caret {
+          margin-left: -12px;
+          width: 4px;
+          height: 50px;
+          background: #0e7470;
+          border-radius: 2px;
+          flex: none;
+        }
+        #s2-aiglow {
+          left: 640px;
+          top: 420px;
+          width: 540px;
+          height: 480px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(31, 91, 198, 0.24), rgba(31, 91, 198, 0));
+        }
+        .s2-tile {
+          position: absolute;
+          width: 104px;
+          height: 104px;
+          border-radius: 20px;
+          background: #fdfefe;
+          border: 3px solid #c6d6f2;
+          box-shadow: 0 10px 24px rgba(31, 91, 198, 0.14);
+          color: #0e7470;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        /* trust-tier badge: 1 = clinical guideline ... 4 = everything else (same rule as the product) */
+        .s2-badge {
+          position: absolute;
+          right: -16px;
+          top: -16px;
+          width: 54px;
+          height: 54px;
+          border-radius: 50%;
+          background: #0b5f5c;
+          color: #fdfefe;
+          font-size: 40px;
+          line-height: 54px;
+          font-weight: 800;
+          text-align: center;
+          box-shadow: 0 4px 10px rgba(14, 116, 112, 0.35);
+        }
+        .s2-badge.t4 {
+          background: #5d6c80;
+          box-shadow: 0 4px 10px rgba(19, 41, 75, 0.25);
+        }
+        #s2-ailabel {
+          left: 720px;
+          top: 716px;
+          width: 380px;
+          display: flex;
+          gap: 14px;
+          align-items: flex-start;
+          justify-content: center;
+          color: #1f5bc6;
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 700;
+          text-align: left;
+        }
+        #s2-optlabel {
+          left: 1140px;
+          top: 446px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          font-size: 40px;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+        .s2-tag {
+          display: inline-flex;
+          align-items: center;
+          height: 52px;
+          padding: 0 20px;
+          border-radius: 999px;
+          background: #ddefec;
+          color: #0b5f5c;
+          font-size: 40px;
+          font-weight: 600;
+        }
+        .s2-chip {
+          position: absolute;
+          left: 1140px;
+          width: 700px;
+          height: 72px;
+          border-radius: 18px;
+          background: #fdfefe;
+          border: 3px solid #c6d6f2;
+          box-shadow: 0 10px 24px rgba(19, 41, 75, 0.08);
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 0 20px;
+          font-size: 40px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        .s2-chip .s2-qi {
+          color: #1f5bc6;
+        }
+        .s2-chip .s2-chiptext {
+          flex: 1;
+        }
+        .s2-slotc {
+          position: relative;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          border: 3px solid #c9d4dc;
+          flex: none;
+        }
+        .s2-fill {
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          background: #f2a93b;
+        }
+        .s2-chk {
+          position: absolute;
+          left: 7px;
+          top: 7px;
+        }
+        #s2-setaside {
+          left: 1140px;
+          top: 852px;
+          font-size: 40px;
+          font-weight: 600;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        #s2-cursor {
+          left: 0;
+          top: 0;
+          width: 56px;
+          height: 56px;
+        }
+        /* ---------- phase B: the disagreement ---------- */
+        #s2-conf {
+          left: 720px;
+          top: 330px;
+          width: 1120px;
+          height: 650px;
+        }
+        #s2-conf-h {
+          left: 0;
+          top: 2px;
+          margin: 0;
+          font-size: 48px;
+          line-height: 60px;
+          font-weight: 800;
+          letter-spacing: -0.015em;
+          white-space: nowrap;
+        }
+        #s2-conf-l {
+          left: 0;
+          top: 72px;
+          margin: 0;
+          font-size: 40px;
+          line-height: 48px;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        #s2-badgerow {
+          left: 0;
+          top: 132px;
+          width: 1120px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
+        #s2-flag {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: #1f5bc6;
+          color: #fdfefe;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+        #s2-dis {
+          display: grid;
+          align-items: center;
+          height: 62px;
+          padding: 0 26px 0 20px;
+          border-radius: 999px;
+          background: #fbe2df;
+          border: 3px solid #b83a33;
+          color: #a3302a;
+          font-size: 40px;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+        .s2-dstate {
+          grid-area: 1 / 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+        }
+        #s2-dis-b {
+          opacity: 0;
+        }
+        .s2-gcard {
+          position: absolute;
+          top: 212px;
+          width: 530px;
+          height: 326px;
+          padding: 24px 30px;
+          border-radius: 22px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 16px 36px rgba(19, 41, 75, 0.12);
+        }
+        #s2-gl {
+          left: 0;
+        }
+        #s2-gr {
+          left: 590px;
+        }
+        .s2-org {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 700;
+        }
+        .s2-src {
+          font-size: 40px;
+          line-height: 48px;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        .s2-rule {
+          height: 3px;
+          margin: 12px 0 10px;
+          background: #e3e9ee;
+        }
+        .s2-target {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 600;
+          color: #13294b;
+        }
+        .s2-target span {
+          display: block;
+          margin: 0 -14px;
+          padding: 2px 14px;
+          border-radius: 12px;
+        }
+        #s2-bracket {
+          left: 0;
+          top: 0;
+          width: 1120px;
+          height: 650px;
+          overflow: visible;
+        }
+        #s2-person {
+          left: 196px;
+          top: 556px;
+          width: 84px;
+          height: 84px;
+          border-radius: 50%;
+          background: #fcebcf;
+          border: 4px solid #f2a93b;
+          color: #8a4a00;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #s2-note {
+          left: 300px;
+          top: 558px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 0 30px 0 18px;
+          border-radius: 999px;
+          background: #fdfefe;
+          border: 4px solid #f2a93b;
+          box-shadow: 0 14px 30px rgba(168, 90, 0, 0.16);
+          font-size: 40px;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+        #s2-ncheck {
+          position: relative;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background: #f2a93b;
+          flex: none;
+        }
+        #s2-ncheck svg {
+          position: absolute;
+          left: 8px;
+          top: 8px;
+        }
+        /* ---------- decision log tray + footer ---------- */
+        #s2-tray {
+          left: 1404px;
+          top: 36px;
+          width: 436px;
+          height: 66px;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding: 0 14px 0 22px;
+          border-radius: 18px;
+          background: #fdfefe;
+          border: 3px solid #d3dde3;
+          box-shadow: 0 10px 24px rgba(19, 41, 75, 0.08);
+          font-size: 40px;
+          font-weight: 700;
+          color: #13294b;
+          white-space: nowrap;
+        }
+        #s2-tray .ic {
+          color: #0e7470;
+        }
+        #s2-count {
+          position: relative;
+          margin-left: auto;
+          width: 50px;
+          height: 50px;
+          border-radius: 14px;
+          background: #fcebcf;
+          overflow: hidden;
+          flex: none;
+        }
+        .s2-num {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 800;
+          color: #8a4a00;
+        }
+        #s2-num-1,
+        #s2-num-2,
+        #s2-num-3,
+        #s2-num-4,
+        #s2-num-5 {
+          opacity: 0;
+        }
+        #s2-fly {
+          left: 1618px;
+          top: 917px;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background: #f2a93b;
+          box-shadow: 0 0 0 4px rgba(242, 169, 59, 0.28);
+          opacity: 0;
+        }
+        #s2-foot {
+          left: 80px;
+          top: 994px;
+          width: 1760px;
+          height: 52px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 22px;
+          font-size: 40px;
+          line-height: 52px;
+          color: #3b4f6b;
+          white-space: nowrap;
+        }
+        .s2-fsep {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #0e7470;
+          flex: none;
+        }
+      </style>
+
+      <div id="s2-root" data-composition-id="s2-how" data-width="1920" data-height="1080" data-duration="20">
+        <div id="s2-bg">
+          <div id="s2-grid"></div>
+          <div id="s2-glow"></div>
+        </div>
+
+        <!-- header -->
+        <div id="s2-key" class="s2-abs">
+          <div class="s2-keypill" id="s2-key-ai"><i></i>Blue = AI</div>
+          <div class="s2-keypill" id="s2-key-team"><i></i>Amber = your team</div>
+        </div>
+        <h1 id="s2-head" class="s2-abs">The AI does the reading; your team makes every call.</h1>
+        <p id="s2-sub" class="s2-abs">It suggests options, each quoting a trusted source. You choose what matters and settle any disagreements.</p>
+
+        <!-- step rail -->
+        <div id="s2-railline" class="s2-abs"></div>
+        <div class="s2-step" id="s2-step1" style="top: 330px"> <div class="s2-circ" id="s2-c1">1</div> <div class="s2-label" id="s2-lab1">Type a condition</div> </div>
+        <div class="s2-step" id="s2-step2" style="top: 422px"> <div class="s2-circ" id="s2-c2">2</div> <div class="s2-label" id="s2-lab2">AI reads &amp; suggests, with quotes</div> </div>
+        <div class="s2-step" id="s2-step3" style="top: 550px"> <div class="s2-circ" id="s2-c3">3</div> <div class="s2-label" id="s2-lab3">You choose &amp; settle conflicts</div> </div>
+        <div class="s2-step" id="s2-step4" style="top: 902px"> <div class="s2-circ" id="s2-c4"><span id="s2-c4n">4</span><svg id="s2-c4k" class="ic" width="34" height="34" viewBox="0 0 24 24" style="stroke-width: 3"><path d="M20 6 9 17l-5-5" /></svg></div> <div class="s2-label" id="s2-lab4">Briefing ready</div> </div>
+        <div id="s2-row-wrap">
+          <div class="s2-row" id="s2-row1" style="top: 660px"> <div class="s2-tick"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div> Lifestyle changes </div>
+          <div class="s2-row" id="s2-row2" style="top: 714px"> <div class="s2-tick"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div> Metformin </div>
+          <div class="s2-row" id="s2-row3" style="top: 768px"> <div class="s2-tick"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.2"><path d="M20 6 9 17l-5-5" /></svg></div> GLP-1 medicines </div>
+          <div class="s2-row" id="s2-row4" style="top: 822px; color: #5d6c80"> <div class="s2-dash"><i></i></div> Weight-loss surgery </div>
+        </div>
+
+        <!-- phase A: search, AI reading zone, suggested options -->
+        <div id="s2-phaseA">
+          <div id="s2-search" class="s2-abs"> <svg class="ic" width="44" height="44" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg> <div id="s2-stext"><span class="s2-ch">T</span><span class="s2-ch">y</span><span class="s2-ch">p</span><span class="s2-ch">e</span><span class="s2-ch">&#160;</span><span class="s2-ch">2</span><span class="s2-ch">&#160;</span><span class="s2-ch">d</span><span class="s2-ch">i</span><span class="s2-ch">a</span><span class="s2-ch">b</span><span class="s2-ch">e</span><span class="s2-ch">t</span><span class="s2-ch">e</span><span class="s2-ch">s</span></div> <div id="s2-caret"></div> </div>
+
+          <div id="s2-aiglow" class="s2-abs"></div>
+          <div class="s2-tile" id="s2-t1" style="left: 736px; top: 474px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg> <div class="s2-badge">1</div> </div>
+          <div class="s2-tile" id="s2-t2" style="left: 858px; top: 474px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg> <div class="s2-badge">2</div> </div>
+          <div class="s2-tile" id="s2-t3" style="left: 980px; top: 474px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></svg> <div class="s2-badge">3</div> </div>
+          <div class="s2-tile" id="s2-t4" style="left: 736px; top: 596px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg> <div class="s2-badge t4">4</div> </div>
+          <div class="s2-tile" id="s2-t5" style="left: 858px; top: 596px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /><path d="M12 7v5l4 2" /></svg> <div class="s2-badge">1</div> </div>
+          <div class="s2-tile" id="s2-t6" style="left: 980px; top: 596px"> <svg class="ic" width="46" height="46" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg> <div class="s2-badge">1</div> </div>
+          <div id="s2-ailabel" class="s2-abs"> <svg class="ic" width="40" height="40" viewBox="0 0 24 24" style="margin-top: 4px"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></svg> <span>AI reads trusted sources</span> </div>
+
+          <div id="s2-optlabel" class="s2-abs">Suggested options <span class="s2-tag">Example</span></div>
+          <div class="s2-chip" id="s2-o1" style="top: 516px"> <svg class="ic s2-qi" width="34" height="34" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg> <span class="s2-chiptext" data-layout-allow-overlap>Lifestyle changes</span> <div class="s2-slotc"><div class="s2-fill" id="s2-f1"></div><svg class="ic s2-chk" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.4; color: #13294b"><path id="s2-k1" d="M20 6 9 17l-5-5" pathLength="100" /></svg></div> </div>
+          <div class="s2-chip" id="s2-o2" style="top: 600px"> <svg class="ic s2-qi" width="34" height="34" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg> <span class="s2-chiptext" data-layout-allow-overlap>Metformin</span> <div class="s2-slotc"><div class="s2-fill" id="s2-f2"></div><svg class="ic s2-chk" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.4; color: #13294b"><path id="s2-k2" d="M20 6 9 17l-5-5" pathLength="100" /></svg></div> </div>
+          <div class="s2-chip" id="s2-o3" style="top: 684px"> <svg class="ic s2-qi" width="34" height="34" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg> <span class="s2-chiptext" data-layout-allow-overlap>GLP-1 medicines</span> <div class="s2-slotc"><div class="s2-fill" id="s2-f3"></div><svg class="ic s2-chk" width="26" height="26" viewBox="0 0 24 24" style="stroke-width: 3.4; color: #13294b"><path id="s2-k3" d="M20 6 9 17l-5-5" pathLength="100" /></svg></div> </div>
+          <div class="s2-chip" id="s2-o4" style="top: 768px"> <svg class="ic s2-qi" width="34" height="34" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg> <span class="s2-chiptext" data-layout-allow-overlap>Weight-loss surgery</span> <div class="s2-slotc"></div> </div>
+          <div id="s2-setaside" class="s2-abs">Set aside for this briefing</div>
+        </div>
+
+        <!-- phase B: the disagreement -->
+        <div id="s2-conf" class="s2-abs">
+          <h2 id="s2-conf-h" class="s2-abs">Blood-sugar target (A1C)</h2>
+          <p id="s2-conf-l" class="s2-abs">Real example: two published guidelines disagree</p>
+          <div id="s2-badgerow" class="s2-abs">
+            <div id="s2-flag"><svg class="ic" width="30" height="30" viewBox="0 0 24 24"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></svg></div>
+            <div id="s2-dis"><span class="s2-dstate" id="s2-dis-a" data-layout-allow-overlap><svg class="ic" width="34" height="34" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>Sources disagree</span><span class="s2-dstate" id="s2-dis-b" data-layout-allow-overlap><svg class="ic" width="34" height="34" viewBox="0 0 24 24" style="stroke-width: 3"><path d="M20 6 9 17l-5-5" /></svg>Settled by your team</span></div>
+          </div>
+          <div class="s2-gcard" id="s2-gl"> <div class="s2-org">American Diabetes Association</div> <div class="s2-src">Standards of Care, 2025</div> <div class="s2-rule"></div> <div class="s2-target"><span id="s2-tl">Below 7% for many adults</span></div> </div>
+          <div class="s2-gcard" id="s2-gr"> <div class="s2-org">American College of Physicians</div> <div class="s2-src">Guidance statement, 2018</div> <div class="s2-rule"></div> <div class="s2-target"><span id="s2-tr">7% to 8% for most adults</span></div> </div>
+          <svg id="s2-bracket" class="s2-abs" viewBox="0 0 1120 650">
+            <g id="s2-brk" fill="none" stroke="#b83a33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+              <path id="s2-brk1" d="M538 311 H556 V439 H538" pathLength="100" />
+              <path id="s2-brk2" d="M582 311 H564 V439 H582" pathLength="100" />
+            </g>
+          </svg>
+          <div id="s2-person" class="s2-abs"> <svg class="ic" width="44" height="44" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg> </div>
+          <div id="s2-note" class="s2-abs"> <div id="s2-ncheck"><svg class="ic" width="36" height="36" viewBox="0 0 24 24" style="stroke-width: 3.2; color: #13294b"><path id="s2-nk" d="M20 6 9 17l-5-5" pathLength="100" /></svg></div> <span data-layout-allow-overlap>Your team's call · Logged</span> </div>
+        </div>
+
+        <!-- decision log tray -->
+        <div id="s2-tray" class="s2-abs"> <svg class="ic" width="40" height="40" viewBox="0 0 24 24"><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></svg> Decision log <div id="s2-count"><div class="s2-num" id="s2-num-0" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>0</div><div class="s2-num" id="s2-num-1" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>1</div><div class="s2-num" id="s2-num-2" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>2</div><div class="s2-num" id="s2-num-3" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>3</div><div class="s2-num" id="s2-num-4" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>4</div><div class="s2-num" id="s2-num-5" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>5</div></div> </div>
+
+        <!-- amber dot: the settled conflict travelling into the decision log -->
+        <div id="s2-fly" class="s2-abs" data-layout-allow-occlusion></div>
+
+        <!-- the question bubble carried over from slide 1 -->
+        <div id="s2-bubble-glow" class="s2-abs"></div>
+        <div class="s2-slot" id="s2-bubble-slot" style="left: 960px; top: 650px">
+          <div id="s2-bubble">
+            <div id="s2-ex">Example condition</div>
+            <p id="s2-qtext">What's the standard of care for type 2 diabetes today?</p>
+          </div>
+        </div>
+
+        <!-- amber cursor (your team) -->
+        <svg id="s2-cursor" class="s2-abs" viewBox="0 0 24 24">
+          <path d="M4 3 L19 11.5 L12.2 13.2 L9 20 Z" fill="#f2a93b" stroke="#8a4a00" stroke-width="1.6" stroke-linejoin="round" />
+        </svg>
+
+        <div id="s2-foot" class="s2-abs">
+          <span id="s2-ft1">Public research only</span><i class="s2-fsep" id="s2-fs1"></i><span id="s2-ft2">No patient data</span><i class="s2-fsep" id="s2-fs2"></i><span id="s2-ft3">Decision support, not medical advice</span>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+
+          // ---- ambient: slow horizontal grid drift + breathing glow ----
+          tl.fromTo("#s2-grid", { x: 0 }, { x: -48, duration: 20, ease: "none" }, 0);
+          tl.fromTo("#s2-glow", { scale: 0.94, opacity: 0.8 }, { scale: 1.06, opacity: 1, duration: 5, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+
+          // ---- 0-1.5s: headline, subhead, colour key, step rail draws ----
+          tl.fromTo("#s2-head", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.9, ease: "expo.out" }, 0.1);
+          tl.fromTo("#s2-sub", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out" }, 0.55);
+          tl.fromTo("#s2-key-ai", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.3);
+          tl.fromTo("#s2-key-team", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.45);
+          tl.fromTo("#s2-railline", { scaleY: 0, transformOrigin: "50% 0%" }, { scaleY: 0.6, duration: 1.2, ease: "power2.inOut" }, 0.3);
+          // step 4 waits just under step 3, then moves down to make room for the chosen options (9s)
+          tl.fromTo("#s2-step4", { y: -230 }, { y: 0, duration: 0.45, ease: "power2.inOut" }, 9.0);
+          tl.fromTo("#s2-railline", { scaleY: 0.6 }, { immediateRender: false, scaleY: 1, duration: 0.45, ease: "power2.inOut" }, 9.0);
+          tl.fromTo([".s2-step"], { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out", stagger: 0.22 }, 0.35);
+
+          // ---- 1.5-3.5s: the question shrinks into a search box; step 1 lights ----
+          tl.fromTo("#s2-bubble-glow", { opacity: 1 }, { opacity: 0, duration: 0.5, ease: "power1.out" }, 1.4);
+          tl.fromTo("#s2-bubble", { opacity: 1, x: 0, y: 0, scale: 1.04 }, { opacity: 0, x: 320, y: -270, scale: 0.42, duration: 0.75, ease: "power2.inOut" }, 1.5);
+          tl.fromTo("#s2-search", { opacity: 0, scaleX: 0.64, scaleY: 0.7 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "power3.out" }, 1.95);
+          tl.fromTo("#s2-c1", { backgroundColor: "#f4f7f6", borderColor: "#c9d4dc", color: "#3b4f6b" }, { backgroundColor: "#0e7470", borderColor: "#0e7470", color: "#fdfefe", duration: 0.4, ease: "power1.out" }, 2.0);
+          tl.fromTo("#s2-c1", { scale: 1 }, { immediateRender: false, scale: 1.16, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 2.0);
+          tl.fromTo("#s2-lab1", { color: "#3b4f6b" }, { color: "#13294b", duration: 0.3 }, 2.0);
+          // letters appear one at a time (display, not opacity, so the caret follows the text)
+          gsap.utils.toArray("#s2-root .s2-ch").forEach(function (c, i) {
+            tl.fromTo(c, { display: "none" }, { display: "inline", duration: 0.01, ease: "none" }, 2.4 + i * 0.06);
+          });
+          tl.fromTo("#s2-caret", { opacity: 1 }, { opacity: 0, duration: 0.3, ease: "power1.out" }, 3.45);
+
+          // ---- 3.5-6.5s: step 2 (blue) - sources stream in, gain trust badges, options come out ----
+          tl.fromTo("#s2-c2", { backgroundColor: "#f4f7f6", borderColor: "#c9d4dc", color: "#3b4f6b" }, { backgroundColor: "#1f5bc6", borderColor: "#1f5bc6", color: "#fdfefe", duration: 0.4, ease: "power1.out" }, 3.5);
+          tl.fromTo("#s2-c2", { scale: 1 }, { immediateRender: false, scale: 1.16, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 3.5);
+          tl.fromTo("#s2-lab2", { color: "#3b4f6b" }, { color: "#1f5bc6", duration: 0.3 }, 3.5);
+          tl.fromTo("#s2-aiglow", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 3.6);
+          var tiles = [
+            { id: "#s2-t1", l: 736, t: 474 },
+            { id: "#s2-t2", l: 858, t: 474 },
+            { id: "#s2-t3", l: 980, t: 474 },
+            { id: "#s2-t4", l: 736, t: 596 },
+            { id: "#s2-t5", l: 858, t: 596 },
+            { id: "#s2-t6", l: 980, t: 596 }
+          ];
+          tiles.forEach(function (t, i) {
+            tl.fromTo(
+              t.id,
+              { opacity: 0, x: 360 - t.l, y: 450 - t.t, rotation: i % 2 ? 9 : -9, scale: 0.7 },
+              { opacity: 1, x: 0, y: 0, rotation: 0, scale: 1, duration: 0.85, ease: "power3.out" },
+              3.7 + i * 0.17
+            );
+          });
+          tl.fromTo(".s2-badge", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.2)", stagger: 0.09 }, 4.85);
+          tl.fromTo("#s2-ailabel", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 4.4);
+          tl.fromTo("#s2-optlabel", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 5.2);
+          ["#s2-o1", "#s2-o2", "#s2-o3", "#s2-o4"].forEach(function (o, i) {
+            tl.fromTo(o, { opacity: 0, x: -48, scale: 0.96 }, { opacity: 1, x: 0, scale: 1, duration: 0.55, ease: "expo.out", transformOrigin: "0% 50%" }, 5.4 + i * 0.2);
+          });
+
+          // ---- 6.5-9s: step 3 (amber) - your team checks three options, sets one aside ----
+          tl.fromTo("#s2-c3", { backgroundColor: "#f4f7f6", borderColor: "#c9d4dc", color: "#3b4f6b" }, { backgroundColor: "#f2a93b", borderColor: "#f2a93b", color: "#13294b", duration: 0.4, ease: "power1.out" }, 6.5);
+          tl.fromTo("#s2-c3", { scale: 1 }, { immediateRender: false, scale: 1.16, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.5);
+          tl.fromTo("#s2-lab3", { color: "#3b4f6b" }, { color: "#8a4a00", duration: 0.3 }, 6.5);
+          tl.fromTo("#s2-tray", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 6.5);
+          // the decision log counts every choice: three options in, one set aside, then the settled conflict
+          function bump(n, t) {
+            tl.fromTo("#s2-num-" + (n - 1), { opacity: 1, y: 0 }, { immediateRender: false, opacity: 0, y: -30, duration: 0.22, ease: "power2.in" }, t);
+            tl.fromTo("#s2-num-" + n, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.28, ease: "back.out(1.8)" }, t + 0.12);
+            tl.fromTo("#s2-count", { scale: 1 }, { immediateRender: false, scale: 1.14, duration: 0.15, ease: "power2.out", yoyo: true, repeat: 1 }, t + 0.12);
+          }
+          tl.fromTo("#s2-cursor", { opacity: 0, x: 600, y: 640 }, { opacity: 1, x: 640, y: 620, duration: 0.25, ease: "power1.out" }, 6.45);
+          var stops = [
+            { x: 1790, y: 540, t: 6.7, f: "#s2-f1", k: "#s2-k1" },
+            { x: 1790, y: 624, t: 7.25, f: "#s2-f2", k: "#s2-k2" },
+            { x: 1790, y: 708, t: 7.8, f: "#s2-f3", k: "#s2-k3" }
+          ];
+          var prev = { x: 640, y: 620 };
+          stops.forEach(function (s) {
+            tl.fromTo("#s2-cursor", { x: prev.x, y: prev.y }, { immediateRender: false, x: s.x, y: s.y, duration: 0.3, ease: "power2.inOut" }, s.t);
+            tl.fromTo(s.f, { scale: 0 }, { scale: 1, duration: 0.25, ease: "back.out(2)" }, s.t + 0.28);
+            tl.fromTo(s.k, { attr: { "stroke-dasharray": "0 100" }, opacity: 0 }, { attr: { "stroke-dasharray": "100 0" }, opacity: 1, duration: 0.3, ease: "power2.out" }, s.t + 0.33);
+            prev = { x: s.x, y: s.y };
+          });
+          bump(1, 7.05);
+          bump(2, 7.6);
+          bump(3, 8.15);
+          tl.fromTo("#s2-cursor", { x: 1790, y: 708 }, { immediateRender: false, x: 1560, y: 800, duration: 0.3, ease: "power2.inOut" }, 8.3);
+          tl.fromTo("#s2-o4", { opacity: 1 }, { immediateRender: false, opacity: 0.5, duration: 0.3, ease: "power1.out" }, 8.6);
+          tl.fromTo("#s2-setaside", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 8.6);
+          bump(4, 8.62);
+          tl.fromTo("#s2-cursor", { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.3, ease: "power1.in" }, 9.0);
+
+          // chips tuck into the rail under step 3; phase A clears
+          [
+            { id: "#s2-o1", dy: 660 - 516 },
+            { id: "#s2-o2", dy: 714 - 600 },
+            { id: "#s2-o3", dy: 768 - 684 },
+            { id: "#s2-o4", dy: 822 - 768 }
+          ].forEach(function (c, i) {
+            tl.fromTo(c.id, { x: 0, y: 0, scale: 1 }, { immediateRender: false, x: -972, y: c.dy, scale: 0.85, duration: 0.65, ease: "power3.inOut", transformOrigin: "0% 0%" }, 9.0 + i * 0.03);
+          });
+          tl.fromTo(["#s2-o1", "#s2-o2", "#s2-o3"], { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.25, ease: "power1.in" }, 9.45);
+          tl.fromTo("#s2-o4", { opacity: 0.5 }, { immediateRender: false, opacity: 0, duration: 0.25, ease: "power1.in" }, 9.66);
+          tl.fromTo(".s2-row", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 9.5);
+          tl.fromTo(["#s2-search", "#s2-optlabel", "#s2-setaside"], { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.35, ease: "power1.in" }, 9.0);
+          // the AI reading zone clears before the chips tuck left across it
+          tl.fromTo(["#s2-aiglow", "#s2-ailabel", "#s2-t1", "#s2-t2", "#s2-t3", "#s2-t4", "#s2-t5", "#s2-t6"], { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.3, ease: "power1.in" }, 8.6);
+
+          // ---- 9-11.5s: camera pushes in on two real guidelines that disagree ----
+          tl.fromTo("#s2-conf", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power1.out" }, 9.35);
+          tl.fromTo("#s2-conf", { scale: 0.92 }, { immediateRender: false, scale: 1, duration: 2.1, ease: "power2.inOut", transformOrigin: "50% 40%" }, 9.35);
+          tl.fromTo("#s2-conf-h", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "expo.out" }, 9.45);
+          tl.fromTo("#s2-conf-l", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 9.7);
+          tl.fromTo("#s2-gl", { opacity: 0, x: -280 }, { opacity: 1, x: 0, duration: 0.75, ease: "power3.out" }, 9.85);
+          tl.fromTo("#s2-gr", { opacity: 0, x: 280 }, { opacity: 1, x: 0, duration: 0.75, ease: "power3.out" }, 9.85);
+          tl.fromTo("#s2-gl", { x: 0 }, { immediateRender: false, x: 14, duration: 0.14, ease: "power1.out", yoyo: true, repeat: 1 }, 10.6);
+          tl.fromTo("#s2-gr", { x: 0 }, { immediateRender: false, x: -14, duration: 0.14, ease: "power1.out", yoyo: true, repeat: 1 }, 10.6);
+          tl.fromTo(["#s2-tl", "#s2-tr"], { backgroundColor: "rgba(31, 91, 198, 0)" }, { backgroundColor: "rgba(31, 91, 198, 0.14)", duration: 0.45, ease: "power1.out" }, 10.7);
+          tl.fromTo(["#s2-brk1", "#s2-brk2"], { attr: { "stroke-dasharray": "0 100" }, opacity: 0 }, { attr: { "stroke-dasharray": "100 0" }, opacity: 1, duration: 0.45, ease: "power2.out" }, 10.85);
+          tl.fromTo("#s2-dis", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }, 10.95);
+          tl.fromTo("#s2-brk", { scaleY: 1, transformOrigin: "50% 50%" }, { scaleY: 1.12, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 11.35);
+          tl.fromTo("#s2-flag", { opacity: 0, scale: 0, rotation: -20 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(2)" }, 11.3);
+
+          // ---- 11.5-14s: a person decides; the conflict settles from coral to amber ----
+          tl.fromTo("#s2-person", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 11.6);
+          tl.fromTo("#s2-note", { opacity: 0, scale: 0.9, x: -20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "power3.out", transformOrigin: "0% 50%" }, 11.85);
+          tl.fromTo("#s2-ncheck", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(2)" }, 12.25);
+          tl.fromTo("#s2-nk", { attr: { "stroke-dasharray": "0 100" }, opacity: 0 }, { attr: { "stroke-dasharray": "100 0" }, opacity: 1, duration: 0.4, ease: "power2.out" }, 12.4);
+          tl.fromTo("#s2-brk", { stroke: "#b83a33" }, { immediateRender: false, stroke: "#d98a14", duration: 0.7, ease: "power1.inOut" }, 12.8);
+          tl.fromTo("#s2-dis", { backgroundColor: "#fbe2df", borderColor: "#b83a33", color: "#a3302a" }, { immediateRender: false, backgroundColor: "#fcebcf", borderColor: "#f2a93b", color: "#8a4a00", duration: 0.7, ease: "power1.inOut" }, 12.8);
+          tl.fromTo("#s2-dis-a", { opacity: 1, y: 0 }, { opacity: 0, y: -12, duration: 0.3, ease: "power1.in" }, 12.85);
+          tl.fromTo("#s2-dis-b", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 13.1);
+
+          // ---- 14-16.5s: the decision stays on screen; an amber dot carries it into the log (via the right margin); briefing ready ----
+          tl.fromTo("#s2-fly", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.15, ease: "power2.out" }, 14.1);
+          tl.fromTo("#s2-fly", { x: 0 }, { immediateRender: false, x: 243, duration: 0.25, ease: "power2.in" }, 14.2);
+          tl.fromTo("#s2-fly", { y: 0 }, { immediateRender: false, y: -859, duration: 0.5, ease: "power2.inOut" }, 14.45);
+          tl.fromTo("#s2-fly", { x: 243 }, { immediateRender: false, x: 169, duration: 0.18, ease: "power2.out" }, 14.95);
+          tl.fromTo("#s2-fly", { opacity: 1 }, { immediateRender: false, opacity: 0, duration: 0.15, ease: "power1.in" }, 15.08);
+          bump(5, 15.05);
+          tl.fromTo("#s2-tray", { scale: 1, borderColor: "#d3dde3" }, { immediateRender: false, scale: 1.05, borderColor: "#f2a93b", duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }, 15.1);
+          tl.fromTo("#s2-c4", { backgroundColor: "#f4f7f6", borderColor: "#c9d4dc" }, { backgroundColor: "#16773d", borderColor: "#16773d", duration: 0.4, ease: "power1.out" }, 15.5);
+          tl.fromTo("#s2-c4", { scale: 1 }, { immediateRender: false, scale: 1.16, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 15.5);
+          tl.fromTo("#s2-c4n", { opacity: 1 }, { opacity: 0, duration: 0.2 }, 15.5);
+          tl.fromTo("#s2-c4k", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 15.6);
+          tl.fromTo("#s2-lab4", { color: "#3b4f6b" }, { color: "#16773d", duration: 0.3 }, 15.5);
+
+          // ---- 16.5-19s: safety footer, one phrase at a time ----
+          tl.fromTo("#s2-ft1", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 16.6);
+          tl.fromTo("#s2-fs1", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 17.1);
+          tl.fromTo("#s2-ft2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 17.3);
+          tl.fromTo("#s2-fs2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 17.8);
+          tl.fromTo("#s2-ft3", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 18.0);
+
+          // ---- 19.42-19.97s: exit; the headline holds until the cut ----
+          tl.fromTo(
+            ["#s2-conf", "#s2-tray", "#s2-row-wrap", ".s2-step", "#s2-railline", "#s2-foot"],
+            { opacity: 1, y: 0 },
+            { immediateRender: false, opacity: 0, y: -16, duration: 0.45, ease: "power2.in", stagger: 0.012 },
+            19.42
+          );
+
+          window.__timelines["s2-how"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Regular exercise",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "People with test condition",
+      "summary": "Lifestyle change is usually the starting point.",
+      "evidence": [
+        {
+          "quote": "Treatment of test condition usually starts with lifestyle changes such as regular exercise.",
+          "statement": "Treatment usually starts with lifestyle changes.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Alphamab",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with test condition",
+      "summary": "A medicine that may help.",
+      "evidence": [
+        {
+          "quote": "Medicines such as alphamab may also help.",
+          "statement": "Alphamab may help.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

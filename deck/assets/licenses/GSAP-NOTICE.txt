@@ -1,0 +1,15 @@
+GSAP 3.14.2 (assets/vendor/gsap-3.14.2.min.js)
+https://gsap.com
+
+Copyright 2025, GreenSock. All rights reserved.
+Distributed under the GSAP Standard "no charge" license:
+https://gsap.com/standard-license
+
+The file is vendored unmodified from the npm package gsap@3.14.2 (dist/gsap.min.js)
+so the deck and the render never fetch scripts from a CDN.
+
+Licence terms (checked 2026-10-03, https://gsap.com/standard-license): GSAP is owned by Webflow, Inc. and is
+free to use, reproduce and display under the Standard "no charge" license. You may not remove or alter its
+proprietary notices (the banner at the top of the vendored file is therefore kept), and you may not use it
+in no-code visual animation builders that compete with Webflow. GSAP is NOT covered by this repository's
+MIT licence; see THIRD_PARTY_NOTICES.md at the repository root.

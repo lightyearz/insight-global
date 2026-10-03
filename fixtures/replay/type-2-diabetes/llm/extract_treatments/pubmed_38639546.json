@@ -1,0 +1,112 @@
+{
+  "is_relevant": true,
+  "issuing_body": "American College of Physicians",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Metformin",
+      "category": "pharmacologic",
+      "drug_class": "Biguanide",
+      "line_of_therapy": "first_line",
+      "population": "Nonpregnant adults with type 2 diabetes",
+      "summary": "Metformin, together with lifestyle modification, is the background therapy to which ACP adds newer agents when glycemic control is inadequate.",
+      "evidence": [
+        {
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications",
+          "statement": "Newer agents are recommended as additions to existing metformin and lifestyle therapy, which positions metformin as the background first-line drug.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Lifestyle modification",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Nonpregnant adults with type 2 diabetes",
+      "summary": "Lifestyle modification is part of the baseline regimen that newer drugs are added to.",
+      "evidence": [
+        {
+          "quote": "to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control",
+          "statement": "Lifestyle modification is assumed as part of baseline therapy alongside metformin.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "SGLT-2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and inadequate glycemic control on metformin and lifestyle modification",
+      "summary": "Strongly recommended as an add-on to metformin to reduce mortality, cardiovascular events, CKD progression and heart-failure hospitalisation.",
+      "evidence": [
+        {
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended"
+        },
+        {
+          "quote": "Use an SGLT-2 inhibitor to reduce the risk for all-cause mortality, major adverse cardiovascular events, progression of chronic kidney disease, and hospitalization due to congestive heart failure.",
+          "statement": "SGLT-2 inhibitors are preferred when the goal is to reduce mortality, cardiovascular events, CKD progression or heart-failure hospitalisation.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "GLP-1 agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and inadequate glycemic control on metformin and lifestyle modification",
+      "summary": "Strongly recommended as an add-on to metformin to reduce mortality, cardiovascular events and stroke.",
+      "evidence": [
+        {
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended"
+        },
+        {
+          "quote": "Use a GLP-1 agonist to reduce the risk for all-cause mortality, major adverse cardiovascular events, and stroke.",
+          "statement": "GLP-1 agonists are preferred when the goal is to reduce mortality, cardiovascular events or stroke.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "DPP-4 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Dipeptidyl peptidase-4 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and inadequate glycemic control on metformin and lifestyle modification",
+      "summary": "ACP recommends against adding a DPP-4 inhibitor to metformin to reduce morbidity and all-cause mortality.",
+      "evidence": [
+        {
+          "quote": "ACP recommends against adding a dipeptidyl peptidase-4 (DPP-4) inhibitor to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control to reduce morbidity and all-cause mortality (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends against DPP-4 inhibitors as the add-on to metformin.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended_against"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": null
+}

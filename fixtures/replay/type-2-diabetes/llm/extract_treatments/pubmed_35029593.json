@@ -1,0 +1,46 @@
+{
+  "is_relevant": true,
+  "issuing_body": "American College of Sports Medicine",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Regular physical activity and reduced sedentary time",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Individuals of various ages with type 2 diabetes",
+      "summary": "Regular physical activity of various types, plus reducing and breaking up sedentary time, improves health and glycemic management.",
+      "evidence": [
+        {
+          "quote": "People with type 2 diabetes should engage in physical activity regularly and be encouraged to reduce sedentary time and break up sitting time with frequent activity breaks.",
+          "statement": "Regular physical activity and frequent breaks in sitting are recommended.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "Various types of physical activity enhance health and glycemic management in people with type 2 diabetes",
+          "statement": "Multiple types of physical activity improve health and glucose control.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "date_precision": "year",
+          "label": "ACSM position stand on exercise and type 2 diabetes (later updated)",
+          "quote": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes."
+        },
+        {
+          "date": "2018",
+          "date_precision": "year",
+          "label": "2018 Physical Activity Guidelines for Americans apply to people with type 2 diabetes",
+          "quote": "the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications"
+        }
+      ]
+    }
+  ],
+  "notes": null
+}

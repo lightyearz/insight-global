@@ -1,0 +1,58 @@
+{
+  "is_relevant": true,
+  "issuing_body": "American College of Physicians and American Academy of Family Physicians",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Pharmacologic treatment to a systolic target below 150 mm Hg",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults aged 60 years or older with systolic BP persistently ≥150 mm Hg",
+      "summary": "Treatment is started at a systolic pressure of 150 mm Hg or more with a target below 150 mm Hg; goals are set through periodic discussion of benefits and harms.",
+      "evidence": [
+        {
+          "quote": "ACP and AAFP recommend that clinicians initiate treatment in adults aged 60 years or older with systolic blood pressure persistently at or above 150 mm Hg to achieve a target systolic blood pressure of less than 150 mm Hg to reduce the risk for mortality, stroke, and cardiac events.",
+          "statement": "Adults 60 or older with systolic pressure persistently at or above 150 mm Hg should be treated to below 150 mm Hg.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-quality evidence",
+          "stance": "recommended"
+        },
+        {
+          "quote": "ACP and AAFP recommend that clinicians select the treatment goals for adults aged 60 years or older based on a periodic discussion of the benefits and harms of specific blood pressure targets with the patient.",
+          "statement": "Targets for adults 60 or older are chosen through periodic discussion of benefits and harms.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Pharmacologic treatment to a systolic target below 140 mm Hg",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults aged 60 years or older with prior stroke or TIA, or at high cardiovascular risk",
+      "summary": "A lower target below 140 mm Hg is considered for adults 60 or older after stroke or TIA, and for some at high cardiovascular risk.",
+      "evidence": [
+        {
+          "quote": "ACP and AAFP recommend that clinicians consider initiating or intensifying pharmacologic treatment in adults aged 60 years or older with a history of stroke or transient ischemic attack to achieve a target systolic blood pressure of less than 140 mm Hg to reduce the risk for recurrent stroke.",
+          "statement": "After stroke or TIA, consider treating adults 60 or older to below 140 mm Hg to reduce recurrent stroke.",
+          "recommendation_strength": "weak recommendation",
+          "evidence_level": "moderate-quality evidence",
+          "stance": "conditional"
+        },
+        {
+          "quote": "ACP and AAFP recommend that clinicians consider initiating or intensifying pharmacologic treatment in some adults aged 60 years or older at high cardiovascular risk, based on individualized assessment, to achieve a target systolic blood pressure of less than 140 mm Hg to reduce the risk for stroke or cardiac events.",
+          "statement": "For some adults 60 or older at high cardiovascular risk, consider a target below 140 mm Hg.",
+          "recommendation_strength": "weak recommendation",
+          "evidence_level": "low-quality evidence",
+          "stance": "conditional"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Published January 2017, before the 2017 ACC/AHA and later guidelines; older than the usual research window."
+}

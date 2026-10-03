@@ -1,0 +1,94 @@
+{
+  "is_relevant": true,
+  "issuing_body": "Hypertension Canada",
+  "region": null,
+  "treatments": [
+    {
+      "name": "Healthy lifestyle changes",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults aged 18 years and older with hypertension in primary care",
+      "summary": "Healthy lifestyle changes are one of the core treatment recommendations.",
+      "evidence": [
+        {
+          "quote": "Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy.",
+          "statement": "Treatment recommendations include implementing healthy lifestyle changes.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Stepwise antihypertensive medication",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension requiring pharmacotherapy in primary care",
+      "summary": "The guideline gives stepwise guidance on optimal medication choices for patients who need pharmacotherapy.",
+      "evidence": [
+        {
+          "quote": "Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy.",
+          "statement": "The guideline provides stepwise guidance on medication choices for patients requiring pharmacotherapy.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "Accurate diagnosis and optimal treatment of hypertension can reduce adverse cardiovascular events and risk of death.",
+          "statement": "Accurate diagnosis and optimal treatment can reduce cardiovascular events and death.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Systolic blood pressure target below 130 mm Hg",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with hypertension (defined as BP ≥130/80 mm Hg) in primary care",
+      "summary": "Treatment targets a systolic blood pressure below 130 mm Hg, alongside a uniform hypertension definition of 130/80 mm Hg or more.",
+      "evidence": [
+        {
+          "quote": "Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy.",
+          "statement": "Treatment recommendations include a systolic target below 130 mm Hg.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "Diagnostic recommendations include a standardized approach to measuring blood pressure (BP) and confirming hypertension, as well as providing a uniform definition for hypertension of BP ≥ 130/80 mm Hg.",
+          "statement": "Hypertension is defined uniformly as blood pressure of 130/80 mm Hg or more.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Standardized blood pressure measurement",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults being assessed for hypertension in primary care",
+      "summary": "A standardized approach to measuring blood pressure and confirming hypertension is part of the diagnostic recommendations.",
+      "evidence": [
+        {
+          "quote": "Diagnostic recommendations include a standardized approach to measuring blood pressure (BP) and confirming hypertension, as well as providing a uniform definition for hypertension of BP ≥ 130/80 mm Hg.",
+          "statement": "The guideline recommends a standardized approach to measuring blood pressure and confirming hypertension.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Canadian guideline; region left null because Canada is not one of the supported regions. GRADE is named as the method but no per-recommendation grades appear in the abstract."
+}

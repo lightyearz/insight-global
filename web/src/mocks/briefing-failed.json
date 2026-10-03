@@ -1,0 +1,393 @@
+{
+  "id": "brf_854ad720cbdc",
+  "condition": {
+    "input": "hypertension",
+    "label": "Hypertension",
+    "mesh_id": "D006973",
+    "synonyms": [
+      "Blood Pressure, High"
+    ]
+  },
+  "region": "US",
+  "status": "failed",
+  "created_by": "analyst2",
+  "created_at": "2026-10-03T17:09:05.344557Z",
+  "updated_at": "2026-10-03T17:09:08.960883Z",
+  "research_started_at": "2026-10-03T17:09:05.356955Z",
+  "research_completed_at": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "id": "pubmed:39589443",
+      "connector": "pubmed",
+      "title": "[Elevated blood pressure and hypertension : Focus of the 2024 ESC guidelines on risk reduction].",
+      "publisher": "Herz",
+      "issuing_body": null,
+      "authors": [
+        "Schmieder RS",
+        "Schunkert H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39589443/",
+      "pmid": "39589443",
+      "doi": "10.1007/s00059-024-05285-8",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2024-11-26",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "The 2024 guidelines of the European Society of Cardiology (ESC) for the management of elevated blood pressure and hypertension introduce the new category \"elevated blood pressure\" (120-139/70-89 mm Hg). All patients with elevated blood pressure are advised to implement lifestyle modifications. … In addition, a structured assessment should be carried out based on the comorbidities, such as coronary artery disease, heart failure and stroke as well as on risk factors, which can result from an antihypertensive treatment in cases of moderate to high risk and a blood pressure of 130/80 mm Hg or more despite 3 months of lifestyle modifications. For patients with hypertension (≥ 140/90 mm Hg), the guidelines now recommend initiating lifestyle modifications and antihypertensive medication concurrently. The new target systolic blood pressure is 120-129 mm Hg, with establishment of individualized treatment goals in cases of frailty or age ≥85 years. Compared to the guidelines of the European Society of Hypertension (ESH) and the German national guidelines (NVL), the ESC extends the treatment recommendations to patients with elevated blood pressure even below the threshold of 140/90 mm Hg. For resistant hypertension spironolactone is recommended, with renal denervation being an alternative option to increasing the antihypertensive medication."
+    },
+    {
+      "id": "pubmed:40419299",
+      "connector": "pubmed",
+      "title": "Hypertension Canada guideline for the diagnosis and treatment of hypertension in adults in primary care.",
+      "publisher": "CMAJ : Canadian Medical Association journal = journal de l'Association medicale canadienne",
+      "issuing_body": null,
+      "authors": [
+        "Goupil R",
+        "Tsuyuki RT",
+        "Santesso N",
+        "Terenzi KA",
+        "Habert J",
+        "Cheng G",
+        "Gysel SC",
+        "Bruneau J",
+        "Leung AA",
+        "Campbell NRC",
+        "Schiffrin EL",
+        "Hundemer GL"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40419299/",
+      "pmid": "40419299",
+      "doi": "10.1503/cmaj.241770",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2025-05-25",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "Diagnostic recommendations include a standardized approach to measuring blood pressure (BP) and confirming hypertension, as well as providing a uniform definition for hypertension of BP ≥ 130/80 mm Hg. Treatment recommendations include targeting a systolic BP < 130 mm Hg, implementing healthy lifestyle changes, and providing stepwise guidance on optimal medication choices for patients requiring pharmacotherapy. … Accurate diagnosis and optimal treatment of hypertension can reduce adverse cardiovascular events and risk of death."
+    },
+    {
+      "id": "pubmed:34152826",
+      "connector": "pubmed",
+      "title": "Management of Blood Pressure in Patients With Chronic Kidney Disease Not Receiving Dialysis: Synopsis of the 2021 KDIGO Clinical Practice Guideline.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": null,
+      "authors": [
+        "Tomson CRV",
+        "Cheung AK",
+        "Mann JFE",
+        "Chang TI",
+        "Cushman WC",
+        "Furth SL",
+        "Hou FF",
+        "Knoll GA",
+        "Muntner P",
+        "Pecoits-Filho R",
+        "Tobe SW",
+        "Lytvyn L",
+        "Craig JC",
+        "Tunnicliffe DJ",
+        "Howell M",
+        "Tonelli M",
+        "Cheung M",
+        "Earley A",
+        "Ix JH",
+        "Sarnak MJ"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34152826/",
+      "pmid": "34152826",
+      "doi": "10.7326/M21-0834",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2021-06-22",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "DESCRIPTION: The Kidney Disease: Improving Global Outcomes (KDIGO) 2021 clinical practice guideline for the management of blood pressure (BP) in patients with chronic kidney disease (CKD) not receiving dialysis is an update of the KDIGO 2012 guideline on the same topic and reflects new evidence on the risks and benefits of BP-lowering therapy among patients with CKD. … In particular, the synopsis focuses on recommendations for standardized BP measurement and a target systolic BP of less than 120 mm Hg, because these recommendations differ from some other guidelines."
+    },
+    {
+      "id": "pubmed:28135725",
+      "connector": "pubmed",
+      "title": "Pharmacologic Treatment of Hypertension in Adults Aged 60 Years or Older to Higher Versus Lower Blood Pressure Targets: A Clinical Practice Guideline From the American College of Physicians and the American Academy of Family Physicians.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": null,
+      "authors": [
+        "Qaseem A",
+        "Wilt TJ",
+        "Rich R",
+        "Humphrey LL",
+        "Frost J",
+        "Forciea MA",
+        "Clinical Guidelines Committee of the American College of Physicians and the Commission on Health of the Public and Science of the American Academy of Family Physicians",
+        "Fitterman N",
+        "Barry MJ",
+        "Horwitch CA",
+        "Iorio A",
+        "McLean RM"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28135725/",
+      "pmid": "28135725",
+      "doi": "10.7326/M16-1785",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2017-01-17",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "RECOMMENDATION 1: ACP and AAFP recommend that clinicians initiate treatment in adults aged 60 years or older with systolic blood pressure persistently at or above 150 mm Hg to achieve a target systolic blood pressure of less than 150 mm Hg to reduce the risk for mortality, stroke, and cardiac events. … ACP and AAFP recommend that clinicians select the treatment goals for adults aged 60 years or older based on a periodic discussion of the benefits and harms of specific blood pressure targets with the patient. RECOMMENDATION 2: ACP and AAFP recommend that clinicians consider initiating or intensifying pharmacologic treatment in adults aged 60 years or older with a history of stroke or transient ischemic attack to achieve a target systolic blood pressure of less than 140 mm Hg to reduce the risk for recurrent stroke. … RECOMMENDATION 3: ACP and AAFP recommend that clinicians consider initiating or intensifying pharmacologic treatment in some adults aged 60 years or older at high cardiovascular risk, based on individualized assessment, to achieve a target systolic blood pressure of less than 140 mm Hg to reduce the risk for stroke or cardiac events."
+    },
+    {
+      "id": "pubmed:39688187",
+      "connector": "pubmed",
+      "title": "Higher blood pressure targets for hypertension in older adults.",
+      "publisher": "The Cochrane database of systematic reviews",
+      "issuing_body": null,
+      "authors": [
+        "Falk JM",
+        "Froentjes L",
+        "Kirkwood JE",
+        "Heran BS",
+        "Kolber MR",
+        "Allan GM",
+        "Korownyk CS",
+        "Garrison SR"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39688187/",
+      "pmid": "39688187",
+      "doi": "10.1002/14651858.CD011575.pub3",
+      "source_type": "systematic_review",
+      "reliability_tier": 2,
+      "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2024-12-17",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "Current clinical practice guidelines are inconsistent in target BP recommendations for older adults, with systolic BP targets ranging from < 130 mmHg to < 150 mmHg. … AUTHORS' CONCLUSIONS: When comparing a higher BP target, in the range of < 150 to 160/95 to 105 mmHg, to a lower BP target of 140/90 or lower, over two to four years of follow-up, there is high-certainty evidence that the lower BP target reduces stroke, and moderate-certainty evidence that the lower BP target likely reduces serious cardiovascular events. … Although additional research is warranted in those who are 80 years of age and older, and those who are frail (in whom risks and benefits may differ), conventional BP targets may be appropriate for the majority of older adults."
+    },
+    {
+      "id": "pubmed:35000192",
+      "connector": "pubmed",
+      "title": "Calcium channel blockers versus other classes of drugs for hypertension.",
+      "publisher": "The Cochrane database of systematic reviews",
+      "issuing_body": null,
+      "authors": [
+        "Zhu J",
+        "Chen N",
+        "Zhou M",
+        "Guo J",
+        "Zhu C",
+        "Zhou J",
+        "Ma M",
+        "He L"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35000192/",
+      "pmid": "35000192",
+      "doi": "10.1002/14651858.CD003654.pub6",
+      "source_type": "systematic_review",
+      "reliability_tier": 2,
+      "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2022-01-09",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "All-cause mortality was not different between first-line CCBs and any other antihypertensive classes. … As compared to beta-blockers, CCBs reduced the following outcomes: major cardiovascular events (RR 0.84, 95% CI 0.77 to 0.92), stroke (RR 0.77, 95% CI 0.67 to 0.88, moderate-certainty evidence), and cardiovascular mortality (RR 0.90, 95% CI 0.81 to 0.99, low-certainty evidence). … AUTHORS' CONCLUSIONS: For the treatment of hypertension, there is moderate certainty evidence that diuretics reduce major cardiovascular events and congestive heart failure more than CCBs. There is low to moderate certainty evidence that CCBs probably reduce major cardiovascular events more than beta-blockers. There is low to moderate certainty evidence that CCBs reduced stroke when compared to angiotensin-converting enzyme (ACE) inhibitors and reduced myocardial infarction when compared to angiotensin receptor blockers (ARBs), but increased congestive heart failure when compared to ACE inhibitors and ARBs. Many of the differences found in the current review are not robust, and further trials might change the conclusions."
+    },
+    {
+      "id": "pubmed:33332584",
+      "connector": "pubmed",
+      "title": "Blood pressure targets in adults with hypertension.",
+      "publisher": "The Cochrane database of systematic reviews",
+      "issuing_body": null,
+      "authors": [
+        "Arguedas JA",
+        "Leiva V",
+        "Wright JM"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33332584/",
+      "pmid": "33332584",
+      "doi": "10.1002/14651858.CD004349.pub3",
+      "source_type": "systematic_review",
+      "reliability_tier": 2,
+      "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2020-12-17",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "Lower targets do not reduce total mortality (risk ratio (RR) 0.95, 95% confidence interval (CI) 0.86 to 1.05; 11 trials, 38,688 participants; high-certainty evidence) and do not reduce total serious adverse events (RR 1.04, 95% CI 0.99 to 1.08; 6 trials, 18,165 participants; moderate-certainty evidence). … AUTHORS' CONCLUSIONS: For the general population of persons with elevated blood pressure, the benefits of trying to achieve a lower blood pressure target rather than a standard target (≤ 140/90 mm Hg) do not outweigh the harms associated with that intervention. … The results of this review are primarily applicable to older people with moderate to high cardiovascular risk."
+    },
+    {
+      "id": "pubmed:32371789",
+      "connector": "pubmed",
+      "title": "Impact of single-pill combination therapy on adherence, blood pressure control, and clinical outcomes: a rapid evidence assessment of recent literature.",
+      "publisher": "Journal of hypertension",
+      "issuing_body": null,
+      "authors": [
+        "Tsioufis K",
+        "Kreutz R",
+        "Sykara G",
+        "van Vugt J",
+        "Hassan T"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32371789/",
+      "pmid": "32371789",
+      "doi": "10.1097/HJH.0000000000002381",
+      "source_type": "systematic_review",
+      "reliability_tier": 2,
+      "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2020-06",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:55:05.314215Z",
+      "excerpt": "OBJECTIVE: The 2018 European Society of Cardiology/European Society of Hypertension Guidelines for the management of arterial hypertension raised the need for evidence to support the use of single-pill combination (SPC) therapy in preference to free-dosed therapy for hypertension. … A range of SPC therapies were studied, with calcium channel blocker/angiotensin receptor blocker combinations most common (11/29 studies). … CONCLUSION: Adherence and/or persistence were generally higher in patients taking antihypertensives as SPC vs. free-dose combination; however, methodological reporting was suboptimal to facilitate comparison. Specifically designed, well reported studies are required to determine if the increased adherence/persistence seen in patients on SPC regimen leads to improved BP control and/or cardiovascular outcomes."
+    },
+    {
+      "id": "medlineplus:highbloodpressure",
+      "connector": "medlineplus",
+      "title": "High Blood Pressure",
+      "publisher": "National Library of Medicine",
+      "issuing_body": null,
+      "authors": [],
+      "url": "https://medlineplus.gov/highbloodpressure.html",
+      "pmid": null,
+      "doi": null,
+      "source_type": "consumer_health_summary",
+      "reliability_tier": 3,
+      "tier_rationale": "Rule: MedlinePlus health topic (NLM-curated consumer health summary)",
+      "region": "US",
+      "region_inferred": false,
+      "published_at": "1998-11-14",
+      "updated_at": "2026-01-22",
+      "retrieved_at": "2026-10-03T15:55:06.220525Z",
+      "excerpt": "What is blood pressure?\n\nBlood pressure is the force of your blood pushing against the walls of your arteries. Each time your heart beats, it pumps blood into the arteries. Your blood pressure is highest when your heart beats, pumping the blood. This is called systolic pressure. When your heart is at rest, between beats, your blood pressure falls. This is called diastolic pressure.\n\nYour blood pressure reading uses these two numbers. Usually the systolic number comes before or above the diastolic number. For example, 120/80 means a systolic of 120 and a diastolic of 80.\n\nHow is high blood pressure diagnosed?\n\nHigh blood pressure usually has no symptoms. So the only way to find out if you have it is to get regular blood pressure checks from your health care provider. Your provider will use a gauge, a stethoscope or electronic sensor, and a blood pressure cuff. They will take two or more readings at separate appointments before making a diagnosis.\n\nBlood Pressure CategorySystolic Blood PressureDiastolic Blood PressureNormalLess than 120andLess than 80Elevated120 - 129andLess than 80High Blood Pressure Stage 1130 - 139or80 - 89High Blood Pressure Stage 2140 or higheror90 or higherHypertensive Crisis (dangerously high blood pressure - seek medical care right away)Higher than 180andHigher than 120\n\nFor children and teens, the health care provider compares the blood pressure reading to what is normal for other kids who are the same age, height, and sex.\n\nWhat are the different types of high blood pressure?\n\nThere are two main types of high blood pressure:\n\n- Primary, or essential, high blood pressure. This is the most common type of high blood pressure. For most people who get this kind of blood pressure, it develops over time as you get older.\n- Secondary high blood pressure. This is caused by another medical condition or use of certain medicines. It usually gets better after you treat that condition or stop taking the medicines that are causing it.Why do I need to worry about high blood pressure?\n\nWhen your blood pressure stays high over time, it causes the heart to pump harder and work overtime, possibly leading to serious health problems such as heart attack, stroke, heart failure, and kidney failure.\n\nWhat are the treatments for high blood pressure?\n\nTreatments for high blood pressure include heart-healthy lifestyle changes and medicines.\n\nYou will work with your provider to come up with a treatment plan. It may include only the lifestyle changes. These changes, such as heart-healthy eating and exercise, can be very effective. But sometimes the changes do not control or lower your high blood pressure. Then you may need to take medicine. There are different types of blood pressure medicines. Some people need to take more than one type.\n\nIf your high blood pressure is caused by another medical condition or medicine, treating that condition or stopping the medicine may lower your blood pressure.\n\nNIH: National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "search_strategy": {
+    "condition_input": "hypertension",
+    "normalised_label": "Hypertension",
+    "mesh_id": "D006973",
+    "normalisation": "replay_fixture",
+    "connectors": [
+      "PubMed (NCBI E-utilities): up to 6 guidelines and 6 systematic reviews / meta-analyses, by relevance",
+      "MedlinePlus Health Topics (NLM consumer summary), with page created/modified dates"
+    ],
+    "pubmed_queries": [
+      "(\"Hypertension\"[MeSH Major Topic]) AND (Practice Guideline[pt] OR Guideline[pt]) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract",
+      "(\"Hypertension\"[MeSH Major Topic]) AND (Systematic Review[pt] OR Meta-Analysis[pt]) AND (therapy OR treatment OR management) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract"
+    ],
+    "publication_types": [
+      "Practice Guideline",
+      "Guideline",
+      "Systematic Review",
+      "Meta-Analysis"
+    ],
+    "date_window": "2020 to present (PubMed publication date), English, with abstract",
+    "max_sources": 12,
+    "sources_found": 9,
+    "sources_selected": 9,
+    "tier_rules": [
+      "Tier 1 (guideline): PubMed publication type Practice Guideline / Guideline, or a title that identifies a guidance document (guideline, guidance / consensus / position statement) or a known guideline body's recommendations.",
+      "Tier 2 (systematic review): PubMed publication type Systematic Review / Meta-Analysis.",
+      "Tier 3 (curated summary): MedlinePlus health topic (NLM-curated consumer summary).",
+      "Tier 4 (other): any other publication."
+    ],
+    "data_mode": "replay",
+    "note": "Replay: these sources were recorded earlier (see 'Retrieved' dates); the queries are the ones a live run issues."
+  },
+  "treatment_options": [],
+  "conflicts": [],
+  "audit_log": [
+    {
+      "at": "2026-10-03T17:09:05.344557Z",
+      "actor": "analyst2",
+      "action": "briefing_created",
+      "target_id": null,
+      "detail": "Briefing created for 'hypertension' (region US, replay data)."
+    }
+  ],
+  "report": null,
+  "run": {
+    "llm_provider": "replay",
+    "data_mode": "replay",
+    "model": "replay",
+    "model_lite": "replay",
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "est_cost_usd": 0.0,
+    "model_versions": [],
+    "steps": [
+      {
+        "name": "normalize_condition",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:05.356949Z",
+        "ended_at": "2026-10-03T17:09:05.767996Z",
+        "detail": "Hypertension (MeSH D006973)"
+      },
+      {
+        "name": "retrieve_sources",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:05.776053Z",
+        "ended_at": "2026-10-03T17:09:06.188183Z",
+        "detail": "9 sources (8 PubMed, 1 MedlinePlus)"
+      },
+      {
+        "name": "extract_treatments",
+        "status": "failed",
+        "started_at": "2026-10-03T17:09:06.196371Z",
+        "ended_at": null,
+        "detail": "Interrupted by server restart"
+      },
+      {
+        "name": "consolidate_options",
+        "status": "pending",
+        "started_at": null,
+        "ended_at": null,
+        "detail": null
+      },
+      {
+        "name": "detect_conflicts",
+        "status": "pending",
+        "started_at": null,
+        "ended_at": null,
+        "detail": null
+      },
+      {
+        "name": "suggest_relevance",
+        "status": "pending",
+        "started_at": null,
+        "ended_at": null,
+        "detail": null
+      },
+      {
+        "name": "human_review",
+        "status": "pending",
+        "started_at": null,
+        "ended_at": null,
+        "detail": null
+      },
+      {
+        "name": "write_report",
+        "status": "pending",
+        "started_at": null,
+        "ended_at": null,
+        "detail": null
+      }
+    ]
+  },
+  "error": "Interrupted by server restart; use Retry to resume from the last checkpoint"
+}

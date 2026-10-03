@@ -1,0 +1,58 @@
+{
+  "is_relevant": true,
+  "issuing_body": "American College of Physicians",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Individualized HbA1c targets",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Nonpregnant outpatient adults with type 2 diabetes",
+      "summary": "Glycemic goals should be personalised; for most patients the target HbA1c is 7% to 8%.",
+      "evidence": [
+        {
+          "quote": "Clinicians should personalize goals for glycemic control in patients with type 2 diabetes on the basis of a discussion of benefits and harms of pharmacotherapy, patients' preferences, patients' general health and life expectancy, treatment burden, and costs of care.",
+          "statement": "Glycemic goals should be personalised through discussion of benefits, harms, preferences, health, life expectancy, burden and cost.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes.",
+          "statement": "ACP sets an HbA1c target of 7% to 8% for most patients.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Deintensification of pharmacologic therapy",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes with HbA1c below 6.5% or limited life expectancy",
+      "summary": "Consider deintensifying when HbA1c is below 6.5%, and avoid targeting HbA1c when life expectancy is under 10 years.",
+      "evidence": [
+        {
+          "quote": "Clinicians should consider deintensifying pharmacologic therapy in patients with type 2 diabetes who achieve HbA1c levels less than 6.5%.",
+          "statement": "Drug therapy should be reduced when HbA1c falls below 6.5%.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "avoid targeting an HbA1c level in patients with a life expectancy less than 10 years due to advanced age (80 years or older), residence in a nursing home, or chronic conditions",
+          "statement": "For people with limited life expectancy, treat symptoms rather than an HbA1c target.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Guidance statement reviewing other national guidelines on HbA1c targets."
+}

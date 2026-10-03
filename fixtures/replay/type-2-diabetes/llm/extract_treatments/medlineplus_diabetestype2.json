@@ -1,0 +1,87 @@
+{
+  "is_relevant": true,
+  "issuing_body": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Healthy lifestyle (eating plan and physical activity)",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "People with type 2 diabetes",
+      "summary": "Many people can manage blood glucose through a healthy eating plan and regular physical activity.",
+      "evidence": [
+        {
+          "quote": "Many people are able to do this by living a healthy lifestyle.",
+          "statement": "Many people can manage their blood glucose with a healthy lifestyle.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "A healthy lifestyle includes following a healthy eating plan and getting regular physical activity.",
+          "statement": "A healthy lifestyle means a healthy eating plan and regular physical activity.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Diabetes medicines including insulin",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with type 2 diabetes who cannot reach glucose goals with lifestyle alone",
+      "summary": "Oral medicines, insulin and other injectables are used; some people need more than one medicine over time.",
+      "evidence": [
+        {
+          "quote": "Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.",
+          "statement": "Medicines include oral agents, insulin and other injectables, often in combination over time.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Blood glucose self-monitoring",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with type 2 diabetes",
+      "summary": "Regular blood glucose checks at a frequency set by the provider.",
+      "evidence": [
+        {
+          "quote": "You will need to check your blood glucose regularly. Your provider will tell you how often you need to do it.",
+          "statement": "People with type 2 diabetes check their blood glucose regularly as advised.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Blood pressure and cholesterol control",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with type 2 diabetes",
+      "summary": "Keeping blood pressure and cholesterol near provider-set targets is part of management.",
+      "evidence": [
+        {
+          "quote": "It's also important to keep your blood pressure and cholesterol levels close to the targets your provider sets for you.",
+          "statement": "Blood pressure and cholesterol should be kept near individual targets.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Consumer health summary; no recommendation strengths or evidence levels."
+}

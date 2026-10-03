@@ -1,0 +1,101 @@
+{
+  "is_relevant": true,
+  "issuing_body": "German National Disease Management Guideline (NVL) programme",
+  "region": "EU",
+  "treatments": [
+    {
+      "name": "GLP-1 receptor agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and cardiovascular disease",
+      "summary": "Drug choice should consider cardiovascular and renal risk; GLP-1 receptor agonists lowered all-cause mortality in people with cardiovascular disease.",
+      "evidence": [
+        {
+          "quote": "Cardiovascular and renal risks are to be considered in the choice of drug.",
+          "statement": "Cardiovascular and renal risk should guide which glucose-lowering drug is chosen.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        },
+        {
+          "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+          "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "date_precision": "year",
+          "label": "German NDMG pharmacotherapy recommendations (reaffirmed in 2023)",
+          "quote": "Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline."
+        }
+      ]
+    },
+    {
+      "name": "SGLT2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and cardiovascular disease",
+      "summary": "Lowered all-cause mortality, heart-failure hospitalisation and worsening renal function in people with cardiovascular disease.",
+      "evidence": [
+        {
+          "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+          "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "hospitalization for heart failure (SGLT2 inhibitors: OR = 0.65)",
+          "statement": "SGLT2 inhibitors also lowered the odds of hospitalisation for heart failure.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Shared decision making",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes whose individual treatment goals have not been achieved",
+      "summary": "A structured shared-decision-making approach is described for when individual goals are not met.",
+      "evidence": [
+        {
+          "quote": "The new chapter on shared decision making includes a description of a structured approach that can be used when individual treatment goals have not been achieved.",
+          "statement": "The guideline adds a structured shared-decision-making process.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "HbA1c target values",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes",
+      "summary": "The guideline group made no recommendation on HbA1c target values because evidence certainty was inadequate.",
+      "evidence": [
+        {
+          "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities.",
+          "statement": "No recommendation on HbA1c target values was made due to insufficient evidence certainty.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "insufficient_evidence"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "German national guideline; pharmacotherapy recommendations of the 2021 version reaffirmed."
+}

@@ -1,0 +1,23 @@
+{
+  "name": "health-briefing-deck",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Three-slide HyperFrames deck and linear video for the Health Briefing prototype (non-technical healthcare strategy audience).",
+  "license": "MIT",
+  "scripts": {
+    "present": "HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes present --port 3004",
+    "preview": "HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes preview",
+    "video:sync": "node scripts/sync-video.mjs",
+    "lint": "npm run video:sync && HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes lint && HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes lint video",
+    "check": "npm run video:sync && HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes check --strict --at-transitions --at 3.45,8.85,13.95,18.4,22.45,27.95,32.9,38.4,43.45,49.55,52.5,59.9 && HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes check --strict --at-transitions --at 3.45,8.85,13.95,18.4,22.45,27.95,32.9,38.4,43.45,49.55,52.5,59.9 video",
+    "snapshot": "HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes snapshot --at 5.6,10.9,18.4,24.9,31.6,38.4,48.9,52.5,59.9 --no-end --describe false -o dist/snapshots",
+    "render": "npm run video:sync && HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes render video -o dist/health-briefing-stakeholders.mp4 --quality standard --fps 30",
+    "doctor": "HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_NO_UPDATE_CHECK=1 hyperframes doctor"
+  },
+  "devDependencies": {
+    "hyperframes": "0.8.114"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "options": [
+    {
+      "id": "opt-alphamab",
+      "name": "Alphamab",
+      "category": "pharmacologic",
+      "drug_class": "Synthetic antibody",
+      "line_of_therapy": "first_line",
+      "population": "Adults with test condition",
+      "summary": "Recommended first-line pharmacotherapy in the 2024 guideline.",
+      "member_refs": ["pubmed:1000001#0", "medlineplus:testcondition#1"],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-betacillin",
+      "name": "Betacillin",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults not at target",
+      "summary": "Add-on in the guideline; first-line in an older review.",
+      "member_refs": ["pubmed:1000001#1", "pubmed:1000002#0"],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-structured-exercise",
+      "name": "Structured exercise",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All patients with test condition",
+      "summary": "Exercise programmes are recommended for everyone.",
+      "member_refs": ["pubmed:1000001#2", "medlineplus:testcondition#0"],
+      "confidence": "high"
+    }
+  ]
+}

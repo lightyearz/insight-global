@@ -1,0 +1,195 @@
+{
+  "options": [
+    {
+      "id": "opt-lifestyle-modification",
+      "name": "Lifestyle modification",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All adults with elevated blood pressure or hypertension",
+      "summary": "All three guideline-level sources place heart-healthy lifestyle change (diet, exercise) at the start of care. The 2024 ESC guidance advises it for everyone with elevated blood pressure and starts it alongside medication in hypertension; Hypertension Canada lists it among its treatment recommendations.",
+      "member_refs": [
+        "pubmed:39589443#0",
+        "pubmed:40419299#0",
+        "medlineplus:highbloodpressure#0"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-antihypertensive-drug-therapy",
+      "name": "Antihypertensive drug therapy",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension (≥140/90 mm Hg), or ≥130/80 mm Hg at moderate-to-high risk after lifestyle change",
+      "summary": "Medication is started together with lifestyle change at 140/90 mm Hg or more under the 2024 ESC guidance, and may be considered from 130/80 mm Hg in moderate-to-high-risk patients. Hypertension Canada gives stepwise medication guidance, and MedlinePlus notes some people need more than one type of medicine.",
+      "member_refs": [
+        "pubmed:39589443#1",
+        "pubmed:40419299#1",
+        "medlineplus:highbloodpressure#1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-intensive-systolic-target",
+      "name": "Intensive systolic target (below 130 mm Hg)",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with treated hypertension (general population)",
+      "summary": "The 2024 ESC guidance targets 120-129 mm Hg and Hypertension Canada (2025) targets below 130 mm Hg. A 2020 Cochrane review found that lower targets did not reduce total mortality or serious adverse events versus a standard target of 140/90 mm Hg or lower.",
+      "member_refs": [
+        "pubmed:39589443#2",
+        "pubmed:40419299#2",
+        "pubmed:33332584#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-bp-targets-older-adults",
+      "name": "Blood pressure targets in older adults",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults aged 60-65 years or older with hypertension",
+      "summary": "The 2017 ACP/AAFP guideline targets a systolic pressure below 150 mm Hg for adults 60 or older, and below 140 mm Hg after stroke or TIA or at high cardiovascular risk. The 2024 Cochrane update found a target of 140/90 mm Hg or lower reduces stroke in adults 65 or older, and notes guideline targets range from below 130 to below 150 mm Hg.",
+      "member_refs": [
+        "pubmed:28135725#0",
+        "pubmed:28135725#1",
+        "pubmed:39688187#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-intensive-target-ckd",
+      "name": "Systolic target below 120 mm Hg in chronic kidney disease",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with chronic kidney disease not receiving dialysis",
+      "summary": "KDIGO 2021 recommends a systolic target below 120 mm Hg for adults with CKD not on dialysis, stating that this differs from some other guidelines.",
+      "member_refs": [
+        "pubmed:34152826#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-standardized-bp-measurement",
+      "name": "Standardized blood pressure measurement",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults being diagnosed or treated for hypertension, including those with CKD",
+      "summary": "Hypertension Canada and KDIGO both recommend a standardized approach to measuring blood pressure, used to confirm the diagnosis and to guide treatment.",
+      "member_refs": [
+        "pubmed:40419299#3",
+        "pubmed:34152826#1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "opt-diuretics",
+      "name": "Diuretics",
+      "category": "pharmacologic",
+      "drug_class": "Diuretic",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension starting first-line therapy",
+      "summary": "In a 2022 Cochrane review of first-line therapy, diuretics reduced major cardiovascular events and congestive heart failure more than calcium channel blockers (moderate certainty).",
+      "member_refs": [
+        "pubmed:35000192#1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-calcium-channel-blockers",
+      "name": "Calcium channel blockers",
+      "category": "pharmacologic",
+      "drug_class": "Calcium channel blocker",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension starting first-line therapy",
+      "summary": "First-line CCBs did not differ from other classes on all-cause mortality. They probably reduce major cardiovascular events more than beta-blockers but less than diuretics, and are the most-studied partner in single-pill combinations with ARBs.",
+      "member_refs": [
+        "pubmed:35000192#0"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-ace-inhibitors-and-arbs",
+      "name": "ACE inhibitors and angiotensin receptor blockers",
+      "category": "pharmacologic",
+      "drug_class": "ACE inhibitor / angiotensin receptor blocker",
+      "line_of_therapy": "first_line",
+      "population": "Adults with hypertension starting first-line therapy",
+      "summary": "Compared with CCBs, ACE inhibitors and ARBs were associated with less congestive heart failure, while CCBs reduced stroke versus ACE inhibitors and myocardial infarction versus ARBs (low to moderate certainty).",
+      "member_refs": [
+        "pubmed:35000192#2"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "opt-beta-blockers",
+      "name": "Beta-blockers",
+      "category": "pharmacologic",
+      "drug_class": "Beta-blocker",
+      "line_of_therapy": "alternative",
+      "population": "Adults with hypertension starting first-line therapy",
+      "summary": "As first-line therapy, beta-blockers were outperformed by CCBs on major cardiovascular events, stroke and cardiovascular mortality.",
+      "member_refs": [
+        "pubmed:35000192#3"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "opt-single-pill-combination",
+      "name": "Single-pill combination therapy",
+      "category": "pharmacologic",
+      "drug_class": "Fixed-dose combination",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with hypertension needing two or more drugs",
+      "summary": "Adherence and persistence are generally higher with single-pill than free-dose combinations, most often CCB/ARB pairs, but mostly observational evidence has not shown whether this improves BP control or cardiovascular outcomes.",
+      "member_refs": [
+        "pubmed:32371789#0"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "opt-spironolactone-resistant-hypertension",
+      "name": "Spironolactone for resistant hypertension",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Patients with resistant hypertension",
+      "summary": "The 2024 ESC guidance recommends spironolactone for resistant hypertension.",
+      "member_refs": [
+        "pubmed:39589443#3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "opt-renal-denervation",
+      "name": "Renal denervation",
+      "category": "procedural",
+      "drug_class": null,
+      "line_of_therapy": "alternative",
+      "population": "Patients with resistant hypertension",
+      "summary": "The 2024 ESC guidance names renal denervation as an alternative to adding further antihypertensive medication in resistant hypertension.",
+      "member_refs": [
+        "pubmed:39589443#4"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "opt-treat-underlying-cause",
+      "name": "Treating the underlying cause of secondary hypertension",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People whose high blood pressure is caused by another condition or a medicine",
+      "summary": "MedlinePlus notes that treating the causative condition or stopping the causative medicine may lower blood pressure.",
+      "member_refs": [
+        "medlineplus:highbloodpressure#2"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

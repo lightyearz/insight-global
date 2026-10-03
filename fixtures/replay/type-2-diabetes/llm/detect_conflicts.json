@@ -1,0 +1,76 @@
+{
+  "conflicts": [
+    {
+      "id": "conf-sglt2-glp1-for-lower-risk-adults",
+      "topic": "Should SGLT-2 inhibitors or GLP-1 receptor agonists be added for adults at lower cardiovascular and kidney risk?",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-sglt2-inhibitors",
+        "opt-glp-1-receptor-agonists"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:38639546",
+          "side": 1,
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or GLP-1 agonist to metformin for all adults with inadequate glycemic control, without stratifying by cardiovascular or kidney risk.",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence)."
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "side": 2,
+          "statement": "The BMJ living guideline gives a weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists for adults with three or fewer cardiovascular risk factors and no established CVD or CKD.",
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists."
+        }
+      ],
+      "ai_assessment": "Both are recent tier-1 guidelines, but they frame the decision differently: ACP (US, April 2024) keys the recommendation to inadequate glycemic control on metformin, whereas the BMJ international panel (August 2025) stratifies by absolute cardiovascular and kidney risk and weighs burden and cost from an individual patient perspective. For lower-risk adults the two directly disagree. The BMJ evidence base is newer (living review to July 2024); ACP is the US college of internists."
+    },
+    {
+      "id": "conf-hba1c-target-for-most-adults",
+      "topic": "What HbA1c target should guide drug therapy for most adults with type 2 diabetes?",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-individualized-glycemic-targets",
+        "opt-deintensification"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:29507945",
+          "side": 1,
+          "statement": "ACP sets a target HbA1c between 7% and 8% for most patients and advises deintensifying below 6.5%.",
+          "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes."
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "side": 2,
+          "statement": "The German national guideline group found no evidence of adequate certainty to make any recommendation on HbA1c target values.",
+          "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities."
+        }
+      ],
+      "ai_assessment": "ACP's 2018 guidance statement (US) derives a numeric range from an appraisal of other national guidelines, while the 2023 German national guideline declines to recommend a target because evidence certainty is inadequate. The German source is newer; PubMed indexes the ACP statement as a review, so its guideline tier comes from its title. Both agree that goals should be individualised."
+    },
+    {
+      "id": "conf-first-line-drug-with-ckd-or-comorbidities",
+      "topic": "Is an SGLT-2 inhibitor first-line, or an add-on to metformin, when chronic kidney disease is present?",
+      "conflict_type": "population_difference",
+      "treatment_option_ids": [
+        "opt-metformin",
+        "opt-sglt2-inhibitors"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:38639546",
+          "side": 1,
+          "statement": "ACP positions SGLT-2 inhibitors and GLP-1 agonists as additions to metformin and lifestyle modification for adults with inadequate glycemic control, without a separate CKD pathway.",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence)."
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "side": 2,
+          "statement": "For people with diabetes and CKD, KDIGO names SGLT-2 inhibitors as first-line pharmacotherapy on a foundation of lifestyle and self-management.",
+          "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes."
+        }
+      ],
+      "ai_assessment": "The two guidelines address different populations. ACP (2024) addresses adults with type 2 diabetes and inadequate glycemic control in general and places SGLT-2 inhibitors after metformin. KDIGO (2022) addresses people with diabetes and chronic kidney disease and names SGLT-2 inhibitors as first-line pharmacotherapy because of their kidney and cardiovascular outcomes. Neither source states a position on the other population."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "is_relevant": true,
+  "issuing_body": null,
+  "region": "US",
+  "treatments": [
+    {
+      "name": "Heart-healthy lifestyle changes",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "People with high blood pressure",
+      "summary": "Heart-healthy eating and exercise are core treatments and can be very effective; some treatment plans include only lifestyle changes.",
+      "evidence": [
+        {
+          "quote": "Treatments for high blood pressure include heart-healthy lifestyle changes and medicines.",
+          "statement": "Treatment includes heart-healthy lifestyle changes and medicines.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "These changes, such as heart-healthy eating and exercise, can be very effective.",
+          "statement": "Heart-healthy eating and exercise can be very effective.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Blood pressure medicines",
+      "category": "pharmacologic",
+      "drug_class": null,
+      "line_of_therapy": "second_line",
+      "population": "People whose blood pressure is not controlled by lifestyle changes",
+      "summary": "Medicines are added when lifestyle changes do not control blood pressure; some people need more than one type.",
+      "evidence": [
+        {
+          "quote": "But sometimes the changes do not control or lower your high blood pressure. Then you may need to take medicine.",
+          "statement": "Medicine is needed when lifestyle changes do not control blood pressure.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        },
+        {
+          "quote": "There are different types of blood pressure medicines. Some people need to take more than one type.",
+          "statement": "Several types of medicine exist and some people need more than one.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    },
+    {
+      "name": "Treating the underlying cause of secondary hypertension",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People whose high blood pressure is caused by another condition or a medicine",
+      "summary": "Treating the causative condition or stopping the causative medicine may lower blood pressure.",
+      "evidence": [
+        {
+          "quote": "If your high blood pressure is caused by another medical condition or medicine, treating that condition or stopping the medicine may lower your blood pressure.",
+          "statement": "Treating the underlying condition or stopping the causative medicine may lower blood pressure.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described"
+        }
+      ],
+      "milestones": []
+    }
+  ],
+  "notes": "Consumer health summary; content attributed on the page to NIH: National Heart, Lung, and Blood Institute."
+}

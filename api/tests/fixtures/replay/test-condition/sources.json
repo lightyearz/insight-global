@@ -1,0 +1,65 @@
+[
+  {
+    "id": "pubmed:1000001",
+    "connector": "pubmed",
+    "title": "2024 Test Society guideline for the management of test condition in adults.",
+    "publisher": "Journal of Synthetic Medicine",
+    "issuing_body": null,
+    "authors": [
+      "Test Society Writing Group",
+      "Doe J"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1000001/",
+    "pmid": "1000001",
+    "doi": null,
+    "source_type": "clinical_guideline",
+    "reliability_tier": 1,
+    "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+    "region": null,
+    "published_at": "2024-01-15",
+    "updated_at": null,
+    "retrieved_at": "2026-09-30T11:58:10Z",
+    "excerpt": "RECOMMENDATIONS: Alphamab is recommended as first-line therapy for adults with test condition (Grade A). Betacillin may be added when treatment targets are not met after 3 months (Grade B).\n\nLIFESTYLE: Since 2022, structured exercise programmes have been recommended for all patients with test condition."
+  },
+  {
+    "id": "pubmed:1000002",
+    "connector": "pubmed",
+    "title": "Initial pharmacotherapy for test condition: a systematic review and meta-analysis.",
+    "publisher": "Synthetic Reviews",
+    "issuing_body": null,
+    "authors": [
+      "Roe R",
+      "Poe P"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1000002/",
+    "pmid": "1000002",
+    "doi": "10.0000/synthetic.1000002",
+    "source_type": "systematic_review",
+    "reliability_tier": 2,
+    "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+    "region": null,
+    "published_at": "2020-06",
+    "updated_at": null,
+    "retrieved_at": "2026-09-30T11:58:11Z",
+    "excerpt": "RESULTS: Betacillin monotherapy was the most common initial therapy across the 14 included trials.\n\nCONCLUSIONS: Betacillin should be considered first-line therapy for test condition."
+  },
+  {
+    "id": "medlineplus:testcondition",
+    "connector": "medlineplus",
+    "title": "Test Condition",
+    "publisher": "National Library of Medicine",
+    "issuing_body": null,
+    "authors": [],
+    "url": "https://medlineplus.gov/testcondition.html",
+    "pmid": null,
+    "doi": null,
+    "source_type": "consumer_health_summary",
+    "reliability_tier": 3,
+    "tier_rationale": "Rule: MedlinePlus health topic (NLM-curated consumer health summary)",
+    "region": "US",
+    "published_at": "2015-03-01",
+    "updated_at": "2025-02-10",
+    "retrieved_at": "2026-09-30T11:58:12Z",
+    "excerpt": "Treatment of test condition usually starts with lifestyle changes such as regular exercise.\n\nMedicines such as alphamab may also help."
+  }
+]

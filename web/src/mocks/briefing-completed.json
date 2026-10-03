@@ -1,0 +1,3075 @@
+{
+  "id": "brf_dbc1d4513364",
+  "condition": {
+    "input": "type 2 diabetes",
+    "label": "Diabetes Mellitus, Type 2",
+    "mesh_id": "D003924",
+    "synonyms": [
+      "Type 2 Diabetes",
+      "Type 2 Diabetes Mellitus",
+      "Diabetes Mellitus, Adult-Onset",
+      "Diabetes Mellitus, Non-Insulin-Dependent",
+      "Noninsulin-Dependent Diabetes Mellitus",
+      "NIDDM",
+      "Diabetes Mellitus, Type II"
+    ]
+  },
+  "region": "US",
+  "status": "completed",
+  "created_by": "admin",
+  "created_at": "2026-10-03T17:09:01.910604Z",
+  "updated_at": "2026-10-03T17:09:05.078040Z",
+  "research_started_at": "2026-10-03T17:09:01.923311Z",
+  "research_completed_at": "2026-10-03T17:09:04.474538Z",
+  "reviewed_by": "admin",
+  "reviewed_at": "2026-10-03T17:09:04.601917Z",
+  "sources": [
+    {
+      "id": "pubmed:38639546",
+      "connector": "pubmed",
+      "title": "Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Clinical Guideline From the American College of Physicians.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": "American College of Physicians",
+      "authors": [
+        "Qaseem A",
+        "Obley AJ",
+        "Shamliyan T",
+        "Hicks LA",
+        "Harrod CS",
+        "Crandall CJ",
+        "Clinical Guidelines Committee of the American College of Physicians",
+        "Balk EM",
+        "Cooney TG",
+        "Cross JT",
+        "Fitterman N",
+        "Lin JS",
+        "Maroto M",
+        "Miller MC",
+        "Shekelle P",
+        "Tice JA",
+        "Tufte JE",
+        "Etxeandia-Ikobaltzeta I",
+        "Yost J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38639546/",
+      "pmid": "38639546",
+      "doi": "10.7326/M23-2788",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "US",
+      "region_inferred": true,
+      "published_at": "2024-04-19",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "RECOMMENDATION 1: ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence). • Use an SGLT-2 inhibitor to reduce the risk for all-cause mortality, major adverse cardiovascular events, progression of chronic kidney disease, and hospitalization due to congestive heart failure. • Use a GLP-1 agonist to reduce the risk for all-cause mortality, major adverse cardiovascular events, and stroke. RECOMMENDATION 2: ACP recommends against adding a dipeptidyl peptidase-4 (DPP-4) inhibitor to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control to reduce morbidity and all-cause mortality (strong recommendation; high-certainty evidence)."
+    },
+    {
+      "id": "pubmed:40813129",
+      "connector": "pubmed",
+      "title": "Cardiovascular, kidney related, and weight loss effects of therapeutics for type 2 diabetes: a living clinical practice guideline.",
+      "publisher": "BMJ (Clinical research ed.)",
+      "issuing_body": null,
+      "authors": [
+        "Agarwal A",
+        "Mustafa R",
+        "Manja V",
+        "Agoritsas T",
+        "Macdonald H",
+        "Li S",
+        "Foroutan F",
+        "Rayner D",
+        "Rodriguez-Gutierrez R",
+        "Åsvold BO",
+        "Heen AF",
+        "Gabi J",
+        "Guo L",
+        "Hao Q",
+        "Jeppesen BT",
+        "Jha V",
+        "Nagler E",
+        "Odom A",
+        "Rodondi N",
+        "Shetty S",
+        "Vermandere M",
+        "Wright R",
+        "Guyatt G",
+        "Vandvik PO"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40813129/",
+      "pmid": "40813129",
+      "doi": "10.1136/bmj-2024-082071",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "International",
+      "region_inferred": true,
+      "published_at": "2025-08-14",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "RECOMMENDATIONS: The panel issued risk-stratified recommendations regarding four prioritised medications for adults with type 2 diabetes (SGLT-2 inhibitors, GLP-1 receptor agonists, finerenone and tirzepatide):• Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.• Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists; and a weak recommendation against finerenone in adults with CKD.• Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists; and a weak recommendation in favour of finerenone in adults with CKD.• Across risk strata: weak recommendation in favour of tirzepatide in adults with obesity. … Recommendations were informed by a linked living systematic review and network meta-analysis evaluating relative benefits and harms updated to 31 July 2024; and by linked systematic reviews addressing risk prediction models and values and preferences of adults with type 2 diabetes."
+    },
+    {
+      "id": "pubmed:36623286",
+      "connector": "pubmed",
+      "title": "Diabetes Management in Chronic Kidney Disease: Synopsis of the KDIGO 2022 Clinical Practice Guideline Update.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+      "authors": [
+        "Navaneethan SD",
+        "Zoungas S",
+        "Caramori ML",
+        "Chan JCN",
+        "Heerspink HJL",
+        "Hurst C",
+        "Liew A",
+        "Michos ED",
+        "Olowu WA",
+        "Sadusky T",
+        "Tandon N",
+        "Tuttle KR",
+        "Wanner C",
+        "Wilkens KG",
+        "Craig JC",
+        "Tunnicliffe DJ",
+        "Tonelli M",
+        "Cheung M",
+        "Earley A",
+        "Rossing P",
+        "de Boer IH",
+        "Khunti K"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36623286/",
+      "pmid": "36623286",
+      "doi": "10.7326/M22-2904",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "International",
+      "region_inferred": true,
+      "published_at": "2023-01-10",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "DESCRIPTION: The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO). … A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes. To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists, and interventions to control risk factors for CKD progression and cardiovascular events, such as blood pressure, glycemia, and lipids."
+    },
+    {
+      "id": "pubmed:41842862",
+      "connector": "pubmed",
+      "title": "American Association of Clinical Endocrinology Consensus Statement: Algorithm for Management of Adults With Type 2 Diabetes - 2026 Update.",
+      "publisher": "Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists",
+      "issuing_body": "American Association of Clinical Endocrinology (AACE)",
+      "authors": [
+        "Samson SL",
+        "Vellanki P",
+        "Blonde L",
+        "Hirsch IB",
+        "Hoang TD",
+        "Isaacs SD",
+        "Izuora KE",
+        "Low Wang CC",
+        "Ooi CP",
+        "Padilla BI",
+        "Schulman-Rosenbaum R",
+        "Twining CL",
+        "Umpierrez GE",
+        "Valencia WM"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41842862/",
+      "pmid": "41842862",
+      "doi": "10.1016/j.eprac.2026.01.006",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "US",
+      "region_inferred": true,
+      "published_at": "2026-03-17",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "RESULTS: This algorithm for management of adults with type 2 diabetes (T2D) includes 11 sections: (1) Principles for the Management of Adults With T2D; (2) Prediabetes Algorithm (3) Diabetes Classification Algorithm (new); (4) Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Dyslipidemia; (5) Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Hypertension; (6) Comorbidities- and Complications-Centric Glycemic Control Algorithm; (7) Glucose-Centric Glycemic Control Algorithm; (8) Initiating and Titrating Insulin Algorithm; (9) Profiles of Pharmacotherapy for T2D; (10) Profiles of Pharmacotherapy for Obesity; and (11) Vaccine Recommendations for Adults With T2D. CONCLUSIONS: This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D. It also provides guidance on the management of atherosclerotic risk factors of dyslipidemia and hypertension."
+    },
+    {
+      "id": "pubmed:37874122",
+      "connector": "pubmed",
+      "title": "Clinical Practice Guideline: Shared Decision Making, Diagnostic Evaluation, and Pharmacotherapy in Type 2 Diabetes.",
+      "publisher": "Deutsches Arzteblatt international",
+      "issuing_body": "German National Disease Management Guideline (NVL) programme",
+      "authors": [
+        "Brockamp C",
+        "Landgraf R",
+        "Müller UA",
+        "Müller-Wieland D",
+        "Petrak F",
+        "Uebel T",
+        "the National Disease Management Guideline Group"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37874122/",
+      "pmid": "37874122",
+      "doi": "10.3238/arztebl.m2023.0219",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "EU",
+      "region_inferred": true,
+      "published_at": "2023-11-24",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "RESULTS: The new chapter on shared decision making includes a description of a structured approach that can be used when individual treatment goals have not been achieved. … Cardiovascular and renal risks are to be considered in the choice of drug. Studies have shown that, in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively), hospitalization for heart failure (SGLT2 inhibitors: OR = 0.65), and worsening of renal function (OR = 0.61 and 0.59, respectively). CONCLUSION: Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline. The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities."
+    },
+    {
+      "id": "pubmed:35029593",
+      "connector": "pubmed",
+      "title": "Exercise/Physical Activity in Individuals with Type 2 Diabetes: A Consensus Statement from the American College of Sports Medicine.",
+      "publisher": "Medicine and science in sports and exercise",
+      "issuing_body": "American College of Sports Medicine",
+      "authors": [
+        "Kanaley JA",
+        "Colberg SR",
+        "Corcoran MH",
+        "Malin SK",
+        "Rodriguez NR",
+        "Crespo CJ",
+        "Kirwan JP",
+        "Zierath JR"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35029593/",
+      "pmid": "35029593",
+      "doi": "10.1249/MSS.0000000000002800",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+      "region": "US",
+      "region_inferred": true,
+      "published_at": "2022-02-01",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes. … Various types of physical activity enhance health and glycemic management in people with type 2 diabetes, including flexibility and balance exercise, and the importance of each recommended type or mode are discussed. In general, the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications. People with type 2 diabetes should engage in physical activity regularly and be encouraged to reduce sedentary time and break up sitting time with frequent activity breaks."
+    },
+    {
+      "id": "pubmed:38639549",
+      "connector": "pubmed",
+      "title": "Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Systematic Review and Network Meta-analysis for the American College of Physicians.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": null,
+      "authors": [
+        "Drake T",
+        "Landsteiner A",
+        "Langsetmo L",
+        "MacDonald R",
+        "Anthony M",
+        "Kalinowski C",
+        "Ullman K",
+        "Billington CJ",
+        "Kaka A",
+        "Sultan S",
+        "Wilt TJ"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38639549/",
+      "pmid": "38639549",
+      "doi": "10.7326/M23-1490",
+      "source_type": "systematic_review",
+      "reliability_tier": 2,
+      "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+      "region": null,
+      "region_inferred": false,
+      "published_at": "2024-04-19",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE), SGLT2 inhibitors reduce progression of chronic kidney disease (CKD) and heart failure hospitalizations and GLP1 agonists reduce stroke (high CoE), and SGLT2 inhibitors reduce serious adverse events and severe hypoglycemia (high CoE). … Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE). … Compared with DPP4 inhibitors, GLP1 agonists reduce all-cause mortality (moderate CoE). Compared with DPP4 inhibitors and sulfonylurea (SU), SGLT2 inhibitors reduce MACE (moderate to high CoE). … Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU."
+    },
+    {
+      "id": "pubmed:29507945",
+      "connector": "pubmed",
+      "title": "Hemoglobin A1c Targets for Glycemic Control With Pharmacologic Therapy for Nonpregnant Adults With Type 2 Diabetes Mellitus: A Guidance Statement Update From the American College of Physicians.",
+      "publisher": "Annals of internal medicine",
+      "issuing_body": "American College of Physicians",
+      "authors": [
+        "Qaseem A",
+        "Wilt TJ",
+        "Kansagara D",
+        "Horwitch C",
+        "Barry MJ",
+        "Forciea MA",
+        "Clinical Guidelines Committee of the American College of Physicians",
+        "Fitterman N",
+        "Balzer K",
+        "Boyd C",
+        "Humphrey LL",
+        "Iorio A",
+        "Lin J",
+        "Maroto M",
+        "McLean R",
+        "Mustafa R",
+        "Tufte J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29507945/",
+      "pmid": "29507945",
+      "doi": "10.7326/M17-0939",
+      "source_type": "clinical_guideline",
+      "reliability_tier": 1,
+      "tier_rationale": "Rule: title identifies a guidance document ('Guidance Statement'); PubMed indexes it as 'Journal Article, Research Support, Non-U.S. Gov't, Review'",
+      "region": "US",
+      "region_inferred": true,
+      "published_at": "2018-03-06",
+      "updated_at": null,
+      "retrieved_at": "2026-10-03T15:50:29.266657Z",
+      "excerpt": "GUIDANCE STATEMENT 1: Clinicians should personalize goals for glycemic control in patients with type 2 diabetes on the basis of a discussion of benefits and harms of pharmacotherapy, patients' preferences, patients' general health and life expectancy, treatment burden, and costs of care. GUIDANCE STATEMENT 2: Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes. GUIDANCE STATEMENT 3: Clinicians should consider deintensifying pharmacologic therapy in patients with type 2 diabetes who achieve HbA1c levels less than 6.5%. GUIDANCE STATEMENT 4: Clinicians should treat patients with type 2 diabetes to minimize symptoms related to hyperglycemia and avoid targeting an HbA1c level in patients with a life expectancy less than 10 years due to advanced age (80 years or older), residence in a nursing home, or chronic conditions (such as dementia, cancer, end-stage kidney disease, or severe chronic obstructive pulmonary disease or congestive heart failure) because the harms outweigh the benefits in this population."
+    },
+    {
+      "id": "medlineplus:diabetestype2",
+      "connector": "medlineplus",
+      "title": "Diabetes Type 2",
+      "publisher": "National Library of Medicine",
+      "issuing_body": "National Institute of Diabetes and Digestive and Kidney Diseases",
+      "authors": [],
+      "url": "https://medlineplus.gov/diabetestype2.html",
+      "pmid": null,
+      "doi": null,
+      "source_type": "consumer_health_summary",
+      "reliability_tier": 3,
+      "tier_rationale": "Rule: MedlinePlus health topic (NLM-curated consumer health summary)",
+      "region": "US",
+      "region_inferred": false,
+      "published_at": "2011-12-05",
+      "updated_at": "2026-01-21",
+      "retrieved_at": "2026-10-03T15:50:29.949658Z",
+      "excerpt": "What is type 2 diabetes?\n\nType 2 diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. If you have diabetes, your body doesn't make enough insulin or doesn't use insulin well. The glucose then stays in your blood and not enough goes into your cells.\n\nOver time, having too much glucose in your blood can cause health problems. But you can take steps to manage your diabetes and try to prevent these health problems.\n\nWhat causes type 2 diabetes?\n\nType 2 diabetes may be caused by a combination of factors:\n\n- Being overweight or having obesity\n- Not being physically active\n- Genetics and family history\n\nType 2 diabetes usually starts with insulin resistance. This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insulin, and your blood glucose levels rise.\n\nWho is at risk for type 2 diabetes?\n\nYou are at higher risk of developing type 2 diabetes if you:\n\n- Are over age 45. Children, teenagers, and younger adults can get type 2 diabetes, but it is more common in middle-aged and older people.\n- Have prediabetes, which means that your blood glucose is high for you but not high enough to be called diabetes\n- Had diabetes in pregnancy or gave birth to a baby weighing 9 pounds or more.\n- Have a family history of diabetes\n- Are overweight or have obesity\n- Are Black or African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander\n- Are not physically active\n- Have other conditions such as high blood pressure, heart disease, stroke, polycystic ovary syndrome (PCOS), or depression\n- Have low HDL (good) cholesterol and high triglycerides\n- Have acanthosis nigricans - dark, thick, and velvety skin around your neck or armpitsWhat are the symptoms of type 2 diabetes?\n\nMany people with type 2 diabetes have no symptoms at all. If you do have them, the symptoms develop slowly over several years. They might be so mild that you do not notice them. The symptoms can include:\n\n- Increased thirst and urination\n- Increased hunger\n- Feeling tired\n- Blurred vision\n- Numbness or tingling in the feet or hands\n- Sores that do not heal\n- Unexplained weight lossHow is type 2 diabetes diagnosed?\n\nYour provider will use blood tests to diagnose type 2 diabetes. The blood tests include:\n\n- A1C test, which measures your average blood glucose level over the past 3 months.\n- Fasting plasma glucose (FPG) test, which measures your current blood glucose level. You need to fast (not eat or drink anything except water) for at least 8 hours before the test.\n- Random plasma glucose (RPG) test, which measures your current blood glucose level. This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test.What are the treatments for type 2 diabetes?\n\nTreatment for type 2 diabetes involves managing your blood glucose levels. Many people are able to do this by living a healthy lifestyle. Some people may also need to take medicine:\n\n- A healthy lifestyle includes following a healthy eating plan and getting regular physical activity. You need to learn how to balance what you eat and drink with physical activity and diabetes medicine, if you take any.\n- Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.\n- You will need to check your blood glucose regularly. Your provider will tell you how often you need to do it.\n- It's also important to keep your blood pressure and cholesterol levels close to the targets your provider sets for you. Make sure to get your screening tests regularly.Can type 2 diabetes be prevented?\n\nYou can take steps to help prevent or delay type 2 diabetes by losing weight if you are overweight, eating fewer calories, and being more physically active. If you have a condition which raises your risk for type 2 diabetes, managing that condition may lower your risk of getting type 2 diabetes.\n\nNIH: National Institute of Diabetes and Digestive and Kidney Diseases"
+    }
+  ],
+  "search_strategy": {
+    "condition_input": "type 2 diabetes",
+    "normalised_label": "Diabetes Mellitus, Type 2",
+    "mesh_id": "D003924",
+    "normalisation": "replay_fixture",
+    "connectors": [
+      "PubMed (NCBI E-utilities): up to 6 guidelines and 6 systematic reviews / meta-analyses, by relevance",
+      "MedlinePlus Health Topics (NLM consumer summary), with page created/modified dates"
+    ],
+    "pubmed_queries": [
+      "(\"Diabetes Mellitus, Type 2\"[MeSH Major Topic]) AND (Practice Guideline[pt] OR Guideline[pt]) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract",
+      "(\"Diabetes Mellitus, Type 2\"[MeSH Major Topic]) AND (Systematic Review[pt] OR Meta-Analysis[pt]) AND (therapy OR treatment OR management) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract"
+    ],
+    "publication_types": [
+      "Practice Guideline",
+      "Guideline",
+      "Systematic Review",
+      "Meta-Analysis"
+    ],
+    "date_window": "2020 to present (PubMed publication date), English, with abstract",
+    "max_sources": 12,
+    "sources_found": 9,
+    "sources_selected": 9,
+    "tier_rules": [
+      "Tier 1 (guideline): PubMed publication type Practice Guideline / Guideline, or a title that identifies a guidance document (guideline, guidance / consensus / position statement) or a known guideline body's recommendations.",
+      "Tier 2 (systematic review): PubMed publication type Systematic Review / Meta-Analysis.",
+      "Tier 3 (curated summary): MedlinePlus health topic (NLM-curated consumer summary).",
+      "Tier 4 (other): any other publication."
+    ],
+    "data_mode": "replay",
+    "note": "Replay: these sources were recorded earlier (see 'Retrieved' dates); the queries are the ones a live run issues."
+  },
+  "treatment_options": [
+    {
+      "id": "opt-metformin",
+      "name": "Metformin",
+      "category": "pharmacologic",
+      "drug_class": "Biguanide",
+      "line_of_therapy": "first_line",
+      "population": "Most nonpregnant adults with type 2 diabetes",
+      "summary": "Metformin with lifestyle modification is the background regimen in the ACP 2024 guideline; newer agents are recommended as additions to it when glycemic control is inadequate. The retrieved abstracts do not grade metformin itself, so its first-line role is implied rather than separately evidenced here.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications",
+          "statement": "Newer agents are recommended as additions to existing metformin and lifestyle therapy, which positions metformin as the background first-line drug.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "not_stated",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Background first-line therapy for most adults; anchors any pathway and formulary view.",
+      "selected": true
+    },
+    {
+      "id": "opt-lifestyle-modification",
+      "name": "Lifestyle modification and weight management",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "All adults with type 2 diabetes or prediabetes",
+      "summary": "Every guideline in the set treats lifestyle change as the foundation of care: ACP pairs it with metformin, KDIGO builds its layered CKD approach on it, and AACE 2026 makes lifestyle and obesity treatment key pillars. MedlinePlus notes many people manage glucose this way.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control",
+          "statement": "Lifestyle modification is assumed as part of baseline therapy alongside metformin.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "quote": "starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy",
+          "statement": "Care is built on a foundation of lifestyle interventions and self-management.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:41842862",
+          "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+          "statement": "AACE treats lifestyle modification and obesity treatment as key pillars of care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "medlineplus:diabetestype2",
+          "quote": "Many people are able to do this by living a healthy lifestyle.",
+          "statement": "Many people can manage their blood glucose with a healthy lifestyle.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "medlineplus:diabetestype2",
+          "quote": "A healthy lifestyle includes following a healthy eating plan and getting regular physical activity.",
+          "statement": "A healthy lifestyle means a healthy eating plan and regular physical activity.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026",
+          "date_precision": "year",
+          "label": "AACE 2026 algorithm makes lifestyle and obesity treatment key pillars",
+          "source_id": "pubmed:41842862",
+          "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+          "grounded": true
+        }
+      ],
+      "recommendation_direction": "for",
+      "confidence": "high",
+      "suggested": true,
+      "suggestion_reason": "Foundation of care in every guideline retrieved; drives education and weight-management service demand.",
+      "selected": true
+    },
+    {
+      "id": "opt-physical-activity",
+      "name": "Structured physical activity",
+      "category": "lifestyle",
+      "drug_class": null,
+      "line_of_therapy": "first_line",
+      "population": "People of all ages with type 2 diabetes",
+      "summary": "ACSM's 2022 consensus statement recommends regular physical activity of several types and breaking up sedentary time, applying the 2018 Physical Activity Guidelines for Americans with few modifications.",
+      "evidence": [
+        {
+          "source_id": "pubmed:35029593",
+          "quote": "People with type 2 diabetes should engage in physical activity regularly and be encouraged to reduce sedentary time and break up sitting time with frequent activity breaks.",
+          "statement": "Regular physical activity and frequent breaks in sitting are recommended.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:35029593",
+          "quote": "Various types of physical activity enhance health and glycemic management in people with type 2 diabetes",
+          "statement": "Multiple types of physical activity improve health and glucose control.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "date_precision": "year",
+          "label": "ACSM position stand on exercise and type 2 diabetes (later updated)",
+          "source_id": "pubmed:35029593",
+          "quote": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes.",
+          "grounded": true
+        },
+        {
+          "date": "2018",
+          "date_precision": "year",
+          "label": "2018 Physical Activity Guidelines for Americans apply to people with type 2 diabetes",
+          "source_id": "pubmed:35029593",
+          "quote": "the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications",
+          "grounded": true
+        }
+      ],
+      "recommendation_direction": "for",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Endorsed by ACSM consensus and relevant to exercise and prevention programme planning.",
+      "selected": true
+    },
+    {
+      "id": "opt-sglt2-inhibitors",
+      "name": "SGLT-2 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+      "line_of_therapy": "add_on",
+      "population": "Adults with inadequate control on metformin (ACP); first-line in diabetes with CKD (KDIGO); risk-stratified by cardiovascular and kidney risk (BMJ)",
+      "summary": "Reduce all-cause mortality, MACE, CKD progression and heart-failure hospitalisation (high certainty). ACP strongly recommends adding them to metformin, KDIGO makes them first-line in CKD, and the BMJ living guideline recommends them for moderate- and higher-risk adults but not for lower-risk adults.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "Use an SGLT-2 inhibitor to reduce the risk for all-cause mortality, major adverse cardiovascular events, progression of chronic kidney disease, and hospitalization due to congestive heart failure.",
+          "statement": "SGLT-2 inhibitors are preferred when the goal is to reduce mortality, cardiovascular events, CKD progression or heart-failure hospitalisation.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "strong recommendation in favour",
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes.",
+          "statement": "SGLT-2 inhibitors are first-line pharmacotherapy in the layered approach for diabetes and CKD.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+          "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "hospitalization for heart failure (SGLT2 inhibitors: OR = 0.65)",
+          "statement": "SGLT2 inhibitors also lowered the odds of hospitalisation for heart failure.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+          "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "SGLT2 inhibitors reduce progression of chronic kidney disease (CKD) and heart failure hospitalizations",
+          "statement": "SGLT2 inhibitors reduce CKD progression and heart-failure hospitalisation.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "date_precision": "year",
+          "label": "KDIGO 2022 update positions SGLT-2 inhibitors as first-line in diabetes with CKD",
+          "source_id": "pubmed:36623286",
+          "quote": "The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO).",
+          "grounded": true
+        }
+      ],
+      "recommendation_direction": "mixed",
+      "confidence": "high",
+      "suggested": true,
+      "suggestion_reason": "High-certainty outcome benefits and strong recommendations; major cost and uptake lever.",
+      "selected": true
+    },
+    {
+      "id": "opt-glp-1-receptor-agonists",
+      "name": "GLP-1 receptor agonists",
+      "category": "pharmacologic",
+      "drug_class": "Glucagon-like peptide-1 receptor agonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with inadequate control on metformin (ACP); moderate- or higher-risk adults (BMJ); people with cardiovascular disease or CKD",
+      "summary": "Reduce all-cause mortality, MACE and stroke. ACP strongly recommends adding them to metformin; KDIGO layers them on first-line therapy in CKD; the German NDMG and BMJ panel tie their use to cardiovascular and renal risk.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "Use a GLP-1 agonist to reduce the risk for all-cause mortality, major adverse cardiovascular events, and stroke.",
+          "statement": "GLP-1 agonists are preferred when the goal is to reduce mortality, cardiovascular events or stroke.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+          "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "recommendation_strength": "strong recommendation in favour",
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+          "statement": "GLP-1 receptor agonists are layered on top of first-line therapy for heart and kidney protection.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "Cardiovascular and renal risks are to be considered in the choice of drug.",
+          "statement": "Cardiovascular and renal risk should guide which glucose-lowering drug is chosen.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+          "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+          "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "GLP1 agonists reduce stroke (high CoE)",
+          "statement": "GLP-1 agonists reduce stroke.",
+          "recommendation_strength": null,
+          "evidence_level": "high CoE",
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "date_precision": "year",
+          "label": "German NDMG pharmacotherapy recommendations (reaffirmed in 2023)",
+          "source_id": "pubmed:37874122",
+          "quote": "Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline.",
+          "grounded": true
+        }
+      ],
+      "recommendation_direction": "mixed",
+      "confidence": "high",
+      "suggested": true,
+      "suggestion_reason": "High-certainty mortality and cardiovascular benefits; significant budget and access implications.",
+      "selected": true
+    },
+    {
+      "id": "opt-tirzepatide",
+      "name": "Tirzepatide",
+      "category": "pharmacologic",
+      "drug_class": "Dual GIP/GLP-1 receptor agonist",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes and obesity",
+      "summary": "The BMJ living guideline gives a weak recommendation in favour for adults with obesity across risk strata, while the ACP network meta-analysis found no reduction in all-cause mortality versus usual care.",
+      "evidence": [
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "Across risk strata: weak recommendation in favour of tirzepatide in adults with obesity.",
+          "statement": "The panel suggests tirzepatide for adults with type 2 diabetes and obesity.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-07-31",
+          "date_precision": "day",
+          "label": "Living evidence review underpinning the tirzepatide recommendation updated",
+          "source_id": "pubmed:40813129",
+          "quote": "network meta-analysis evaluating relative benefits and harms updated to 31 July 2024",
+          "grounded": true
+        }
+      ],
+      "recommendation_direction": "conditional",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Newer high-cost agent with a weak recommendation in obesity; important for formulary horizon scanning.",
+      "selected": false
+    },
+    {
+      "id": "opt-finerenone",
+      "name": "Finerenone (nonsteroidal MRA)",
+      "category": "pharmacologic",
+      "drug_class": "Nonsteroidal mineralocorticoid receptor antagonist",
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes and chronic kidney disease",
+      "summary": "KDIGO adds nonsteroidal MRAs on top of first-line therapy for heart and kidney protection; the BMJ panel suggests finerenone only for higher-risk adults with CKD and suggests against it at moderate risk.",
+      "evidence": [
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "and a weak recommendation against finerenone in adults with CKD",
+          "statement": "For moderate-risk adults with CKD the panel suggests not using finerenone.",
+          "recommendation_strength": "weak recommendation against",
+          "evidence_level": null,
+          "stance": "recommended_against",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "quote": "and a weak recommendation in favour of finerenone in adults with CKD",
+          "statement": "For higher-risk adults with CKD the panel suggests using finerenone.",
+          "recommendation_strength": "weak recommendation in favour",
+          "evidence_level": null,
+          "stance": "conditional",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+          "statement": "Nonsteroidal MRAs are layered on top of first-line therapy for heart and kidney protection.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "mixed",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Kidney-protective add-on for the CKD subgroup, with risk-dependent recommendations.",
+      "selected": true
+    },
+    {
+      "id": "opt-dpp-4-inhibitors",
+      "name": "DPP-4 inhibitors",
+      "category": "pharmacologic",
+      "drug_class": "Dipeptidyl peptidase-4 inhibitor",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with inadequate glycemic control on metformin",
+      "summary": "ACP strongly recommends against adding a DPP-4 inhibitor to metformin to reduce morbidity and mortality; the supporting network meta-analysis found no mortality reduction versus usual care.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639546",
+          "quote": "ACP recommends against adding a dipeptidyl peptidase-4 (DPP-4) inhibitor to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control to reduce morbidity and all-cause mortality (strong recommendation; high-certainty evidence).",
+          "statement": "ACP strongly recommends against DPP-4 inhibitors as the add-on to metformin.",
+          "recommendation_strength": "strong recommendation",
+          "evidence_level": "high-certainty evidence",
+          "stance": "recommended_against",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with DPP4 inhibitors, GLP1 agonists reduce all-cause mortality (moderate CoE).",
+          "statement": "GLP-1 agonists reduce mortality relative to DPP-4 inhibitors.",
+          "recommendation_strength": null,
+          "evidence_level": "moderate CoE",
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "against",
+      "confidence": "high",
+      "suggested": true,
+      "suggestion_reason": "Strong recommendation against as add-on; relevant to de-adoption and formulary review.",
+      "selected": true
+    },
+    {
+      "id": "opt-insulin",
+      "name": "Insulin (basal / long-acting)",
+      "category": "pharmacologic",
+      "drug_class": "Insulin",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes who need further glucose lowering",
+      "summary": "AACE provides a dedicated insulin initiation and titration algorithm. Long-acting insulin did not reduce mortality versus usual care and carries more severe hypoglycemia than SGLT2 inhibitors or GLP-1 agonists.",
+      "evidence": [
+        {
+          "source_id": "pubmed:41842862",
+          "quote": "(8) Initiating and Titrating Insulin Algorithm",
+          "statement": "Insulin initiation and titration has its own algorithm in the AACE guidance.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+          "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+          "recommendation_strength": null,
+          "evidence_level": "low to high CoE",
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU.",
+          "statement": "Severe hypoglycemia and serious adverse events are more frequent with insulin or sulfonylureas than with SGLT2 inhibitors or GLP-1 agonists.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "medlineplus:diabetestype2",
+          "quote": "Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.",
+          "statement": "Medicines include oral agents, insulin and other injectables, often in combination over time.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "not_stated",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Remains part of the treatment pathway; hypoglycaemia harms matter for utilisation planning.",
+      "selected": true
+    },
+    {
+      "id": "opt-sulfonylureas",
+      "name": "Sulfonylureas",
+      "category": "pharmacologic",
+      "drug_class": "Sulfonylurea",
+      "line_of_therapy": "unspecified",
+      "population": "Adults with type 2 diabetes",
+      "summary": "Appears only as a comparator: SGLT2 inhibitors reduce MACE versus sulfonylureas, and severe hypoglycemia is more frequent with sulfonylureas.",
+      "evidence": [
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Compared with DPP4 inhibitors and sulfonylurea (SU), SGLT2 inhibitors reduce MACE (moderate to high CoE).",
+          "statement": "SGLT2 inhibitors reduce major cardiovascular events compared with sulfonylureas.",
+          "recommendation_strength": null,
+          "evidence_level": "moderate to high CoE",
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:38639549",
+          "quote": "Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU.",
+          "statement": "Severe hypoglycemia and serious adverse events are more frequent with insulin or sulfonylureas than with SGLT2 inhibitors or GLP-1 agonists.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "not_stated",
+      "confidence": "medium",
+      "suggested": false,
+      "suggestion_reason": "Only appears as a comparator in the retrieved evidence, with no recommendation.",
+      "selected": false
+    },
+    {
+      "id": "opt-individualized-glycemic-targets",
+      "name": "Individualized HbA1c targets",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Nonpregnant adults with type 2 diabetes",
+      "summary": "ACP (2018) asks clinicians to personalise glycemic goals and aim for HbA1c 7%-8% in most patients; the German NDMG (2023) found evidence too uncertain to recommend HbA1c target values.",
+      "evidence": [
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities.",
+          "statement": "No recommendation on HbA1c target values was made due to insufficient evidence certainty.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "insufficient_evidence",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:29507945",
+          "quote": "Clinicians should personalize goals for glycemic control in patients with type 2 diabetes on the basis of a discussion of benefits and harms of pharmacotherapy, patients' preferences, patients' general health and life expectancy, treatment burden, and costs of care.",
+          "statement": "Glycemic goals should be personalised through discussion of benefits, harms, preferences, health, life expectancy, burden and cost.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:29507945",
+          "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes.",
+          "statement": "ACP sets an HbA1c target of 7% to 8% for most patients.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "for",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Target choice shapes quality measures and treatment intensity across the population.",
+      "selected": true
+    },
+    {
+      "id": "opt-deintensification",
+      "name": "Deintensification of drug therapy",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults with HbA1c below 6.5% on drug therapy, or with life expectancy under 10 years",
+      "summary": "ACP advises considering deintensification when HbA1c is below 6.5% and avoiding HbA1c targets for people with limited life expectancy, where harms outweigh benefits.",
+      "evidence": [
+        {
+          "source_id": "pubmed:29507945",
+          "quote": "Clinicians should consider deintensifying pharmacologic therapy in patients with type 2 diabetes who achieve HbA1c levels less than 6.5%.",
+          "statement": "Drug therapy should be reduced when HbA1c falls below 6.5%.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:29507945",
+          "quote": "avoid targeting an HbA1c level in patients with a life expectancy less than 10 years due to advanced age (80 years or older), residence in a nursing home, or chronic conditions",
+          "statement": "For people with limited life expectancy, treat symptoms rather than an HbA1c target.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "for",
+      "confidence": "medium",
+      "suggested": true,
+      "suggestion_reason": "Supports overtreatment reduction in older and frail populations.",
+      "selected": true
+    },
+    {
+      "id": "opt-shared-decision-making",
+      "name": "Structured shared decision making",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "Adults whose individual treatment goals have not been achieved",
+      "summary": "The German NDMG adds a structured shared-decision-making approach for use when individual treatment goals are not met.",
+      "evidence": [
+        {
+          "source_id": "pubmed:37874122",
+          "quote": "The new chapter on shared decision making includes a description of a structured approach that can be used when individual treatment goals have not been achieved.",
+          "statement": "The guideline adds a structured shared-decision-making process.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "for",
+      "confidence": "medium",
+      "suggested": false,
+      "suggestion_reason": "Process recommendation from one non-US guideline; better covered in a care-model briefing.",
+      "selected": false
+    },
+    {
+      "id": "opt-cardiovascular-risk-factor-management",
+      "name": "Blood pressure and lipid management",
+      "category": "other",
+      "drug_class": null,
+      "line_of_therapy": "add_on",
+      "population": "Adults with type 2 diabetes",
+      "summary": "KDIGO, AACE and MedlinePlus all include control of blood pressure and lipids alongside glycemia to reduce cardiovascular and kidney events.",
+      "evidence": [
+        {
+          "source_id": "pubmed:36623286",
+          "quote": "interventions to control risk factors for CKD progression and cardiovascular events, such as blood pressure, glycemia, and lipids",
+          "statement": "Blood pressure, glucose and lipid control are part of comprehensive care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "recommended",
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:41842862",
+          "quote": "It also provides guidance on the management of atherosclerotic risk factors of dyslipidemia and hypertension.",
+          "statement": "The algorithm covers lipid and blood pressure management as part of diabetes care.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        },
+        {
+          "source_id": "medlineplus:diabetestype2",
+          "quote": "It's also important to keep your blood pressure and cholesterol levels close to the targets your provider sets for you.",
+          "statement": "Blood pressure and cholesterol should be kept near individual targets.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "for",
+      "confidence": "high",
+      "suggested": false,
+      "suggestion_reason": "Important but usually covered by a separate cardiometabolic risk briefing.",
+      "selected": false
+    },
+    {
+      "id": "opt-blood-glucose-self-monitoring",
+      "name": "Blood glucose self-monitoring",
+      "category": "monitoring",
+      "drug_class": null,
+      "line_of_therapy": "unspecified",
+      "population": "People with type 2 diabetes",
+      "summary": "MedlinePlus advises regular blood glucose checks at a frequency set by the provider; no guideline in this set grades it.",
+      "evidence": [
+        {
+          "source_id": "medlineplus:diabetestype2",
+          "quote": "You will need to check your blood glucose regularly. Your provider will tell you how often you need to do it.",
+          "statement": "People with type 2 diabetes check their blood glucose regularly as advised.",
+          "recommendation_strength": null,
+          "evidence_level": null,
+          "stance": "described",
+          "grounded": true
+        }
+      ],
+      "milestones": [],
+      "recommendation_direction": "not_stated",
+      "confidence": "medium",
+      "suggested": false,
+      "suggestion_reason": "Supported only by a consumer health summary in this set; no graded guideline evidence.",
+      "selected": false
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conf-sglt2-glp1-for-lower-risk-adults",
+      "topic": "Should SGLT-2 inhibitors or GLP-1 receptor agonists be added for adults at lower cardiovascular and kidney risk?",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-sglt2-inhibitors",
+        "opt-glp-1-receptor-agonists"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:38639546",
+          "side": 1,
+          "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or GLP-1 agonist to metformin for all adults with inadequate glycemic control, without stratifying by cardiovascular or kidney risk.",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "published_at": "2024-04-19",
+          "reliability_tier": 1,
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:40813129",
+          "side": 2,
+          "statement": "The BMJ living guideline gives a weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists for adults with three or fewer cardiovascular risk factors and no established CVD or CKD.",
+          "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+          "published_at": "2025-08-14",
+          "reliability_tier": 1,
+          "grounded": true
+        }
+      ],
+      "ai_assessment": "Both are recent tier-1 guidelines, but they frame the decision differently: ACP (US, April 2024) keys the recommendation to inadequate glycemic control on metformin, whereas the BMJ international panel (August 2025) stratifies by absolute cardiovascular and kidney risk and weighs burden and cost from an individual patient perspective. For lower-risk adults the two directly disagree. The BMJ evidence base is newer (living review to July 2024); ACP is the US college of internists.",
+      "suggested_resolution": {
+        "decision": "accept_source",
+        "accepted_source_id": "pubmed:40813129",
+        "rule": "more_recent_same_tier",
+        "rationale": "Rule (same tier, newer wins): position 2: tier 1 clinical guideline (2025-08-14) is more recent than position 1: tier 1 clinical guideline (2024-04-19). This is a recency rule, not a judgement of the evidence."
+      },
+      "resolution": {
+        "decision": "accept_source",
+        "accepted_source_id": "pubmed:40813129",
+        "note": "Agree with the suggested resolution.",
+        "resolved_by": "admin",
+        "resolved_at": "2026-10-03T17:09:04.601917Z"
+      }
+    },
+    {
+      "id": "conf-hba1c-target-for-most-adults",
+      "topic": "What HbA1c target should guide drug therapy for most adults with type 2 diabetes?",
+      "conflict_type": "contradiction",
+      "treatment_option_ids": [
+        "opt-individualized-glycemic-targets",
+        "opt-deintensification"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:29507945",
+          "side": 1,
+          "statement": "ACP sets a target HbA1c between 7% and 8% for most patients and advises deintensifying below 6.5%.",
+          "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes.",
+          "published_at": "2018-03-06",
+          "reliability_tier": 1,
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:37874122",
+          "side": 2,
+          "statement": "The German national guideline group found no evidence of adequate certainty to make any recommendation on HbA1c target values.",
+          "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities.",
+          "published_at": "2023-11-24",
+          "reliability_tier": 1,
+          "grounded": true
+        }
+      ],
+      "ai_assessment": "ACP's 2018 guidance statement (US) derives a numeric range from an appraisal of other national guidelines, while the 2023 German national guideline declines to recommend a target because evidence certainty is inadequate. The German source is newer; PubMed indexes the ACP statement as a review, so its guideline tier comes from its title. Both agree that goals should be individualised.",
+      "suggested_resolution": {
+        "decision": "accept_source",
+        "accepted_source_id": "pubmed:37874122",
+        "rule": "more_recent_same_tier",
+        "rationale": "Rule (same tier, newer wins): position 2: tier 1 clinical guideline (2023-11-24) is more recent than position 1: tier 1 clinical guideline (2018-03-06). This is a recency rule, not a judgement of the evidence."
+      },
+      "resolution": {
+        "decision": "accept_source",
+        "accepted_source_id": "pubmed:29507945",
+        "note": "Our pathway uses a numeric target; keep ACP's 7-8% range and note the German position.",
+        "resolved_by": "admin",
+        "resolved_at": "2026-10-03T17:09:04.601917Z"
+      }
+    },
+    {
+      "id": "conf-first-line-drug-with-ckd-or-comorbidities",
+      "topic": "Is an SGLT-2 inhibitor first-line, or an add-on to metformin, when chronic kidney disease is present?",
+      "conflict_type": "population_difference",
+      "treatment_option_ids": [
+        "opt-metformin",
+        "opt-sglt2-inhibitors"
+      ],
+      "positions": [
+        {
+          "source_id": "pubmed:38639546",
+          "side": 1,
+          "statement": "ACP positions SGLT-2 inhibitors and GLP-1 agonists as additions to metformin and lifestyle modification for adults with inadequate glycemic control, without a separate CKD pathway.",
+          "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+          "published_at": "2024-04-19",
+          "reliability_tier": 1,
+          "grounded": true
+        },
+        {
+          "source_id": "pubmed:36623286",
+          "side": 2,
+          "statement": "For people with diabetes and CKD, KDIGO names SGLT-2 inhibitors as first-line pharmacotherapy on a foundation of lifestyle and self-management.",
+          "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes.",
+          "published_at": "2023-01-10",
+          "reliability_tier": 1,
+          "grounded": true
+        }
+      ],
+      "ai_assessment": "The two guidelines address different populations. ACP (2024) addresses adults with type 2 diabetes and inadequate glycemic control in general and places SGLT-2 inhibitors after metformin. KDIGO (2022) addresses people with diabetes and chronic kidney disease and names SGLT-2 inhibitors as first-line pharmacotherapy because of their kidney and cardiovascular outcomes. Neither source states a position on the other population.",
+      "suggested_resolution": {
+        "decision": "accept_both_with_context",
+        "accepted_source_id": null,
+        "rule": "population_context",
+        "rationale": "Population difference: the positions apply to different patient groups, so they are kept with the population stated."
+      },
+      "resolution": {
+        "decision": "accept_both_with_context",
+        "accepted_source_id": null,
+        "note": "Agree with the suggested resolution.",
+        "resolved_by": "admin",
+        "resolved_at": "2026-10-03T17:09:04.601917Z"
+      }
+    }
+  ],
+  "audit_log": [
+    {
+      "at": "2026-10-03T17:09:01.910604Z",
+      "actor": "admin",
+      "action": "briefing_created",
+      "target_id": null,
+      "detail": "Briefing created for 'type 2 diabetes' (region US, replay data)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "review_submitted",
+      "target_id": null,
+      "detail": "Selected 10 of 15 options; resolved 3 conflict(s)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-metformin",
+      "detail": "Metformin: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-lifestyle-modification",
+      "detail": "Lifestyle modification and weight management: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-physical-activity",
+      "detail": "Structured physical activity: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-sglt2-inhibitors",
+      "detail": "SGLT-2 inhibitors: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-glp-1-receptor-agonists",
+      "detail": "GLP-1 receptor agonists: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_excluded",
+      "target_id": "opt-tirzepatide",
+      "detail": "Tirzepatide: excluded (overrides AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-finerenone",
+      "detail": "Finerenone (nonsteroidal MRA): included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-dpp-4-inhibitors",
+      "detail": "DPP-4 inhibitors: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-insulin",
+      "detail": "Insulin (basal / long-acting): included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_excluded",
+      "target_id": "opt-sulfonylureas",
+      "detail": "Sulfonylureas: excluded (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-individualized-glycemic-targets",
+      "detail": "Individualized HbA1c targets: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_selected",
+      "target_id": "opt-deintensification",
+      "detail": "Deintensification of drug therapy: included (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_excluded",
+      "target_id": "opt-shared-decision-making",
+      "detail": "Structured shared decision making: excluded (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_excluded",
+      "target_id": "opt-cardiovascular-risk-factor-management",
+      "detail": "Blood pressure and lipid management: excluded (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "option_excluded",
+      "target_id": "opt-blood-glucose-self-monitoring",
+      "detail": "Blood glucose self-monitoring: excluded (matches AI suggestion)."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "conflict_resolved",
+      "target_id": "conf-sglt2-glp1-for-lower-risk-adults",
+      "detail": "Should SGLT-2 inhibitors or GLP-1 receptor agonists be added for adults at lower cardiovascular and kidney risk?: accepted BMJ (Clinical research ed.), 2025 (pubmed:40813129) (follows suggested resolution). Note: Agree with the suggested resolution."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "conflict_resolved",
+      "target_id": "conf-hba1c-target-for-most-adults",
+      "detail": "What HbA1c target should guide drug therapy for most adults with type 2 diabetes?: accepted American College of Physicians, 2018 (pubmed:29507945) (differs from suggested resolution). Note: Our pathway uses a numeric target; keep ACP's 7-8% range and note the German position."
+    },
+    {
+      "at": "2026-10-03T17:09:04.601917Z",
+      "actor": "admin",
+      "action": "conflict_resolved",
+      "target_id": "conf-first-line-drug-with-ckd-or-comorbidities",
+      "detail": "Is an SGLT-2 inhibitor first-line, or an add-on to metformin, when chronic kidney disease is present?: kept both positions with context (follows suggested resolution). Note: Agree with the suggested resolution."
+    },
+    {
+      "at": "2026-10-03T17:09:04.643071Z",
+      "actor": "system",
+      "action": "report_generated",
+      "target_id": null,
+      "detail": "Report generated with replay for admin (10 options, 3 conflict(s))."
+    }
+  ],
+  "report": {
+    "title": "Standard of care: Type 2 diabetes mellitus (US)",
+    "condition": {
+      "input": "type 2 diabetes",
+      "label": "Diabetes Mellitus, Type 2",
+      "mesh_id": "D003924",
+      "synonyms": [
+        "Type 2 Diabetes",
+        "Type 2 Diabetes Mellitus",
+        "Diabetes Mellitus, Adult-Onset",
+        "Diabetes Mellitus, Non-Insulin-Dependent",
+        "Noninsulin-Dependent Diabetes Mellitus",
+        "NIDDM",
+        "Diabetes Mellitus, Type II"
+      ]
+    },
+    "region": "US",
+    "top_level_description": "Current guidance for adults with type 2 diabetes treats lifestyle modification, physical activity and weight management as the foundation of care, with metformin as the usual background drug. The largest shift is the role of SGLT-2 inhibitors and GLP-1 receptor agonists. Both reduce all-cause mortality and major cardiovascular events with high certainty, and ACP (2024) strongly recommends adding either to metformin when glycemic control is inadequate. The BMJ living guideline (2025) instead stratifies by cardiovascular and kidney risk and advises against routine use in lower-risk adults; reviewers adopted this risk-stratified view. In chronic kidney disease, KDIGO positions SGLT-2 inhibitors as first-line, with GLP-1 receptor agonists and finerenone layered on for higher-risk patients. DPP-4 inhibitors are recommended against as an add-on, and insulin carries more severe hypoglycaemia than newer agents. Tirzepatide has a weak recommendation in adults with obesity. Glycaemic targets should be individualised, and deintensification is advised when HbA1c is very low or life expectancy is limited. Evidence certainty for a single HbA1c target is contested.",
+    "key_takeaways": [
+      "Replay note: this narrative was recorded for the AI-suggested selection and conflict resolutions. The reviewer changed 1 option selection(s) and 1 conflict decision(s), so the treatment options table and conflict log below, not this text, reflect the review.",
+      "SGLT-2 inhibitors and GLP-1 receptor agonists are the main outcome-driven add-ons, with high-certainty reductions in mortality and cardiovascular events; the size of the eligible population depends on whether use is risk-stratified.",
+      "In diabetes with CKD, SGLT-2 inhibitors are first-line (KDIGO 2022), with GLP-1 receptor agonists and finerenone as layered add-ons.",
+      "ACP strongly recommends against adding DPP-4 inhibitors to metformin, which signals a de-adoption opportunity.",
+      "Lifestyle, physical activity and obesity treatment are consistent first-line pillars across US and international guidance.",
+      "HbA1c targets remain contested (ACP 2018: 7%-8% versus no recommended target in the German NDMG 2023); individualisation and deintensification for frail or low-HbA1c patients are common ground."
+    ],
+    "treatment_options": [
+      {
+        "id": "opt-lifestyle-modification",
+        "name": "Lifestyle modification and weight management",
+        "category": "lifestyle",
+        "drug_class": null,
+        "line_of_therapy": "first_line",
+        "population": "All adults with type 2 diabetes or prediabetes",
+        "summary": "Every guideline in the set treats lifestyle change as the foundation of care: ACP pairs it with metformin, KDIGO builds its layered CKD approach on it, and AACE 2026 makes lifestyle and obesity treatment key pillars. MedlinePlus notes many people manage glucose this way.",
+        "evidence": [
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control",
+            "statement": "Lifestyle modification is assumed as part of baseline therapy alongside metformin.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:36623286",
+            "quote": "starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy",
+            "statement": "Care is built on a foundation of lifestyle interventions and self-management.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:41842862",
+            "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+            "statement": "AACE treats lifestyle modification and obesity treatment as key pillars of care.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "medlineplus:diabetestype2",
+            "quote": "Many people are able to do this by living a healthy lifestyle.",
+            "statement": "Many people can manage their blood glucose with a healthy lifestyle.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "medlineplus:diabetestype2",
+            "quote": "A healthy lifestyle includes following a healthy eating plan and getting regular physical activity.",
+            "statement": "A healthy lifestyle means a healthy eating plan and regular physical activity.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2026",
+            "date_precision": "year",
+            "label": "AACE 2026 algorithm makes lifestyle and obesity treatment key pillars",
+            "source_id": "pubmed:41842862",
+            "quote": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+            "grounded": true
+          }
+        ],
+        "recommendation_direction": "for",
+        "confidence": "high",
+        "suggested": true,
+        "suggestion_reason": "Foundation of care in every guideline retrieved; drives education and weight-management service demand.",
+        "selected": true
+      },
+      {
+        "id": "opt-metformin",
+        "name": "Metformin",
+        "category": "pharmacologic",
+        "drug_class": "Biguanide",
+        "line_of_therapy": "first_line",
+        "population": "Most nonpregnant adults with type 2 diabetes",
+        "summary": "Metformin with lifestyle modification is the background regimen in the ACP 2024 guideline; newer agents are recommended as additions to it when glycemic control is inadequate. The retrieved abstracts do not grade metformin itself, so its first-line role is implied rather than separately evidenced here.",
+        "evidence": [
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications",
+            "statement": "Newer agents are recommended as additions to existing metformin and lifestyle therapy, which positions metformin as the background first-line drug.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "not_stated",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Background first-line therapy for most adults; anchors any pathway and formulary view.",
+        "selected": true
+      },
+      {
+        "id": "opt-physical-activity",
+        "name": "Structured physical activity",
+        "category": "lifestyle",
+        "drug_class": null,
+        "line_of_therapy": "first_line",
+        "population": "People of all ages with type 2 diabetes",
+        "summary": "ACSM's 2022 consensus statement recommends regular physical activity of several types and breaking up sedentary time, applying the 2018 Physical Activity Guidelines for Americans with few modifications.",
+        "evidence": [
+          {
+            "source_id": "pubmed:35029593",
+            "quote": "People with type 2 diabetes should engage in physical activity regularly and be encouraged to reduce sedentary time and break up sitting time with frequent activity breaks.",
+            "statement": "Regular physical activity and frequent breaks in sitting are recommended.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:35029593",
+            "quote": "Various types of physical activity enhance health and glycemic management in people with type 2 diabetes",
+            "statement": "Multiple types of physical activity improve health and glucose control.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2010",
+            "date_precision": "year",
+            "label": "ACSM position stand on exercise and type 2 diabetes (later updated)",
+            "source_id": "pubmed:35029593",
+            "quote": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes.",
+            "grounded": true
+          },
+          {
+            "date": "2018",
+            "date_precision": "year",
+            "label": "2018 Physical Activity Guidelines for Americans apply to people with type 2 diabetes",
+            "source_id": "pubmed:35029593",
+            "quote": "the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications",
+            "grounded": true
+          }
+        ],
+        "recommendation_direction": "for",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Endorsed by ACSM consensus and relevant to exercise and prevention programme planning.",
+        "selected": true
+      },
+      {
+        "id": "opt-glp-1-receptor-agonists",
+        "name": "GLP-1 receptor agonists",
+        "category": "pharmacologic",
+        "drug_class": "Glucagon-like peptide-1 receptor agonist",
+        "line_of_therapy": "add_on",
+        "population": "Adults with inadequate control on metformin (ACP); moderate- or higher-risk adults (BMJ); people with cardiovascular disease or CKD",
+        "summary": "Reduce all-cause mortality, MACE and stroke. ACP strongly recommends adding them to metformin; KDIGO layers them on first-line therapy in CKD; the German NDMG and BMJ panel tie their use to cardiovascular and renal risk.",
+        "evidence": [
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+            "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+            "recommendation_strength": "strong recommendation",
+            "evidence_level": "high-certainty evidence",
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "Use a GLP-1 agonist to reduce the risk for all-cause mortality, major adverse cardiovascular events, and stroke.",
+            "statement": "GLP-1 agonists are preferred when the goal is to reduce mortality, cardiovascular events or stroke.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "weak recommendation against",
+            "evidence_level": null,
+            "stance": "recommended_against",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+            "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "weak recommendation in favour",
+            "evidence_level": null,
+            "stance": "conditional",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+            "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "strong recommendation in favour",
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:36623286",
+            "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+            "statement": "GLP-1 receptor agonists are layered on top of first-line therapy for heart and kidney protection.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:37874122",
+            "quote": "Cardiovascular and renal risks are to be considered in the choice of drug.",
+            "statement": "Cardiovascular and renal risk should guide which glucose-lowering drug is chosen.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:37874122",
+            "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+            "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+            "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+            "recommendation_strength": null,
+            "evidence_level": "high CoE",
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "GLP1 agonists reduce stroke (high CoE)",
+            "statement": "GLP-1 agonists reduce stroke.",
+            "recommendation_strength": null,
+            "evidence_level": "high CoE",
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2021",
+            "date_precision": "year",
+            "label": "German NDMG pharmacotherapy recommendations (reaffirmed in 2023)",
+            "source_id": "pubmed:37874122",
+            "quote": "Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline.",
+            "grounded": true
+          }
+        ],
+        "recommendation_direction": "mixed",
+        "confidence": "high",
+        "suggested": true,
+        "suggestion_reason": "High-certainty mortality and cardiovascular benefits; significant budget and access implications.",
+        "selected": true
+      },
+      {
+        "id": "opt-sglt2-inhibitors",
+        "name": "SGLT-2 inhibitors",
+        "category": "pharmacologic",
+        "drug_class": "Sodium-glucose cotransporter-2 inhibitor",
+        "line_of_therapy": "add_on",
+        "population": "Adults with inadequate control on metformin (ACP); first-line in diabetes with CKD (KDIGO); risk-stratified by cardiovascular and kidney risk (BMJ)",
+        "summary": "Reduce all-cause mortality, MACE, CKD progression and heart-failure hospitalisation (high certainty). ACP strongly recommends adding them to metformin, KDIGO makes them first-line in CKD, and the BMJ living guideline recommends them for moderate- and higher-risk adults but not for lower-risk adults.",
+        "evidence": [
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+            "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or a GLP-1 agonist to metformin when glycemic control is inadequate.",
+            "recommendation_strength": "strong recommendation",
+            "evidence_level": "high-certainty evidence",
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "Use an SGLT-2 inhibitor to reduce the risk for all-cause mortality, major adverse cardiovascular events, progression of chronic kidney disease, and hospitalization due to congestive heart failure.",
+            "statement": "SGLT-2 inhibitors are preferred when the goal is to reduce mortality, cardiovascular events, CKD progression or heart-failure hospitalisation.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "statement": "For lower-risk adults the panel suggests not using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "weak recommendation against",
+            "evidence_level": null,
+            "stance": "recommended_against",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+            "statement": "For moderate-risk adults the panel suggests using SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "weak recommendation in favour",
+            "evidence_level": null,
+            "stance": "conditional",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists",
+            "statement": "For higher-risk adults, including those with heart failure, the panel recommends SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "recommendation_strength": "strong recommendation in favour",
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:36623286",
+            "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes.",
+            "statement": "SGLT-2 inhibitors are first-line pharmacotherapy in the layered approach for diabetes and CKD.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:37874122",
+            "quote": "in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively)",
+            "statement": "In people with cardiovascular disease, GLP-1 receptor agonists and SGLT2 inhibitors lowered the odds of all-cause mortality versus comparators.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:37874122",
+            "quote": "hospitalization for heart failure (SGLT2 inhibitors: OR = 0.65)",
+            "statement": "SGLT2 inhibitors also lowered the odds of hospitalisation for heart failure.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE)",
+            "statement": "SGLT2 inhibitors and GLP-1 agonists reduce all-cause mortality and major adverse cardiovascular events versus usual care.",
+            "recommendation_strength": null,
+            "evidence_level": "high CoE",
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "SGLT2 inhibitors reduce progression of chronic kidney disease (CKD) and heart failure hospitalizations",
+            "statement": "SGLT2 inhibitors reduce CKD progression and heart-failure hospitalisation.",
+            "recommendation_strength": null,
+            "evidence_level": "high CoE",
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2022",
+            "date_precision": "year",
+            "label": "KDIGO 2022 update positions SGLT-2 inhibitors as first-line in diabetes with CKD",
+            "source_id": "pubmed:36623286",
+            "quote": "The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO).",
+            "grounded": true
+          }
+        ],
+        "recommendation_direction": "mixed",
+        "confidence": "high",
+        "suggested": true,
+        "suggestion_reason": "High-certainty outcome benefits and strong recommendations; major cost and uptake lever.",
+        "selected": true
+      },
+      {
+        "id": "opt-finerenone",
+        "name": "Finerenone (nonsteroidal MRA)",
+        "category": "pharmacologic",
+        "drug_class": "Nonsteroidal mineralocorticoid receptor antagonist",
+        "line_of_therapy": "add_on",
+        "population": "Adults with type 2 diabetes and chronic kidney disease",
+        "summary": "KDIGO adds nonsteroidal MRAs on top of first-line therapy for heart and kidney protection; the BMJ panel suggests finerenone only for higher-risk adults with CKD and suggests against it at moderate risk.",
+        "evidence": [
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "and a weak recommendation against finerenone in adults with CKD",
+            "statement": "For moderate-risk adults with CKD the panel suggests not using finerenone.",
+            "recommendation_strength": "weak recommendation against",
+            "evidence_level": null,
+            "stance": "recommended_against",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "quote": "and a weak recommendation in favour of finerenone in adults with CKD",
+            "statement": "For higher-risk adults with CKD the panel suggests using finerenone.",
+            "recommendation_strength": "weak recommendation in favour",
+            "evidence_level": null,
+            "stance": "conditional",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:36623286",
+            "quote": "To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists",
+            "statement": "Nonsteroidal MRAs are layered on top of first-line therapy for heart and kidney protection.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "mixed",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Kidney-protective add-on for the CKD subgroup, with risk-dependent recommendations.",
+        "selected": true
+      },
+      {
+        "id": "opt-dpp-4-inhibitors",
+        "name": "DPP-4 inhibitors",
+        "category": "pharmacologic",
+        "drug_class": "Dipeptidyl peptidase-4 inhibitor",
+        "line_of_therapy": "unspecified",
+        "population": "Adults with inadequate glycemic control on metformin",
+        "summary": "ACP strongly recommends against adding a DPP-4 inhibitor to metformin to reduce morbidity and mortality; the supporting network meta-analysis found no mortality reduction versus usual care.",
+        "evidence": [
+          {
+            "source_id": "pubmed:38639546",
+            "quote": "ACP recommends against adding a dipeptidyl peptidase-4 (DPP-4) inhibitor to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control to reduce morbidity and all-cause mortality (strong recommendation; high-certainty evidence).",
+            "statement": "ACP strongly recommends against DPP-4 inhibitors as the add-on to metformin.",
+            "recommendation_strength": "strong recommendation",
+            "evidence_level": "high-certainty evidence",
+            "stance": "recommended_against",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+            "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+            "recommendation_strength": null,
+            "evidence_level": "low to high CoE",
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Compared with DPP4 inhibitors, GLP1 agonists reduce all-cause mortality (moderate CoE).",
+            "statement": "GLP-1 agonists reduce mortality relative to DPP-4 inhibitors.",
+            "recommendation_strength": null,
+            "evidence_level": "moderate CoE",
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "against",
+        "confidence": "high",
+        "suggested": true,
+        "suggestion_reason": "Strong recommendation against as add-on; relevant to de-adoption and formulary review.",
+        "selected": true
+      },
+      {
+        "id": "opt-deintensification",
+        "name": "Deintensification of drug therapy",
+        "category": "other",
+        "drug_class": null,
+        "line_of_therapy": "unspecified",
+        "population": "Adults with HbA1c below 6.5% on drug therapy, or with life expectancy under 10 years",
+        "summary": "ACP advises considering deintensification when HbA1c is below 6.5% and avoiding HbA1c targets for people with limited life expectancy, where harms outweigh benefits.",
+        "evidence": [
+          {
+            "source_id": "pubmed:29507945",
+            "quote": "Clinicians should consider deintensifying pharmacologic therapy in patients with type 2 diabetes who achieve HbA1c levels less than 6.5%.",
+            "statement": "Drug therapy should be reduced when HbA1c falls below 6.5%.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:29507945",
+            "quote": "avoid targeting an HbA1c level in patients with a life expectancy less than 10 years due to advanced age (80 years or older), residence in a nursing home, or chronic conditions",
+            "statement": "For people with limited life expectancy, treat symptoms rather than an HbA1c target.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "for",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Supports overtreatment reduction in older and frail populations.",
+        "selected": true
+      },
+      {
+        "id": "opt-individualized-glycemic-targets",
+        "name": "Individualized HbA1c targets",
+        "category": "monitoring",
+        "drug_class": null,
+        "line_of_therapy": "unspecified",
+        "population": "Nonpregnant adults with type 2 diabetes",
+        "summary": "ACP (2018) asks clinicians to personalise glycemic goals and aim for HbA1c 7%-8% in most patients; the German NDMG (2023) found evidence too uncertain to recommend HbA1c target values.",
+        "evidence": [
+          {
+            "source_id": "pubmed:37874122",
+            "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities.",
+            "statement": "No recommendation on HbA1c target values was made due to insufficient evidence certainty.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "insufficient_evidence",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:29507945",
+            "quote": "Clinicians should personalize goals for glycemic control in patients with type 2 diabetes on the basis of a discussion of benefits and harms of pharmacotherapy, patients' preferences, patients' general health and life expectancy, treatment burden, and costs of care.",
+            "statement": "Glycemic goals should be personalised through discussion of benefits, harms, preferences, health, life expectancy, burden and cost.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:29507945",
+            "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes.",
+            "statement": "ACP sets an HbA1c target of 7% to 8% for most patients.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "recommended",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "for",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Target choice shapes quality measures and treatment intensity across the population.",
+        "selected": true
+      },
+      {
+        "id": "opt-insulin",
+        "name": "Insulin (basal / long-acting)",
+        "category": "pharmacologic",
+        "drug_class": "Insulin",
+        "line_of_therapy": "unspecified",
+        "population": "Adults with type 2 diabetes who need further glucose lowering",
+        "summary": "AACE provides a dedicated insulin initiation and titration algorithm. Long-acting insulin did not reduce mortality versus usual care and carries more severe hypoglycemia than SGLT2 inhibitors or GLP-1 agonists.",
+        "evidence": [
+          {
+            "source_id": "pubmed:41842862",
+            "quote": "(8) Initiating and Titrating Insulin Algorithm",
+            "statement": "Insulin initiation and titration has its own algorithm in the AACE guidance.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE).",
+            "statement": "Insulin, tirzepatide and DPP-4 inhibitors did not reduce all-cause mortality versus usual care.",
+            "recommendation_strength": null,
+            "evidence_level": "low to high CoE",
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:38639549",
+            "quote": "Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU.",
+            "statement": "Severe hypoglycemia and serious adverse events are more frequent with insulin or sulfonylureas than with SGLT2 inhibitors or GLP-1 agonists.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          },
+          {
+            "source_id": "medlineplus:diabetestype2",
+            "quote": "Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.",
+            "statement": "Medicines include oral agents, insulin and other injectables, often in combination over time.",
+            "recommendation_strength": null,
+            "evidence_level": null,
+            "stance": "described",
+            "grounded": true
+          }
+        ],
+        "milestones": [],
+        "recommendation_direction": "not_stated",
+        "confidence": "medium",
+        "suggested": true,
+        "suggestion_reason": "Remains part of the treatment pathway; hypoglycaemia harms matter for utilisation planning.",
+        "selected": true
+      }
+    ],
+    "excluded_options": [
+      {
+        "id": "opt-cardiovascular-risk-factor-management",
+        "name": "Blood pressure and lipid management",
+        "category": "other",
+        "line_of_therapy": "add_on",
+        "recommendation_direction": "for",
+        "suggested": false,
+        "suggestion_reason": "Important but usually covered by a separate cardiometabolic risk briefing.",
+        "excluded_by": "admin",
+        "excluded_at": "2026-10-03T17:09:04.601917Z"
+      },
+      {
+        "id": "opt-blood-glucose-self-monitoring",
+        "name": "Blood glucose self-monitoring",
+        "category": "monitoring",
+        "line_of_therapy": "unspecified",
+        "recommendation_direction": "not_stated",
+        "suggested": false,
+        "suggestion_reason": "Supported only by a consumer health summary in this set; no graded guideline evidence.",
+        "excluded_by": "admin",
+        "excluded_at": "2026-10-03T17:09:04.601917Z"
+      },
+      {
+        "id": "opt-shared-decision-making",
+        "name": "Structured shared decision making",
+        "category": "other",
+        "line_of_therapy": "unspecified",
+        "recommendation_direction": "for",
+        "suggested": false,
+        "suggestion_reason": "Process recommendation from one non-US guideline; better covered in a care-model briefing.",
+        "excluded_by": "admin",
+        "excluded_at": "2026-10-03T17:09:04.601917Z"
+      },
+      {
+        "id": "opt-sulfonylureas",
+        "name": "Sulfonylureas",
+        "category": "pharmacologic",
+        "line_of_therapy": "unspecified",
+        "recommendation_direction": "not_stated",
+        "suggested": false,
+        "suggestion_reason": "Only appears as a comparator in the retrieved evidence, with no recommendation.",
+        "excluded_by": "admin",
+        "excluded_at": "2026-10-03T17:09:04.601917Z"
+      },
+      {
+        "id": "opt-tirzepatide",
+        "name": "Tirzepatide",
+        "category": "pharmacologic",
+        "line_of_therapy": "unspecified",
+        "recommendation_direction": "conditional",
+        "suggested": true,
+        "suggestion_reason": "Newer high-cost agent with a weak recommendation in obesity; important for formulary horizon scanning.",
+        "excluded_by": "admin",
+        "excluded_at": "2026-10-03T17:09:04.601917Z"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tl-ms-physical-activity-1",
+        "date": "2010",
+        "date_precision": "year",
+        "kind": "treatment_milestone",
+        "label": "Structured physical activity: ACSM position stand on exercise and type 2 diabetes (later updated)",
+        "short_label": "Structured physical a…",
+        "description": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes.",
+        "source_ids": [
+          "pubmed:35029593"
+        ],
+        "treatment_option_ids": [
+          "opt-physical-activity"
+        ]
+      },
+      {
+        "id": "tl-src-medlineplus-diabetestype2",
+        "date": "2011-12-05",
+        "date_precision": "day",
+        "kind": "evidence_published",
+        "label": "National Institute of Diabetes and Digestive and Kidney Diseases: Diabetes Type 2",
+        "short_label": "NIDDKD 2011",
+        "description": "Evidence published (consumer health summary, reliability tier 3).",
+        "source_ids": [
+          "medlineplus:diabetestype2"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification",
+          "opt-insulin"
+        ]
+      },
+      {
+        "id": "tl-ms-physical-activity-2",
+        "date": "2018",
+        "date_precision": "year",
+        "kind": "treatment_milestone",
+        "label": "Structured physical activity: 2018 Physical Activity Guidelines for Americans apply to people with type 2 diabetes",
+        "short_label": "Structured physical a…",
+        "description": "the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications",
+        "source_ids": [
+          "pubmed:35029593"
+        ],
+        "treatment_option_ids": [
+          "opt-physical-activity"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-29507945",
+        "date": "2018-03-06",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "American College of Physicians: Hemoglobin A1c Targets for Glycemic Control With Pharmacologic Therapy for Nonp…",
+        "short_label": "ACP 2018",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:29507945"
+        ],
+        "treatment_option_ids": [
+          "opt-deintensification",
+          "opt-individualized-glycemic-targets"
+        ]
+      },
+      {
+        "id": "tl-ms-glp-1-receptor-agonists-1",
+        "date": "2021",
+        "date_precision": "year",
+        "kind": "treatment_milestone",
+        "label": "GLP-1 receptor agonists: German NDMG pharmacotherapy recommendations (reaffirmed in 2023)",
+        "short_label": "GLP-1 receptor agonis…",
+        "description": "Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline.",
+        "source_ids": [
+          "pubmed:37874122"
+        ],
+        "treatment_option_ids": [
+          "opt-glp-1-receptor-agonists"
+        ]
+      },
+      {
+        "id": "tl-ms-sglt2-inhibitors-1",
+        "date": "2022",
+        "date_precision": "year",
+        "kind": "treatment_milestone",
+        "label": "SGLT-2 inhibitors: KDIGO 2022 update positions SGLT-2 inhibitors as first-line in diabetes with CKD",
+        "short_label": "SGLT-2 inhibitors",
+        "description": "The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO).",
+        "source_ids": [
+          "pubmed:36623286"
+        ],
+        "treatment_option_ids": [
+          "opt-sglt2-inhibitors"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-35029593",
+        "date": "2022-02-01",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "American College of Sports Medicine: Exercise/Physical Activity in Individuals with Type 2 Diabetes: A Consensus Sta…",
+        "short_label": "ACSM 2022",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:35029593"
+        ],
+        "treatment_option_ids": [
+          "opt-physical-activity"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-36623286",
+        "date": "2023-01-10",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "Kidney Disease: Improving Global Outcomes (KDIGO): Diabetes Management in Chronic Kidney Disease: Synopsis of the KDIGO 2022 Clini…",
+        "short_label": "KDIGO 2023",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:36623286"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification",
+          "opt-glp-1-receptor-agonists",
+          "opt-sglt2-inhibitors",
+          "opt-finerenone"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-37874122",
+        "date": "2023-11-24",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "German National Disease Management Guideline (NVL) programme: Clinical Practice Guideline: Shared Decision Making, Diagnostic Evaluation, and…",
+        "short_label": "NVL 2023",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:37874122"
+        ],
+        "treatment_option_ids": [
+          "opt-glp-1-receptor-agonists",
+          "opt-sglt2-inhibitors",
+          "opt-individualized-glycemic-targets"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-38639546",
+        "date": "2024-04-19",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "American College of Physicians: Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Clinical Guide…",
+        "short_label": "ACP 2024",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:38639546"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification",
+          "opt-metformin",
+          "opt-glp-1-receptor-agonists",
+          "opt-sglt2-inhibitors",
+          "opt-dpp-4-inhibitors"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-38639549",
+        "date": "2024-04-19",
+        "date_precision": "day",
+        "kind": "evidence_published",
+        "label": "Annals of internal medicine: Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Systematic Rev…",
+        "short_label": "Annals of inter… 2024",
+        "description": "Evidence published (systematic review, reliability tier 2).",
+        "source_ids": [
+          "pubmed:38639549"
+        ],
+        "treatment_option_ids": [
+          "opt-glp-1-receptor-agonists",
+          "opt-sglt2-inhibitors",
+          "opt-dpp-4-inhibitors",
+          "opt-insulin"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-40813129",
+        "date": "2025-08-14",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "BMJ (Clinical research ed.): Cardiovascular, kidney related, and weight loss effects of therapeutics for typ…",
+        "short_label": "BMJ 2025",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:40813129"
+        ],
+        "treatment_option_ids": [
+          "opt-glp-1-receptor-agonists",
+          "opt-sglt2-inhibitors",
+          "opt-finerenone"
+        ]
+      },
+      {
+        "id": "tl-ms-lifestyle-modification-1",
+        "date": "2026",
+        "date_precision": "year",
+        "kind": "treatment_milestone",
+        "label": "Lifestyle modification and weight management: AACE 2026 algorithm makes lifestyle and obesity treatment key pillars",
+        "short_label": "Lifestyle modificatio…",
+        "description": "This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D.",
+        "source_ids": [
+          "pubmed:41842862"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification"
+        ]
+      },
+      {
+        "id": "tl-upd-medlineplus-diabetestype2",
+        "date": "2026-01-21",
+        "date_precision": "day",
+        "kind": "evidence_published",
+        "label": "National Institute of Diabetes and Digestive and Kidney Diseases: Diabetes Type 2 (updated)",
+        "short_label": "NIDDKD upd. 2026",
+        "description": "Source last updated by National Institute of Diabetes and Digestive and Kidney Diseases.",
+        "source_ids": [
+          "medlineplus:diabetestype2"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification",
+          "opt-insulin"
+        ]
+      },
+      {
+        "id": "tl-src-pubmed-41842862",
+        "date": "2026-03-17",
+        "date_precision": "day",
+        "kind": "guideline_published",
+        "label": "American Association of Clinical Endocrinology (AACE): American Association of Clinical Endocrinology Consensus Statement: Algorithm f…",
+        "short_label": "AACE 2026",
+        "description": "Guideline published (clinical guideline, reliability tier 1).",
+        "source_ids": [
+          "pubmed:41842862"
+        ],
+        "treatment_option_ids": [
+          "opt-lifestyle-modification",
+          "opt-insulin"
+        ]
+      },
+      {
+        "id": "tl-research",
+        "date": "2026-10-03",
+        "date_precision": "day",
+        "kind": "research_conducted",
+        "label": "Evidence snapshot recorded (replay of an earlier retrieval)",
+        "short_label": "Research",
+        "description": "9 sources retrieved (replay) between 2026-10-03T15:50:29Z and 2026-10-03T15:50:29Z",
+        "source_ids": [],
+        "treatment_option_ids": []
+      }
+    ],
+    "conflict_log": [
+      {
+        "id": "conf-sglt2-glp1-for-lower-risk-adults",
+        "topic": "Should SGLT-2 inhibitors or GLP-1 receptor agonists be added for adults at lower cardiovascular and kidney risk?",
+        "conflict_type": "contradiction",
+        "treatment_option_ids": [
+          "opt-sglt2-inhibitors",
+          "opt-glp-1-receptor-agonists"
+        ],
+        "positions": [
+          {
+            "source_id": "pubmed:38639546",
+            "side": 1,
+            "statement": "ACP strongly recommends adding an SGLT-2 inhibitor or GLP-1 agonist to metformin for all adults with inadequate glycemic control, without stratifying by cardiovascular or kidney risk.",
+            "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+            "published_at": "2024-04-19",
+            "reliability_tier": 1,
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:40813129",
+            "side": 2,
+            "statement": "The BMJ living guideline gives a weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists for adults with three or fewer cardiovascular risk factors and no established CVD or CKD.",
+            "quote": "Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.",
+            "published_at": "2025-08-14",
+            "reliability_tier": 1,
+            "grounded": true
+          }
+        ],
+        "ai_assessment": "Both are recent tier-1 guidelines, but they frame the decision differently: ACP (US, April 2024) keys the recommendation to inadequate glycemic control on metformin, whereas the BMJ international panel (August 2025) stratifies by absolute cardiovascular and kidney risk and weighs burden and cost from an individual patient perspective. For lower-risk adults the two directly disagree. The BMJ evidence base is newer (living review to July 2024); ACP is the US college of internists.",
+        "suggested_resolution": {
+          "decision": "accept_source",
+          "accepted_source_id": "pubmed:40813129",
+          "rule": "more_recent_same_tier",
+          "rationale": "Rule (same tier, newer wins): position 2: tier 1 clinical guideline (2025-08-14) is more recent than position 1: tier 1 clinical guideline (2024-04-19). This is a recency rule, not a judgement of the evidence."
+        },
+        "resolution": {
+          "decision": "accept_source",
+          "accepted_source_id": "pubmed:40813129",
+          "note": "Agree with the suggested resolution.",
+          "resolved_by": "admin",
+          "resolved_at": "2026-10-03T17:09:04.601917Z"
+        }
+      },
+      {
+        "id": "conf-hba1c-target-for-most-adults",
+        "topic": "What HbA1c target should guide drug therapy for most adults with type 2 diabetes?",
+        "conflict_type": "contradiction",
+        "treatment_option_ids": [
+          "opt-individualized-glycemic-targets",
+          "opt-deintensification"
+        ],
+        "positions": [
+          {
+            "source_id": "pubmed:29507945",
+            "side": 1,
+            "statement": "ACP sets a target HbA1c between 7% and 8% for most patients and advises deintensifying below 6.5%.",
+            "quote": "Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes.",
+            "published_at": "2018-03-06",
+            "reliability_tier": 1,
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:37874122",
+            "side": 2,
+            "statement": "The German national guideline group found no evidence of adequate certainty to make any recommendation on HbA1c target values.",
+            "quote": "The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities.",
+            "published_at": "2023-11-24",
+            "reliability_tier": 1,
+            "grounded": true
+          }
+        ],
+        "ai_assessment": "ACP's 2018 guidance statement (US) derives a numeric range from an appraisal of other national guidelines, while the 2023 German national guideline declines to recommend a target because evidence certainty is inadequate. The German source is newer; PubMed indexes the ACP statement as a review, so its guideline tier comes from its title. Both agree that goals should be individualised.",
+        "suggested_resolution": {
+          "decision": "accept_source",
+          "accepted_source_id": "pubmed:37874122",
+          "rule": "more_recent_same_tier",
+          "rationale": "Rule (same tier, newer wins): position 2: tier 1 clinical guideline (2023-11-24) is more recent than position 1: tier 1 clinical guideline (2018-03-06). This is a recency rule, not a judgement of the evidence."
+        },
+        "resolution": {
+          "decision": "accept_source",
+          "accepted_source_id": "pubmed:29507945",
+          "note": "Our pathway uses a numeric target; keep ACP's 7-8% range and note the German position.",
+          "resolved_by": "admin",
+          "resolved_at": "2026-10-03T17:09:04.601917Z"
+        }
+      },
+      {
+        "id": "conf-first-line-drug-with-ckd-or-comorbidities",
+        "topic": "Is an SGLT-2 inhibitor first-line, or an add-on to metformin, when chronic kidney disease is present?",
+        "conflict_type": "population_difference",
+        "treatment_option_ids": [
+          "opt-metformin",
+          "opt-sglt2-inhibitors"
+        ],
+        "positions": [
+          {
+            "source_id": "pubmed:38639546",
+            "side": 1,
+            "statement": "ACP positions SGLT-2 inhibitors and GLP-1 agonists as additions to metformin and lifestyle modification for adults with inadequate glycemic control, without a separate CKD pathway.",
+            "quote": "ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence).",
+            "published_at": "2024-04-19",
+            "reliability_tier": 1,
+            "grounded": true
+          },
+          {
+            "source_id": "pubmed:36623286",
+            "side": 2,
+            "statement": "For people with diabetes and CKD, KDIGO names SGLT-2 inhibitors as first-line pharmacotherapy on a foundation of lifestyle and self-management.",
+            "quote": "A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes.",
+            "published_at": "2023-01-10",
+            "reliability_tier": 1,
+            "grounded": true
+          }
+        ],
+        "ai_assessment": "The two guidelines address different populations. ACP (2024) addresses adults with type 2 diabetes and inadequate glycemic control in general and places SGLT-2 inhibitors after metformin. KDIGO (2022) addresses people with diabetes and chronic kidney disease and names SGLT-2 inhibitors as first-line pharmacotherapy because of their kidney and cardiovascular outcomes. Neither source states a position on the other population.",
+        "suggested_resolution": {
+          "decision": "accept_both_with_context",
+          "accepted_source_id": null,
+          "rule": "population_context",
+          "rationale": "Population difference: the positions apply to different patient groups, so they are kept with the population stated."
+        },
+        "resolution": {
+          "decision": "accept_both_with_context",
+          "accepted_source_id": null,
+          "note": "Agree with the suggested resolution.",
+          "resolved_by": "admin",
+          "resolved_at": "2026-10-03T17:09:04.601917Z"
+        }
+      }
+    ],
+    "audit_log": [
+      {
+        "at": "2026-10-03T17:09:01.910604Z",
+        "actor": "admin",
+        "action": "briefing_created",
+        "target_id": null,
+        "detail": "Briefing created for 'type 2 diabetes' (region US, replay data)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "review_submitted",
+        "target_id": null,
+        "detail": "Selected 10 of 15 options; resolved 3 conflict(s)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-metformin",
+        "detail": "Metformin: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-lifestyle-modification",
+        "detail": "Lifestyle modification and weight management: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-physical-activity",
+        "detail": "Structured physical activity: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-sglt2-inhibitors",
+        "detail": "SGLT-2 inhibitors: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-glp-1-receptor-agonists",
+        "detail": "GLP-1 receptor agonists: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_excluded",
+        "target_id": "opt-tirzepatide",
+        "detail": "Tirzepatide: excluded (overrides AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-finerenone",
+        "detail": "Finerenone (nonsteroidal MRA): included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-dpp-4-inhibitors",
+        "detail": "DPP-4 inhibitors: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-insulin",
+        "detail": "Insulin (basal / long-acting): included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_excluded",
+        "target_id": "opt-sulfonylureas",
+        "detail": "Sulfonylureas: excluded (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-individualized-glycemic-targets",
+        "detail": "Individualized HbA1c targets: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_selected",
+        "target_id": "opt-deintensification",
+        "detail": "Deintensification of drug therapy: included (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_excluded",
+        "target_id": "opt-shared-decision-making",
+        "detail": "Structured shared decision making: excluded (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_excluded",
+        "target_id": "opt-cardiovascular-risk-factor-management",
+        "detail": "Blood pressure and lipid management: excluded (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "option_excluded",
+        "target_id": "opt-blood-glucose-self-monitoring",
+        "detail": "Blood glucose self-monitoring: excluded (matches AI suggestion)."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "conflict_resolved",
+        "target_id": "conf-sglt2-glp1-for-lower-risk-adults",
+        "detail": "Should SGLT-2 inhibitors or GLP-1 receptor agonists be added for adults at lower cardiovascular and kidney risk?: accepted BMJ (Clinical research ed.), 2025 (pubmed:40813129) (follows suggested resolution). Note: Agree with the suggested resolution."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "conflict_resolved",
+        "target_id": "conf-hba1c-target-for-most-adults",
+        "detail": "What HbA1c target should guide drug therapy for most adults with type 2 diabetes?: accepted American College of Physicians, 2018 (pubmed:29507945) (differs from suggested resolution). Note: Our pathway uses a numeric target; keep ACP's 7-8% range and note the German position."
+      },
+      {
+        "at": "2026-10-03T17:09:04.601917Z",
+        "actor": "admin",
+        "action": "conflict_resolved",
+        "target_id": "conf-first-line-drug-with-ckd-or-comorbidities",
+        "detail": "Is an SGLT-2 inhibitor first-line, or an add-on to metformin, when chronic kidney disease is present?: kept both positions with context (follows suggested resolution). Note: Agree with the suggested resolution."
+      },
+      {
+        "at": "2026-10-03T17:09:04.643071Z",
+        "actor": "system",
+        "action": "report_generated",
+        "target_id": null,
+        "detail": "Report generated with replay for admin (10 options, 3 conflict(s))."
+      }
+    ],
+    "sources": [
+      {
+        "id": "pubmed:41842862",
+        "connector": "pubmed",
+        "title": "American Association of Clinical Endocrinology Consensus Statement: Algorithm for Management of Adults With Type 2 Diabetes - 2026 Update.",
+        "publisher": "Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists",
+        "issuing_body": "American Association of Clinical Endocrinology (AACE)",
+        "authors": [
+          "Samson SL",
+          "Vellanki P",
+          "Blonde L",
+          "Hirsch IB",
+          "Hoang TD",
+          "Isaacs SD",
+          "Izuora KE",
+          "Low Wang CC",
+          "Ooi CP",
+          "Padilla BI",
+          "Schulman-Rosenbaum R",
+          "Twining CL",
+          "Umpierrez GE",
+          "Valencia WM"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41842862/",
+        "pmid": "41842862",
+        "doi": "10.1016/j.eprac.2026.01.006",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "US",
+        "region_inferred": true,
+        "published_at": "2026-03-17",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "RESULTS: This algorithm for management of adults with type 2 diabetes (T2D) includes 11 sections: (1) Principles for the Management of Adults With T2D; (2) Prediabetes Algorithm (3) Diabetes Classification Algorithm (new); (4) Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Dyslipidemia; (5) Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Hypertension; (6) Comorbidities- and Complications-Centric Glycemic Control Algorithm; (7) Glucose-Centric Glycemic Control Algorithm; (8) Initiating and Titrating Insulin Algorithm; (9) Profiles of Pharmacotherapy for T2D; (10) Profiles of Pharmacotherapy for Obesity; and (11) Vaccine Recommendations for Adults With T2D. CONCLUSIONS: This 2026 update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and T2D. It also provides guidance on the management of atherosclerotic risk factors of dyslipidemia and hypertension."
+      },
+      {
+        "id": "pubmed:40813129",
+        "connector": "pubmed",
+        "title": "Cardiovascular, kidney related, and weight loss effects of therapeutics for type 2 diabetes: a living clinical practice guideline.",
+        "publisher": "BMJ (Clinical research ed.)",
+        "issuing_body": null,
+        "authors": [
+          "Agarwal A",
+          "Mustafa R",
+          "Manja V",
+          "Agoritsas T",
+          "Macdonald H",
+          "Li S",
+          "Foroutan F",
+          "Rayner D",
+          "Rodriguez-Gutierrez R",
+          "Åsvold BO",
+          "Heen AF",
+          "Gabi J",
+          "Guo L",
+          "Hao Q",
+          "Jeppesen BT",
+          "Jha V",
+          "Nagler E",
+          "Odom A",
+          "Rodondi N",
+          "Shetty S",
+          "Vermandere M",
+          "Wright R",
+          "Guyatt G",
+          "Vandvik PO"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40813129/",
+        "pmid": "40813129",
+        "doi": "10.1136/bmj-2024-082071",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "International",
+        "region_inferred": true,
+        "published_at": "2025-08-14",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "RECOMMENDATIONS: The panel issued risk-stratified recommendations regarding four prioritised medications for adults with type 2 diabetes (SGLT-2 inhibitors, GLP-1 receptor agonists, finerenone and tirzepatide):• Lower risk (three or fewer cardiovascular risk factors without established cardiovascular disease (CVD) or chronic kidney disease (CKD)): weak recommendation against SGLT-2 inhibitors or GLP-1 receptor agonists.• Moderate risk (more than three cardiovascular risk factors without established CVD or CKD; or established CVD and/or CKD at lower risk of complications): weak recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists; and a weak recommendation against finerenone in adults with CKD.• Higher risk (established CVD and/or CKD at higher risk of complications, or established heart failure): strong recommendation in favour of SGLT-2 inhibitors or GLP-1 receptor agonists; and a weak recommendation in favour of finerenone in adults with CKD.• Across risk strata: weak recommendation in favour of tirzepatide in adults with obesity. … Recommendations were informed by a linked living systematic review and network meta-analysis evaluating relative benefits and harms updated to 31 July 2024; and by linked systematic reviews addressing risk prediction models and values and preferences of adults with type 2 diabetes."
+      },
+      {
+        "id": "pubmed:38639546",
+        "connector": "pubmed",
+        "title": "Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Clinical Guideline From the American College of Physicians.",
+        "publisher": "Annals of internal medicine",
+        "issuing_body": "American College of Physicians",
+        "authors": [
+          "Qaseem A",
+          "Obley AJ",
+          "Shamliyan T",
+          "Hicks LA",
+          "Harrod CS",
+          "Crandall CJ",
+          "Clinical Guidelines Committee of the American College of Physicians",
+          "Balk EM",
+          "Cooney TG",
+          "Cross JT",
+          "Fitterman N",
+          "Lin JS",
+          "Maroto M",
+          "Miller MC",
+          "Shekelle P",
+          "Tice JA",
+          "Tufte JE",
+          "Etxeandia-Ikobaltzeta I",
+          "Yost J"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38639546/",
+        "pmid": "38639546",
+        "doi": "10.7326/M23-2788",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "US",
+        "region_inferred": true,
+        "published_at": "2024-04-19",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "RECOMMENDATION 1: ACP recommends adding a sodium-glucose cotransporter-2 (SGLT-2) inhibitor or glucagon-like peptide-1 (GLP-1) agonist to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control (strong recommendation; high-certainty evidence). • Use an SGLT-2 inhibitor to reduce the risk for all-cause mortality, major adverse cardiovascular events, progression of chronic kidney disease, and hospitalization due to congestive heart failure. • Use a GLP-1 agonist to reduce the risk for all-cause mortality, major adverse cardiovascular events, and stroke. RECOMMENDATION 2: ACP recommends against adding a dipeptidyl peptidase-4 (DPP-4) inhibitor to metformin and lifestyle modifications in adults with type 2 diabetes and inadequate glycemic control to reduce morbidity and all-cause mortality (strong recommendation; high-certainty evidence)."
+      },
+      {
+        "id": "pubmed:37874122",
+        "connector": "pubmed",
+        "title": "Clinical Practice Guideline: Shared Decision Making, Diagnostic Evaluation, and Pharmacotherapy in Type 2 Diabetes.",
+        "publisher": "Deutsches Arzteblatt international",
+        "issuing_body": "German National Disease Management Guideline (NVL) programme",
+        "authors": [
+          "Brockamp C",
+          "Landgraf R",
+          "Müller UA",
+          "Müller-Wieland D",
+          "Petrak F",
+          "Uebel T",
+          "the National Disease Management Guideline Group"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37874122/",
+        "pmid": "37874122",
+        "doi": "10.3238/arztebl.m2023.0219",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "EU",
+        "region_inferred": true,
+        "published_at": "2023-11-24",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "RESULTS: The new chapter on shared decision making includes a description of a structured approach that can be used when individual treatment goals have not been achieved. … Cardiovascular and renal risks are to be considered in the choice of drug. Studies have shown that, in persons with cardiovascular disease, treatment with GLP-1 receptor agonists (GLP-1, glucagon-like peptide-1) or SGLT2 inhibitors (SGLT2, sodium-glucose co-transporter-2) was less likely than the comparison intervention to lead to certain patient-relevant endpoints, including all-cause mortality (OR = 0.88 and 0.84, respectively), hospitalization for heart failure (SGLT2 inhibitors: OR = 0.65), and worsening of renal function (OR = 0.61 and 0.59, respectively). CONCLUSION: Current evidence continues to support the recommendations on pharmacotherapy of the 2021 guideline. The Guideline Group did not find evidence of adequate certainty to inform recommendations about the screening of persons at risk, HbA1c target values, or screening for sequelae and comorbidities."
+      },
+      {
+        "id": "pubmed:36623286",
+        "connector": "pubmed",
+        "title": "Diabetes Management in Chronic Kidney Disease: Synopsis of the KDIGO 2022 Clinical Practice Guideline Update.",
+        "publisher": "Annals of internal medicine",
+        "issuing_body": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+        "authors": [
+          "Navaneethan SD",
+          "Zoungas S",
+          "Caramori ML",
+          "Chan JCN",
+          "Heerspink HJL",
+          "Hurst C",
+          "Liew A",
+          "Michos ED",
+          "Olowu WA",
+          "Sadusky T",
+          "Tandon N",
+          "Tuttle KR",
+          "Wanner C",
+          "Wilkens KG",
+          "Craig JC",
+          "Tunnicliffe DJ",
+          "Tonelli M",
+          "Cheung M",
+          "Earley A",
+          "Rossing P",
+          "de Boer IH",
+          "Khunti K"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36623286/",
+        "pmid": "36623286",
+        "doi": "10.7326/M22-2904",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "International",
+        "region_inferred": true,
+        "published_at": "2023-01-10",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "DESCRIPTION: The KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease is an update of the 2020 guideline from Kidney Disease: Improving Global Outcomes (KDIGO). … A focus on preserving kidney function and maintaining well-being is recommended using a layered approach to care, starting with a foundation of lifestyle interventions, self-management, and first-line pharmacotherapy (such as sodium-glucose cotransporter-2 inhibitors) demonstrated to improve clinical outcomes. To this are added additional drugs with heart and kidney protection, such as glucagon-like peptide-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists, and interventions to control risk factors for CKD progression and cardiovascular events, such as blood pressure, glycemia, and lipids."
+      },
+      {
+        "id": "pubmed:35029593",
+        "connector": "pubmed",
+        "title": "Exercise/Physical Activity in Individuals with Type 2 Diabetes: A Consensus Statement from the American College of Sports Medicine.",
+        "publisher": "Medicine and science in sports and exercise",
+        "issuing_body": "American College of Sports Medicine",
+        "authors": [
+          "Kanaley JA",
+          "Colberg SR",
+          "Corcoran MH",
+          "Malin SK",
+          "Rodriguez NR",
+          "Crespo CJ",
+          "Kirwan JP",
+          "Zierath JR"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35029593/",
+        "pmid": "35029593",
+        "doi": "10.1249/MSS.0000000000002800",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: PubMed publication type 'Practice Guideline'",
+        "region": "US",
+        "region_inferred": true,
+        "published_at": "2022-02-01",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "This consensus statement is an update of the 2010 American College of Sports Medicine position stand on exercise and type 2 diabetes. … Various types of physical activity enhance health and glycemic management in people with type 2 diabetes, including flexibility and balance exercise, and the importance of each recommended type or mode are discussed. In general, the 2018 Physical Activity Guidelines for Americans apply to all individuals with type 2 diabetes, with a few exceptions and modifications. People with type 2 diabetes should engage in physical activity regularly and be encouraged to reduce sedentary time and break up sitting time with frequent activity breaks."
+      },
+      {
+        "id": "pubmed:29507945",
+        "connector": "pubmed",
+        "title": "Hemoglobin A1c Targets for Glycemic Control With Pharmacologic Therapy for Nonpregnant Adults With Type 2 Diabetes Mellitus: A Guidance Statement Update From the American College of Physicians.",
+        "publisher": "Annals of internal medicine",
+        "issuing_body": "American College of Physicians",
+        "authors": [
+          "Qaseem A",
+          "Wilt TJ",
+          "Kansagara D",
+          "Horwitch C",
+          "Barry MJ",
+          "Forciea MA",
+          "Clinical Guidelines Committee of the American College of Physicians",
+          "Fitterman N",
+          "Balzer K",
+          "Boyd C",
+          "Humphrey LL",
+          "Iorio A",
+          "Lin J",
+          "Maroto M",
+          "McLean R",
+          "Mustafa R",
+          "Tufte J"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29507945/",
+        "pmid": "29507945",
+        "doi": "10.7326/M17-0939",
+        "source_type": "clinical_guideline",
+        "reliability_tier": 1,
+        "tier_rationale": "Rule: title identifies a guidance document ('Guidance Statement'); PubMed indexes it as 'Journal Article, Research Support, Non-U.S. Gov't, Review'",
+        "region": "US",
+        "region_inferred": true,
+        "published_at": "2018-03-06",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "GUIDANCE STATEMENT 1: Clinicians should personalize goals for glycemic control in patients with type 2 diabetes on the basis of a discussion of benefits and harms of pharmacotherapy, patients' preferences, patients' general health and life expectancy, treatment burden, and costs of care. GUIDANCE STATEMENT 2: Clinicians should aim to achieve an HbA1c level between 7% and 8% in most patients with type 2 diabetes. GUIDANCE STATEMENT 3: Clinicians should consider deintensifying pharmacologic therapy in patients with type 2 diabetes who achieve HbA1c levels less than 6.5%. GUIDANCE STATEMENT 4: Clinicians should treat patients with type 2 diabetes to minimize symptoms related to hyperglycemia and avoid targeting an HbA1c level in patients with a life expectancy less than 10 years due to advanced age (80 years or older), residence in a nursing home, or chronic conditions (such as dementia, cancer, end-stage kidney disease, or severe chronic obstructive pulmonary disease or congestive heart failure) because the harms outweigh the benefits in this population."
+      },
+      {
+        "id": "pubmed:38639549",
+        "connector": "pubmed",
+        "title": "Newer Pharmacologic Treatments in Adults With Type 2 Diabetes: A Systematic Review and Network Meta-analysis for the American College of Physicians.",
+        "publisher": "Annals of internal medicine",
+        "issuing_body": null,
+        "authors": [
+          "Drake T",
+          "Landsteiner A",
+          "Langsetmo L",
+          "MacDonald R",
+          "Anthony M",
+          "Kalinowski C",
+          "Ullman K",
+          "Billington CJ",
+          "Kaka A",
+          "Sultan S",
+          "Wilt TJ"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38639549/",
+        "pmid": "38639549",
+        "doi": "10.7326/M23-1490",
+        "source_type": "systematic_review",
+        "reliability_tier": 2,
+        "tier_rationale": "Rule: PubMed publication type 'Systematic Review'",
+        "region": null,
+        "region_inferred": false,
+        "published_at": "2024-04-19",
+        "updated_at": null,
+        "retrieved_at": "2026-10-03T15:50:29.266657Z",
+        "excerpt": "Compared with usual care, SGLT2 inhibitors and GLP1 agonists reduce all-cause mortality (high CoE) and major adverse cardiovascular events (MACE) (moderate to high CoE), SGLT2 inhibitors reduce progression of chronic kidney disease (CKD) and heart failure hospitalizations and GLP1 agonists reduce stroke (high CoE), and SGLT2 inhibitors reduce serious adverse events and severe hypoglycemia (high CoE). … Compared with usual care, insulin, tirzepatide, and DPP4 inhibitors do not reduce all-cause mortality (low to high CoE). … Compared with DPP4 inhibitors, GLP1 agonists reduce all-cause mortality (moderate CoE). Compared with DPP4 inhibitors and sulfonylurea (SU), SGLT2 inhibitors reduce MACE (moderate to high CoE). … Serious adverse events and severe hypoglycemia are less frequent with SGLT2 inhibitors and GLP1 agonists than with insulin or SU."
+      },
+      {
+        "id": "medlineplus:diabetestype2",
+        "connector": "medlineplus",
+        "title": "Diabetes Type 2",
+        "publisher": "National Library of Medicine",
+        "issuing_body": "National Institute of Diabetes and Digestive and Kidney Diseases",
+        "authors": [],
+        "url": "https://medlineplus.gov/diabetestype2.html",
+        "pmid": null,
+        "doi": null,
+        "source_type": "consumer_health_summary",
+        "reliability_tier": 3,
+        "tier_rationale": "Rule: MedlinePlus health topic (NLM-curated consumer health summary)",
+        "region": "US",
+        "region_inferred": false,
+        "published_at": "2011-12-05",
+        "updated_at": "2026-01-21",
+        "retrieved_at": "2026-10-03T15:50:29.949658Z",
+        "excerpt": "What is type 2 diabetes?\n\nType 2 diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. If you have diabetes, your body doesn't make enough insulin or doesn't use insulin well. The glucose then stays in your blood and not enough goes into your cells.\n\nOver time, having too much glucose in your blood can cause health problems. But you can take steps to manage your diabetes and try to prevent these health problems.\n\nWhat causes type 2 diabetes?\n\nType 2 diabetes may be caused by a combination of factors:\n\n- Being overweight or having obesity\n- Not being physically active\n- Genetics and family history\n\nType 2 diabetes usually starts with insulin resistance. This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insulin, and your blood glucose levels rise.\n\nWho is at risk for type 2 diabetes?\n\nYou are at higher risk of developing type 2 diabetes if you:\n\n- Are over age 45. Children, teenagers, and younger adults can get type 2 diabetes, but it is more common in middle-aged and older people.\n- Have prediabetes, which means that your blood glucose is high for you but not high enough to be called diabetes\n- Had diabetes in pregnancy or gave birth to a baby weighing 9 pounds or more.\n- Have a family history of diabetes\n- Are overweight or have obesity\n- Are Black or African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander\n- Are not physically active\n- Have other conditions such as high blood pressure, heart disease, stroke, polycystic ovary syndrome (PCOS), or depression\n- Have low HDL (good) cholesterol and high triglycerides\n- Have acanthosis nigricans - dark, thick, and velvety skin around your neck or armpitsWhat are the symptoms of type 2 diabetes?\n\nMany people with type 2 diabetes have no symptoms at all. If you do have them, the symptoms develop slowly over several years. They might be so mild that you do not notice them. The symptoms can include:\n\n- Increased thirst and urination\n- Increased hunger\n- Feeling tired\n- Blurred vision\n- Numbness or tingling in the feet or hands\n- Sores that do not heal\n- Unexplained weight lossHow is type 2 diabetes diagnosed?\n\nYour provider will use blood tests to diagnose type 2 diabetes. The blood tests include:\n\n- A1C test, which measures your average blood glucose level over the past 3 months.\n- Fasting plasma glucose (FPG) test, which measures your current blood glucose level. You need to fast (not eat or drink anything except water) for at least 8 hours before the test.\n- Random plasma glucose (RPG) test, which measures your current blood glucose level. This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test.What are the treatments for type 2 diabetes?\n\nTreatment for type 2 diabetes involves managing your blood glucose levels. Many people are able to do this by living a healthy lifestyle. Some people may also need to take medicine:\n\n- A healthy lifestyle includes following a healthy eating plan and getting regular physical activity. You need to learn how to balance what you eat and drink with physical activity and diabetes medicine, if you take any.\n- Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.\n- You will need to check your blood glucose regularly. Your provider will tell you how often you need to do it.\n- It's also important to keep your blood pressure and cholesterol levels close to the targets your provider sets for you. Make sure to get your screening tests regularly.Can type 2 diabetes be prevented?\n\nYou can take steps to help prevent or delay type 2 diabetes by losing weight if you are overweight, eating fewer calories, and being more physically active. If you have a condition which raises your risk for type 2 diabetes, managing that condition may lower your risk of getting type 2 diabetes.\n\nNIH: National Institute of Diabetes and Digestive and Kidney Diseases"
+      }
+    ],
+    "research_conducted_at": "2026-10-03T15:50:29.949658Z",
+    "research_started_at": "2026-10-03T17:09:01.923311Z",
+    "research_completed_at": "2026-10-03T17:09:04.474538Z",
+    "search_strategy": {
+      "condition_input": "type 2 diabetes",
+      "normalised_label": "Diabetes Mellitus, Type 2",
+      "mesh_id": "D003924",
+      "normalisation": "replay_fixture",
+      "connectors": [
+        "PubMed (NCBI E-utilities): up to 6 guidelines and 6 systematic reviews / meta-analyses, by relevance",
+        "MedlinePlus Health Topics (NLM consumer summary), with page created/modified dates"
+      ],
+      "pubmed_queries": [
+        "(\"Diabetes Mellitus, Type 2\"[MeSH Major Topic]) AND (Practice Guideline[pt] OR Guideline[pt]) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract",
+        "(\"Diabetes Mellitus, Type 2\"[MeSH Major Topic]) AND (Systematic Review[pt] OR Meta-Analysis[pt]) AND (therapy OR treatment OR management) AND (\"2020\"[dp] : \"3000\"[dp]) AND English[la] AND hasabstract"
+      ],
+      "publication_types": [
+        "Practice Guideline",
+        "Guideline",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "date_window": "2020 to present (PubMed publication date), English, with abstract",
+      "max_sources": 12,
+      "sources_found": 9,
+      "sources_selected": 9,
+      "tier_rules": [
+        "Tier 1 (guideline): PubMed publication type Practice Guideline / Guideline, or a title that identifies a guidance document (guideline, guidance / consensus / position statement) or a known guideline body's recommendations.",
+        "Tier 2 (systematic review): PubMed publication type Systematic Review / Meta-Analysis.",
+        "Tier 3 (curated summary): MedlinePlus health topic (NLM-curated consumer summary).",
+        "Tier 4 (other): any other publication."
+      ],
+      "data_mode": "replay",
+      "note": "Replay: these sources were recorded earlier (see 'Retrieved' dates); the queries are the ones a live run issues."
+    },
+    "reviewed_by": "admin",
+    "reviewed_at": "2026-10-03T17:09:04.601917Z",
+    "generated_at": "2026-10-03T17:09:04.643071Z",
+    "generated_by": "admin",
+    "model": "replay",
+    "llm_provider": "replay",
+    "data_mode": "replay",
+    "disclaimer": "This briefing is an AI-assisted summary of publicly available literature, prepared for health-system strategy and planning. It is not medical advice, is not a clinical guideline, and must not be used to make decisions about the care of any individual patient. Verify all statements against the cited sources."
+  },
+  "run": {
+    "llm_provider": "replay",
+    "data_mode": "replay",
+    "model": "replay",
+    "model_lite": "replay",
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "est_cost_usd": 0.0,
+    "model_versions": [],
+    "steps": [
+      {
+        "name": "normalize_condition",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:01.923306Z",
+        "ended_at": "2026-10-03T17:09:02.331282Z",
+        "detail": "Diabetes Mellitus, Type 2 (MeSH D003924)"
+      },
+      {
+        "name": "retrieve_sources",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:02.338884Z",
+        "ended_at": "2026-10-03T17:09:02.748217Z",
+        "detail": "9 sources (8 PubMed, 1 MedlinePlus)"
+      },
+      {
+        "name": "extract_treatments",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:02.755083Z",
+        "ended_at": "2026-10-03T17:09:03.182298Z",
+        "detail": "34 treatments from 9 of 9 sources"
+      },
+      {
+        "name": "consolidate_options",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:03.189824Z",
+        "ended_at": "2026-10-03T17:09:03.629847Z",
+        "detail": "15 options from 34 extracted treatments"
+      },
+      {
+        "name": "detect_conflicts",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:03.638625Z",
+        "ended_at": "2026-10-03T17:09:04.054702Z",
+        "detail": "3 conflict(s) need a human decision"
+      },
+      {
+        "name": "suggest_relevance",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:04.064209Z",
+        "ended_at": "2026-10-03T17:09:04.474559Z",
+        "detail": "11 of 15 options suggested"
+      },
+      {
+        "name": "human_review",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:04.494473Z",
+        "ended_at": "2026-10-03T17:09:04.622422Z",
+        "detail": "Reviewed by admin"
+      },
+      {
+        "name": "write_report",
+        "status": "completed",
+        "started_at": "2026-10-03T17:09:04.630684Z",
+        "ended_at": "2026-10-03T17:09:05.048092Z",
+        "detail": "10 options, 16 timeline events"
+      }
+    ]
+  },
+  "error": null
+}

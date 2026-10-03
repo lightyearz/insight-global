@@ -1,0 +1,14 @@
+{
+  "input": "type 2 diabetes",
+  "label": "Diabetes Mellitus, Type 2",
+  "mesh_id": "D003924",
+  "synonyms": [
+    "Type 2 Diabetes",
+    "Type 2 Diabetes Mellitus",
+    "Diabetes Mellitus, Adult-Onset",
+    "Diabetes Mellitus, Non-Insulin-Dependent",
+    "Noninsulin-Dependent Diabetes Mellitus",
+    "NIDDM",
+    "Diabetes Mellitus, Type II"
+  ]
+}

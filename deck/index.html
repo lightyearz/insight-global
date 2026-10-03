@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Health Briefing - stakeholder deck</title>
+    <!-- GSAP is vendored locally (assets/vendor) so nothing is fetched from a CDN at present or render time. -->
+    <script src="assets/vendor/gsap-3.14.2.min.js"></script>
+    <!-- HyperFrames runtime (Apache-2.0, @hyperframes/core 0.8.114) vendored so `present` works offline;
+         without it the player fetches the same file from cdn.jsdelivr.net. -->
+    <script src="assets/vendor/hyperframe.runtime-0.8.114.iife.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #f4f7f6;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Slideshow deck for `npx hyperframes present`.
+      One slide per scene; fragments are absolute hold-points at the script's beat boundaries;
+      notes carry the narration plus the likely question and answer (presenter view only).
+      The same three scene files are played back-to-back by video/index.html for the MP4.
+    -->
+    <script type="application/hyperframes-slideshow+json">
+      {
+        "slides": [
+          {
+            "sceneId": "s1-problem",
+            "fragments": [
+              3.45,
+              8.85,
+              13.95,
+              18.4
+            ],
+            "notes": "SAY: Picture one of your analysts on a Monday. Friday is the diabetes service-line planning meeting, and the question is simple: what's the standard of care today? The answers are out there, in clinical guidelines, research reviews and National Library of Medicine resources. But they're scattered, updated at different times, and sometimes they disagree. Pulling all of that into one briefing can take days or weeks, and it's hard to trace where each point came from. That's the gap Health Briefing closes.\n\nLIKELY QUESTION: Our analysts already do this well. What's actually broken?\nANSWER: Their judgment isn't the problem. The slow part is finding, reading and organizing the sources, and keeping track of which one is newest. The AI takes on that part, so analysts can spend their time on the decisions that need their expertise."
+          },
+          {
+            "sceneId": "s2-how",
+            "fragments": [
+              22.45,
+              27.95,
+              32.9,
+              38.4
+            ],
+            "notes": "SAY: Here's how it works. The analyst types a condition. The AI, shown in blue, reads trusted public sources and suggests treatment options, each with a quote from its source. The small number on each source is its trust tier: clinical guidelines are tier 1, systematic reviews tier 2. Then your team, shown in amber, takes over. The AI pre-selects its suggestions; your team confirms or changes every one: here, three options in and one set aside for this briefing, and each choice is logged. When sources disagree, like these two published guidelines with different blood-sugar targets, the AI flags the conflict, shows both sides with quotes and dates, and suggests a default using a simple, visible rule. A person makes the final call, and it's logged.\n\nLIKELY QUESTION: What if the AI gets something wrong, or makes something up?\nANSWER: The AI pre-selects its suggestions; your analyst confirms or changes every one before the report is written, and any quote it couldn't match word-for-word to the source is flagged with a warning. Sources are graded by a fixed rule: tier 1 is a clinical guideline, tier 2 a systematic review, tier 3 a National Library of Medicine health summary, tier 4 everything else. An option's confidence is capped when its quote can't be found in the source."
+          },
+          {
+            "sceneId": "s3-briefing",
+            "fragments": [
+              43.45,
+              49.55,
+              52.5,
+              59.9
+            ],
+            "notes": "SAY: With Health Briefing, the same question has a briefing ready well before Friday. It has a one-paragraph summary, a timeline, the treatment options your team chose and a record of every decision. Every option is linked to its source, and every source is listed with when it was published, when it was researched, and its trust tier. Standard of care works today as a prototype. Emerging treatments come next, then the key companies and institutions. Our goal is a sourced first draft in minutes, not weeks. The ask: pick two or three conditions you care about, and let's pilot together.\n\nLIKELY QUESTION: What would a pilot need from us, and is our data safe?\nANSWER: We'd need two or three priority conditions and an analyst to review and confirm the options. We'd compare each draft with how your team builds that briefing today, and you decide whether it holds up. It reads public medical literature only and never touches patient data. It's for strategy and planning, not patient care. It runs on Google Cloud using Google's Gemini AI models."
+          }
+        ]
+      }
+    </script>
+    <div id="root" data-composition-id="deck" data-start="0" data-duration="60" data-width="1920" data-height="1080">
+      <div
+        id="slide-1"
+        data-composition-id="s1-problem"
+        data-composition-src="compositions/s1-problem.html"
+        data-start="0"
+        data-duration="19"
+        data-track-index="1"
+        data-label="1 · Scattered sources"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="slide-2"
+        data-composition-id="s2-how"
+        data-composition-src="compositions/s2-how.html"
+        data-start="19"
+        data-duration="20"
+        data-track-index="1"
+        data-label="2 · The AI reads, your team decides"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="slide-3"
+        data-composition-id="s3-briefing"
+        data-composition-src="compositions/s3-briefing.html"
+        data-start="39"
+        data-duration="21"
+        data-track-index="1"
+        data-label="3 · The briefing and the ask"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["deck"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

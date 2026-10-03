@@ -1,0 +1,6 @@
+{
+  "suggestions": [
+    { "option_id": "opt-alphamab", "suggested": true, "reason": "Guideline first-line therapy." },
+    { "option_id": "opt-betacillin", "suggested": true, "reason": "Common add-on with formulary impact." }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "hypertension",
+  "label": "Hypertension",
+  "aliases": [
+    "high blood pressure",
+    "HTN",
+    "essential hypertension"
+  ],
+  "recorded_at": "2026-10-03T15:55:06.220525Z",
+  "recorded_with": "hand-authored",
+  "notes": "Sources fetched live on 2026-10-03 with the project's own connectors: MeSH lookup (Hypertension, D006973; synonym from the MeSH descriptor's entry terms), PubMed E-utilities efetch for 8 hand-picked PMIDs, and the MedlinePlus health-topics service plus page meta dates. PMIDs were chosen by hand (not by the live esearch ranking) so the abstracts contain concrete recommendations; the 2017 ACP/AAFP guideline (PMID 28135725) is outside the default PUBMED_YEARS window and was included deliberately as the older-adult target position. The 2025 AHA/ACC guideline (PMID 40811497) and the 2024 ESC full guideline (PMID 39210715) were not used: the first's abstract states scope and methods only, and the second has no abstract in PubMed; the 2024 ESC guidance is represented by an English abstract summarising it (PMID 39589443). All LLM outputs are hand-authored from the abstracts only; every quote is verbatim and passes is_grounded. write_report.json is written for the suggested selection and the suggested conflict resolutions. Contract 1.1 (2026-10-03): evidence 'stance' and conflict position 'side' values were added by hand from the same abstracts; source tiers were recomputed with the title rule. Suggested resolutions are computed at run time, not stored. Public copy: abstracts from publishers outside the open-licence allowlist are cut down to the sentences quoted as evidence (joined with ' … '); see fixtures/README.md."
+}

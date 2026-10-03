@@ -1,0 +1,9 @@
+node_modules/
+dist/
+# HyperFrames scratch output (default snapshot/render folders)
+snapshots/
+renders/
+.hyperframes/
+# copies made by scripts/sync-video.mjs (edit the deck folders instead)
+video/compositions/
+video/assets/

@@ -1,0 +1,27 @@
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/node_modules
+**/.next
+api/data
+api/tests
+docs
+**/.env
+**/.env.*
+!.env.example
+*.db
+deck
+.run
+web
+scripts
+**/dist
+**/test-results
+# Key material and cloud credentials must never enter an image (defence in depth)
+**/*.pem
+**/*.key
+**/*.p12
+**/sa-key*.json
+**/*credentials*.json
+**/service-account*.json
+**/client_secret*.json
